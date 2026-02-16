@@ -1,9 +1,9 @@
 {
     "fix_filenames": {
-        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE023-Pots-de-Vin": "UOE033-Pots-de-Vin",
-        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacmbes": "UOE050-Catacombes",
-        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082-L_Héritage du Mordor": "UOE082B-L_Héritage du Mordor",
-        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gens-des-Chariots": "LRM066-Championne des Gents-des-Chariots"
+        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE023-Pots-de-Vin": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE033-Pots-de-Vin",
+        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacmbes": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacombes",
+        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082-L_Héritage du Mordor": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082B-L_Héritage du Mordor",
+        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gens-des-Chariots": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gents-des-Chariots"
     },
     "copy_cycle_9_deluxe": {
         "SDA-intégrale/Deluxe cycle 9 sans logo FFG/UOAE012.jpg": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE012-Poursuite des Orientaux.png",
