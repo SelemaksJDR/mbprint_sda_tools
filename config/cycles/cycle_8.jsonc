@@ -1,0 +1,14 @@
+{
+    // Dossier contenant les images
+    "pictures_folder": "SDA-intégrale/cycle 8 (incl. The wilds of Rhovanion)",
+    // Nomenclature des extensions (nom réél - nomenclature)
+    "extensions": [
+        ""
+    ],
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "": {
+        
+    }
+}

@@ -1,0 +1,16 @@
+{
+    // Les dossiers contenant les informations pour générer les fichiers mbprints
+    "workspace": {
+        // Dossier racine des images (par défaut on considère qu'on exécute le script à la racine du dossier images)
+        "root_pictures": ".",
+        // Dossier de configuration. En absolu ou en relatif par rapport au dossier racine
+        "config_folder": "config",
+        // dossier résultats (resultat par défaut). En absolu ou en relatif par rapport au dossier racine
+        "folder_result": "resultats",
+        // Dos des cartes. En absolu ou en relatif par rapport au dossier racine
+        "backs":{
+            "player_back": "",
+            "ennemy_back": ""
+        }
+    }
+}
