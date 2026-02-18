@@ -7,10 +7,27 @@
         "config_folder": "./config",
         // dossier résultats (resultat par défaut)
         "folder_result": "./resultats",
-        // Dos des cartes. En absolu ou en relatif par rapport au dossier racine
+        // Dos des cartes
         "backs":{
             "player_back": "./data/player_back.jpg",
             "encounter_back": "./data/encounter_back.jpg"
         }
-    }
+    },
+    // Cycles de cartes à imprimer
+    "cycles": [
+        // "coreset",
+        // "cycle_1",
+        // "cycle_2",
+        // "cycle_3",
+        // "cycle_4",
+        // "cycle_5",
+        // "cycle_6",
+        // "cycle_7",
+        // "cycle_8",
+        "cycle_9",
+        // "Nightmare",
+        // "POD",
+        // "saga_hobbits",
+        // "saga_LOTR"
+    ]
 }

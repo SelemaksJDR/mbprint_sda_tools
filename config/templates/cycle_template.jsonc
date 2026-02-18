@@ -1,0 +1,27 @@
+{
+    // Dossier contenant les images
+    "pictures_folder": "",
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "": {
+        "heros": [
+        ],
+        "joueurs": [
+        ],
+        "contrats": [
+        ],
+        "rencontres": [
+            {
+                "name": "",
+                "number_cards": 1,
+                "cards": {
+                }
+            }
+        ],
+        "quêtes": [
+        ],
+        "flip_cards": {
+        }
+    }
+}
