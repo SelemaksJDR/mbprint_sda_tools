@@ -1,4 +1,6 @@
 {
+    // Nom
+    "name": "",
     // Dossier contenant les images
     "pictures_folder": "",
     // Par extension :

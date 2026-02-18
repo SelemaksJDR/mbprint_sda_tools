@@ -1,14 +1,29 @@
 {
+    // Nom
+    "name": "Cycle 8 : Ered Mithrin",
     // Dossier contenant les images
     "pictures_folder": "SDA-intégrale/cycle 8 (incl. The wilds of Rhovanion)",
-    // Nomenclature des extensions (nom réél - nomenclature)
-    "extensions": [
-        ""
-    ],
     // Par extension :
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
-    "": {
-        
+    "Les Terres Sauvages du Rhovanion": {
+        "heros": [
+        ],
+        "joueurs": [
+        ],
+        "contrats": [
+        ],
+        "rencontres": [
+            {
+                "name": "",
+                "number_cards": 1,
+                "cards": {
+                }
+            }
+        ],
+        "quêtes": [
+        ],
+        "flip_cards": {
+        }
     }
 }

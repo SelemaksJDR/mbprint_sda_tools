@@ -1,14 +1,29 @@
 {
+    // Nom
+    "name": "Boîte de base",
     // Dossier contenant les images
     "pictures_folder": "SDA-intégrale/coreset",
-    // Nomenclature des extensions (nom réél - nomenclature)
-    "extensions": [
-        ""
-    ],
     // Par extension :
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
-    "": {
-        
+    "Boite de Base": {
+        "heros": [
+        ],
+        "joueurs": [
+        ],
+        "contrats": [
+        ],
+        "rencontres": [
+            {
+                "name": "",
+                "number_cards": 1,
+                "cards": {
+                }
+            }
+        ],
+        "quêtes": [
+        ],
+        "flip_cards": {
+        }
     }
 }
