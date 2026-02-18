@@ -1,4 +1,9 @@
 # Dossier de données images
 SDAJCE
-
 data/*.jpg
+
+# Python
+__pycache__
+
+# vscode
+.vscode
