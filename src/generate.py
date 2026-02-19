@@ -67,6 +67,7 @@ if __name__ == '__main__':
     # Détermination des cycles à générer
     cycles_object = config_object["cycles"]
     cycles : list = get_cycles_from_workspace(config_folder, cycles_object)
+    # génération des listes de cartes par cycle
     for cycle in cycles:
         cycle_data: dict = None
         with open(cycle, 'r') as file:

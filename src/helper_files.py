@@ -66,8 +66,8 @@ def validate_config_json(config_data: dict) -> bool:
         print(f"L'élément config_folder n'existe pas dans le workspace")
         return False
     # Récupération du chemin vers le dossier de résultat
-    if validate_field(config_data["workspace"], name="folder_result") is False:
-        print(f"L'élément folder_result n'existe pas dans le workspace")
+    if validate_field(config_data["workspace"], name="result_folder") is False:
+        print(f"L'élément result_folder n'existe pas dans le workspace")
         return False
     # Récupération du chemin vers les dos de carte
     if validate_field(config_data["workspace"], name="backs") is False:

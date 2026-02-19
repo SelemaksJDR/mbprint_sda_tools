@@ -6,7 +6,7 @@
         // Dossier de configuration
         "config_folder": "./config",
         // dossier résultats (resultat par défaut)
-        "folder_result": "./resultats",
+        "result_folder": "./resultats",
         // Dos des cartes
         "backs":{
             "player_back": "./data/player_back.jpg",
