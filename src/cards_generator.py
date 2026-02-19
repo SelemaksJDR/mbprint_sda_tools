@@ -5,11 +5,10 @@ Fonctions de génération des cartes avec le bon dos et le bon nombre d'exemplai
 import helper_files
 import infos
 import itertools
-import os
 import pathlib
 
 
-def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictures: os.path, back: os.path = None) -> list:
+def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path = None) -> list:
     result: list = []
 
     facesA: list = [a for a in flip_cards]
@@ -30,16 +29,16 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
                 multiple_result_card: list = []
                 for card_back in flip_cards[card]:
                     result_card_front: dict = {}
-                    result_card_front[infos.CARDS_FACE_A] = os.path.join(root_pictures, card)
-                    result_card_front[infos.CARDS_FACE_B] = os.path.join(root_pictures, card_back)
+                    result_card_front[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
+                    result_card_front[infos.CARDS_FACE_B] = pathlib.Path.joinpath(root_pictures, card_back)
                     result_card_front[infos.CARDS_EXEMPLAIRES] = occurrence
                     multiple_result_card.append(result_card_front)
                 result.extend(multiple_result_card)
                 # On arrête le traitement ici
                 continue
             # Cas général, il n'y a qu'un seul dos
-            result_card[infos.CARDS_FACE_A] = os.path.join(root_pictures, card)
-            result_card[infos.CARDS_FACE_B] = os.path.join(root_pictures, flip_cards[card])
+            result_card[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
+            result_card[infos.CARDS_FACE_B] = pathlib.Path.joinpath(root_pictures, flip_cards[card])
 
             result_card[infos.CARDS_EXEMPLAIRES] = occurrence
         elif card in facesB:
@@ -49,34 +48,34 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
             if back is None:
                 print(f"Aucun dos n'a été assigné à la carte {card}")
                 continue
-            result_card[infos.CARDS_FACE_A] = os.path.join(root_pictures, card)
-            result_card[infos.CARDS_FACE_B] = back
+            result_card[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
+            result_card[infos.CARDS_FACE_B] = pathlib.Path(back)
             result_card[infos.CARDS_EXEMPLAIRES] = occurrence
         result.append(result_card)
     return result
 
 
-def card_list_with_flip_cards(cards: list, flip_cards: dict, root_pictures: os.path, number_cards: int, back: os.path = None) -> list:
+def card_list_with_flip_cards(cards: list, flip_cards: dict, root_pictures: pathlib.Path, number_cards: int, back: pathlib.Path = None) -> list:
     cards_dict: dict = {card: number for card, number in zip(cards, itertools.repeat(number_cards, len(cards)))}
     return card_list_with_flip_cards_numbered(cards=cards_dict, flip_cards=flip_cards, root_pictures=root_pictures, back=back)
 
 
-def generate_heroes(extension: dict, flip_cards: dict, root_pictures: os.path, back: os.path) -> list:
+def generate_heroes(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path) -> list:
     result: list = card_list_with_flip_cards(cards= extension[infos.EXTENSION_HEROES], flip_cards=flip_cards, root_pictures=root_pictures, back=back, number_cards=1)
     return result
 
 
-def generate_players(extension: dict, flip_cards: dict, root_pictures: os.path, back: os.path) -> list:
+def generate_players(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path) -> list:
     result: list = card_list_with_flip_cards(cards=extension[infos.EXTENSION_PLAYERS], flip_cards=flip_cards, root_pictures=root_pictures, back=back, number_cards=3)
     return result
 
 
-def generate_contracts(extension: dict, flip_cards: dict, root_pictures: os.path, back: os.path) -> list:
+def generate_contracts(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path) -> list:
     result: list = card_list_with_flip_cards(cards=extension[infos.EXTENSION_CONTRACTS], flip_cards=flip_cards, root_pictures=root_pictures, back=back, number_cards=4)
     return result
 
 
-def generate_encounters(extension: dict, flip_cards: dict, root_pictures: os.path, back: os.path) -> list:
+def generate_encounters(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path) -> list:
     result: list = []
     encounter_series: list = extension[infos.EXTENSION_ENCOUNTERS]
     for serie in encounter_series:
@@ -91,21 +90,21 @@ def generate_encounters(extension: dict, flip_cards: dict, root_pictures: os.pat
         if cards_in_serie_occ != cards_number:
             print(f"[ERREUR] La serie {encounter_name} devrait avoir {cards_number} cartes et {cards_in_serie_occ} se trouvent dans le fichier de configuration.")
             for card in cards_in_serie:
-                print(f"{card[infos.CARDS_EXEMPLAIRES]}x {os.path.split(card[infos.CARDS_FACE_A])[-1]} // {os.path.split(card[infos.CARDS_FACE_B])[-1]}")
+                print(f"{card[infos.CARDS_EXEMPLAIRES]}x {pathlib.Path.split(card[infos.CARDS_FACE_A])[-1]} // {pathlib.Path.split(card[infos.CARDS_FACE_B])[-1]}")
             continue
         print(f"[OK] La serie {encounter_name} est ajoutée avec {cards_number} cartes.")
         result.extend(cards_in_serie)
     return result
 
 
-def generate_quests(extension: dict, flip_cards: dict, root_pictures: os.path) -> list:
+def generate_quests(extension: dict, flip_cards: dict, root_pictures: pathlib.Path) -> list:
     result: list = card_list_with_flip_cards(cards=extension[infos.EXTENSION_QUESTS], flip_cards=flip_cards, root_pictures=root_pictures, number_cards=1)
     return result
 
 
-def generate_cycle(cycle_data: dict, root_pictures: os.path, backs: dict) -> list:
+def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict) -> list:
     print(f"Génération des cartes : {cycle_data[infos.CYCLE_NAME]}")
-    pictures_path: os.path = os.path.join(root_pictures, cycle_data[infos.CYCLE_FOLDER])
+    pictures_path: pathlib.Path = pathlib.Path.joinpath(root_pictures, cycle_data[infos.CYCLE_FOLDER])
     print(f"Dossier des images : {pictures_path}")
     result: list = []
     for extension_name in helper_files.get_cycle_extensions(cycle_data=cycle_data):

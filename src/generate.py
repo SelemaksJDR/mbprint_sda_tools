@@ -8,7 +8,7 @@ import cards_generator
 import helper_files
 import json5
 import infos
-import os
+import pathlib
 
 
 def get_backs(backs_object) -> dict:
@@ -32,11 +32,11 @@ def get_backs(backs_object) -> dict:
     return result
 
 
-def get_cycles_from_workspace(config_folder: os.path, cycles_object) -> list:
+def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> list:
     result: list = []
     for element in cycles_object:
         # Création du chemin vers le cycle
-        result.append(os.path.join(config_folder, f"cycles/{element}.jsonc"))
+        result.append(pathlib.Path.joinpath(config_folder, f"cycles/{element}.jsonc"))
     return result
 
 
@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser.add_argument("--config", required=True, help='jsonc de configuration')
     args = parser.parse_args()
     # Chemin vers le fichier de configuration
-    config_path = os.path.abspath(args.config)
+    config_path: pathlib.Path = pathlib.Path.absolute(pathlib.Path(args.config))
     print(f"Fichier de configuration pour generate_cards : {config_path}")
 
     workspace = None
@@ -56,11 +56,11 @@ if __name__ == '__main__':
     workspace = config_object["workspace"]
 
     # Récupération de la racine des fichiers images
-    root_pictures = workspace["root_pictures"]
+    root_pictures: pathlib.Path = pathlib.Path(workspace["root_pictures"])
     # Récupération du dossier de configuration
-    config_folder = workspace["config_folder"]
+    config_folder: pathlib.Path = pathlib.Path(workspace["config_folder"])
     # Récupération du chemin vers le dossier de résultat
-    folder_result = workspace["folder_result"]
+    result_folder: pathlib.Path = pathlib.Path(workspace["result_folder"])
     # Récupération du chemin vers les dos de carte
     backs_object = workspace["backs"]
     backs: dict = get_backs(backs_object)
@@ -77,3 +77,5 @@ if __name__ == '__main__':
             print(f"Le fichier {cycle} est valide.")
         # Génère les cartes avec le bon dos et le bon nombre d'exemplaires
         cards = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs)
+    # génération des images
+    cards_generator.generate_images(cards=cards, result_folder=result_folder)

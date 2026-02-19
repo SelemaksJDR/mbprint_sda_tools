@@ -6,9 +6,9 @@ Et copie les cartes du cycle 9 sans le watermark
 
 import argparse
 import json5
-import os
+import pathlib
 
-def fix_filenames(root_path: os.path, fix_config_file: os.path, is_quiet: bool) -> None:
+def fix_filenames(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_quiet: bool) -> None:
     # Ouvre le fichier .jsonc
     with open(fix_config_file, 'r') as file:
         data = json5.load(file)
@@ -16,23 +16,23 @@ def fix_filenames(root_path: os.path, fix_config_file: os.path, is_quiet: bool) 
             print(f"L'élément fix_filenames n'existe pas dans le fichier {fix_config_file}")
             exit(1)
         for element in data["fix_filenames"]:
-            source: os.path = element
-            target: os.path = data["fix_filenames"][element]
+            source: pathlib.Path = element
+            target: pathlib.Path = data["fix_filenames"][element]
             print(f"Correction : {source} -> {target}")
             # Si il n'y a pas d'action à faire, continue
             if is_quiet is False:
                 # Effectue l'action
                 continue
 
-def copy_cycle_9_deluxe(root_path: os.path, fix_config_file: os.path, is_quiet: bool):
+def copy_cycle_9_deluxe(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_quiet: bool):
     with open(fix_config_file, 'r') as file:
         data = json5.load(file)
         if "copy_cycle_9_deluxe" not in data:
             print(f"L'élément copy_cycle_9_deluxe n'existe pas dans le fichier {fix_config_file}")
             exit(1)
         for element in data["copy_cycle_9_deluxe"]:
-            source: os.path = element
-            target: os.path = data["copy_cycle_9_deluxe"][element]
+            source: pathlib.Path = element
+            target: pathlib.Path = data["copy_cycle_9_deluxe"][element]
             print(f"Remplacement : {source} -> {target}")
             # Si il n'y a pas d'action à faire, continue
             if is_quiet is False:
@@ -47,10 +47,10 @@ if __name__ == '__main__':
     parser.add_argument("--quiet", required=False, action='store_true')
     args = parser.parse_args()
     # Chemin vers la racine des images
-    root_path = os.path.abspath(args.root)
+    root_path = pathlib.Path.absolute(args.root)
     print(f"racine des fichiers images : {root_path}")
     # Chemin vers le fichier de configuration
-    config_path = os.path.abspath(args.config)
+    config_path = pathlib.Path.absolute(args.config)
     print(f"Fichier de configuration pour fix_files : {config_path}")
     # Flag qui indique si le script effectue les actions ou log seulement
     is_quiet: bool = args.quiet
