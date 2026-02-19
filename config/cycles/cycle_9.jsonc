@@ -8,443 +8,444 @@
     // * Les cartes recto-verso avec la face A et la face B
     "Une Ombre à l'Est": {
         "héros": [
-            "UOE001-L_Anneau Unique",
-            "UOE002-Frodon Sacquet",
-            "UOE072-Sméagol",
-            "UOE073-Gollum"
+            "UOE001-L_Anneau Unique.png",
+            "UOE002-Frodon Sacquet.png",
+            "UOE072-Sméagol.png",
+            "UOE073-Gollum.png"
         ],
         "joueurs": [
-            "UOE003-Merry",
-            "UOE004-Pippin",
-            "UOE005-Faramir",
-            "UOE006-Derufin",
-            "UOE007-L_Orage Gronde",
-            "UOE008-Décourager les Poursuivants",
-            "UOE009-La Maître Anneau",
-            "UOE010-L_Anneau Souverain",
-            "UOE011-L_Anneau de Puissance"
+            "UOE003-Merry.png",
+            "UOE004-Pippin.png",
+            "UOE005-Faramir.png",
+            "UOE006-Derufin.png",
+            "UOE007-L_Orage Gronde.png",
+            "UOE008-Décourager les Poursuivants.png",
+            "UOE009-La Maître Anneau.png",
+            "UOE010-L_Anneau Souverain.png",
+            "UOE011-L_Anneau de Puissance.png"
         ],
         "contrats": [
-            "UOE074A-Communauté",
-            "UOE074B-Communauté"
+            "UOE074A-Communauté.png",
+            "UOE074B-Communauté.png"
         ],
         "rencontres": [
             {
                 "name": "La Rivière Courante",
                 "number_cards": 10,
                 "cards": {
-                    "UOE012-Poursuite des Orientaux": 1,
-                    "UOE013-Tirailleur des Orientaux": 3,
-                    "UOE014-Rivière Courante": 2,
-                    "UOE015-Berge Exposée": 2,
-                    "UOE016-Des Ennemis aux Trousses": 2
+                    "UOE012-Poursuite des Orientaux.png": 1,
+                    "UOE013-Tirailleur des Orientaux.png": 3,
+                    "UOE014-Rivière Courante.png": 2,
+                    "UOE015-Berge Exposée.png": 2,
+                    "UOE016-Des Ennemis aux Trousses.png": 2
                 }
             },
             {
                 "name": "Cavaliers de Rhûn",
                 "number_cards": 6,
                 "cards": {
-                    "UOE017-Capitaine des Orientaux": 1,
-                    "UOE018-Cavalier de Rhun": 2,
-                    "UOE019-Cheval des Orientaux": 3
+                    "UOE017-Capitaine des Orientaux.png": 1,
+                    "UOE018-Cavalier de Rhun.png": 2,
+                    "UOE019-Cheval des Orientaux.png": 3
                 }
             },
             {
                 "name": "Pillards Orientaux",
                 "number_cards": 11,
                 "cards": {
-                    "UOE020-Pillard Oriental": 3,
-                    "UOE021-Guerrier de Rhun": 3,
-                    "UOE022-Épée de Rhun": 2,
-                    "UOE023-Arc Recourbé": 2,
-                    "UOE024-Guerriers de l_Est": 1
+                    "UOE020-Pillard Oriental.png": 3,
+                    "UOE021-Guerrier de Rhun.png": 3,
+                    "UOE022-Épée de Rhun.png": 2,
+                    "UOE023-Arc Recourbé.png": 2,
+                    "UOE024-Guerriers de l_Est.png": 1
                 }
             },
             {
                 "name": "Plaines Vallonées",
                 "number_cards": 11,
                 "cards": {
-                    "UOE025-Plaines Vallonnées": 4,
-                    "UOE026-Affleurement Rocheux": 2,
-                    "UOE027-Terres Désolées": 2,
-                    "UOE028-Crampes": 2,
-                    "UOE029-Un Voyage Ardu": 1
+                    "UOE025-Plaines Vallonnées.png": 4,
+                    "UOE026-Affleurement Rocheux.png": 2,
+                    "UOE027-Terres Désolées.png": 2,
+                    "UOE028-Crampes.png": 2,
+                    "UOE029-Un Voyage Ardu.png": 1
                 }
             },
             {
                 "name": "Danger au Dorwinion",
                 "number_cards": 16,
                 "cards": {
-                    "UOE030-Prêtre de Sauron": 1,
-                    "UOE031-Le Gouverneur": 1,
-                    "UOE032-Numénoréen Noir": 1,
-                    "UOE033-Pots-de-Vin": 1,
-                    "UOE034-Se Soumettre ou Périr": 1,
-                    "UOE035-Culte de Sauron": 1,
-                    "UOE036-La Preuve d_un Culte": 3,
-                    "UOE037-Manoir à Flanc de Coteau": 3,
-                    "UOE038-Disparitions": 2,
-                    "UOE039-Cultiste Infiltré": 2
+                    "UOE030-Prêtre de Sauron.png": 1,
+                    "UOE031-Le Gouverneur.png": 1,
+                    "UOE032-Numénoréen Noir.png": 1,
+                    "UOE033-Pots-de-Vin.png": 1,
+                    "UOE034-Se Soumettre ou Périr.png": 1,
+                    "UOE035-Culte de Sauron.png": 1,
+                    "UOE036-La Preuve d_un Culte.png": 3,
+                    "UOE037-Manoir à Flanc de Coteau.png": 3,
+                    "UOE038-Disparitions.png": 2,
+                    "UOE039-Cultiste Infiltré.png": 2
                 }
             },
             {
                 "name": "Serviteurs de Sauron",
                 "number_cards": 8,
                 "cards": {
-                    "UOE040-Messager du Mordor": 3,
-                    "UOE041-Serviteur de Sauron": 2,
-                    "UOE042-Submergé": 2,
-                    "UOE043-L_Ombre de la Peur": 1
+                    "UOE040-Messager du Mordor.png": 3,
+                    "UOE041-Serviteur de Sauron.png": 2,
+                    "UOE042-Submergé.png": 2,
+                    "UOE043-L_Ombre de la Peur.png": 1
                 }
             },
             {
                 "name": "Cité de Rhûn",
                 "number_cards": 10,
                 "cards": {
-                    "UOE044-Surineur de Rhun": 2,
-                    "UOE045-Oriental Perfide": 2,
-                    "UOE046-Forum de la Cité": 2,
-                    "UOE047-Taverne Miteuse": 2,
-                    "UOE048-Des Ténèbres à l_Est": 2
+                    "UOE044-Surineur de Rhun.png": 2,
+                    "UOE045-Oriental Perfide.png": 2,
+                    "UOE046-Forum de la Cité.png": 2,
+                    "UOE047-Taverne Miteuse.png": 2,
+                    "UOE048-Des Ténèbres à l_Est.png": 2
                 }
             },
             {
                 "name": "Sous Bonne Garde",
                 "number_cards": 8,
                 "cards": {
-                    "UOE049-Ruelle Attenante": 2,
-                    "UOE050-Catacmbes": 2,
-                    "UOE051-Sous Bonne Garde": 3,
-                    "UOE052-Voyageurs Indésirables": 1
+                    "UOE049-Ruelle Attenante.png": 2,
+                    "UOE050-Catacombes.png": 2,
+                    "UOE051-Sous Bonne Garde.png": 3,
+                    "UOE052-Voyageurs Indésirables.png": 1
                 }
             },
             {
                 "name": "Le Temple Maudit",
                 "number_cards": 10,
                 "cards": {
-                    "UOE053-Tribut au Mordor": 1,
-                    "UOE054-Thane Ulchor": 1,
-                    "UOE055-Temple de Sauron": 2,
-                    "UOE056-Hall des Horreurs": 3,
-                    "UOE057-Lieu Maléfique": 3
+                    "UOE053-Tribut au Mordor.png": 1,
+                    "UOE054-Thane Ulchor.png": 1,
+                    "UOE055-Temple de Sauron.png": 2,
+                    "UOE056-Hall des Horreurs.png": 3,
+                    "UOE057-Lieu Maléfique.png": 3
                 }
             },
             {
                 "name": "Garde d'Ulchor",
                 "number_cards": 9,
                 "cards": {
-                    "UOE058-Garde d_Ulchor": 4,
-                    "UOE059-Rage d_Ulchor": 3,
-                    "UOE060-Fanatisme": 2
+                    "UOE058-Garde d_Ulchor.png": 4,
+                    "UOE059-Rage d_Ulchor.png": 3,
+                    "UOE060-Fanatisme.png": 2
                 }
             },
             {
                 "name": "Tunnels Sinueux",
-                "number_cards": 10,
+                "number_cards": 9,
                 "cards": {
-                    "UOE061-Tunnel Sinueux": 2,
-                    "UOE062-Ouverture Étroite": 2,
-                    "UOE063-Couloir Effondré": 2,
-                    "UOE064-Ombres Effroyables": 2,
-                    "UOE065-Perdus dans le Noir": 1
+                    "UOE061-Tunnel Sinueux.png": 2,
+                    "UOE062-Ouverture Étroite.png": 2,
+                    "UOE063-Couloir Effondré.png": 2,
+                    "UOE064-Ombres Effroyables.png": 2,
+                    "UOE065-Perdus dans le Noir.png": 1
                 }
             },
             {
                 "name": "Le Pouvoir du Mordor",
                 "number_cards": 5,
                 "cards": {
-                    "UOE066-Khamul l_Oriental": 1,
-                    "UOE067-La tour de Barad-Dur": 1,
-                    "UOE068-Sous l_Oeil Attentif": 1,
-                    "UOE069-Les Armées du Mordor": 1,
-                    "UOE070-Plongé dans les Ténèbres": 1
+                    "UOE066-Khamul l_Oriental.png": 1,
+                    "UOE067-La tour de Barad-Dur.png": 1,
+                    "UOE068-Sous l_Oeil Attentif.png": 1,
+                    "UOE069-Les Armées du Mordor.png": 1,
+                    "UOE070-Plongé dans les Ténèbres.png": 1
                 }
             },
             {
                 "name": "Gollum",
+                // Il y a 3 cartes normalement dans cette série, mais l'une d'entre elle est le dos de la carte Sméagol
                 "number_cards": 2,
                 "cards": {
-                    "UOE071-Puant": 2
+                    "UOE071-Puant.png": 2
                 }
             }
         ],
         "quêtes": [
-            "UOE075A-Pourchassés par les Orientaux",
-            "UOE075B-Pourchassés par les Orientaux",
-            "UOE076A-Le Gué d_Araw",
-            "UOE076B-Le gué d_Araw",
-            "UOE077A-Une Ville dans la Tourmente",
-            "UOE077B-Une Ville dans la Tourmente",
-            "UOE078A-L_Ombre du Mordor",
-            "UOE078B-L_Ombre du Mordor",
-            "UOE079A-Le Dirigeant du Culte",
-            "UOE079B-Le Dirigeant du Culte",
-            "UOE080A-Le Temple Oublié",
-            "UOE080B-Le Temple Oublié",
-            "UOE081A-L_Héritage du Mordor",
-            "UOE082B-L_Héritage du Mordor",
-            "UOE083A-Souvenir des Années Sombres",
-            "UOE083B-Souvenir des Années Sombres",
-            "UOE084A-Autel Dédié à Sauron",
-            "UOE084B-Autel Dédié à Sauron",
-            "UOE085A-Le Seigneur de la Terre du Milieu",
-            "UOE085B-Le Seigneur de la Terre du Milieu"
+            "UOE075A-Pourchassés par les Orientaux.png",
+            "UOE075B-Pourchassés par les Orientaux.png",
+            "UOE076A-Le Gué d_Araw.png",
+            "UOE076B-Le gué d_Araw.png",
+            "UOE077A-Une Ville dans la Tourmente.png",
+            "UOE077B-Une Ville dans la Tourmente.png",
+            "UOE078A-L_Ombre du Mordor.png",
+            "UOE078B-L_Ombre du Mordor.png",
+            "UOE079A-Le Dirigeant du Culte.png",
+            "UOE079B-Le Dirigeant du Culte.png",
+            "UOE080A-Le Temple Oublié.png",
+            "UOE080B-Le Temple Oublié.png",
+            "UOE081A-L_Héritage du Mordor.png",
+            "UOE082B-L_Héritage du Mordor.png",
+            "UOE083A-Souvenir des Années Sombres.png",
+            "UOE083B-Souvenir des Années Sombres.png",
+            "UOE084A-Autel Dédié à Sauron.png",
+            "UOE084B-Autel Dédié à Sauron.png",
+            "UOE085A-Le Seigneur de la Terre du Milieu.png",
+            "UOE085B-Le Seigneur de la Terre du Milieu.png"
         ],
         "flip_cards": {
-            "UOE072-Sméagol": "UOE073-Gollum",
-            "UOE074A-Communauté": "UOE074B-Communauté",
-            "UOE075A-Pourchassés par les Orientaux": "UOE075B-Pourchassés par les Orientaux",
-            "UOE076A-Le Gué d_Araw": "UOE076B-Le gué d_Araw",
-            "UOE077A-Une Ville dans la Tourmente": "UOE077B-Une Ville dans la Tourmente",
-            "UOE078A-L_Ombre du Mordor": "UOE078B-L_Ombre du Mordor",
-            "UOE079A-Le Dirigeant du Culte": "UOE079B-Le Dirigeant du Culte",
-            "UOE080A-Le Temple Oublié": "UOE080B-Le Temple Oublié",
-            "UOE081A-L_Héritage du Mordor": "UOE082B-L_Héritage du Mordor",
-            "UOE083A-Souvenir des Années Sombres": "UOE083B-Souvenir des Années Sombres",
-            "UOE084A-Autel Dédié à Sauron": "UOE084B-Autel Dédié à Sauron",
-            "UOE085A-Le Seigneur de la Terre du Milieu": "UOE085B-Le Seigneur de la Terre du Milieu"
+            "UOE072-Sméagol.png": "UOE073-Gollum.png",
+            "UOE074A-Communauté.png": "UOE074B-Communauté.png",
+            "UOE075A-Pourchassés par les Orientaux.png": "UOE075B-Pourchassés par les Orientaux.png",
+            "UOE076A-Le Gué d_Araw.png": "UOE076B-Le gué d_Araw.png",
+            "UOE077A-Une Ville dans la Tourmente.png": "UOE077B-Une Ville dans la Tourmente.png",
+            "UOE078A-L_Ombre du Mordor.png": "UOE078B-L_Ombre du Mordor.png",
+            "UOE079A-Le Dirigeant du Culte.png": "UOE079B-Le Dirigeant du Culte.png",
+            "UOE080A-Le Temple Oublié.png": "UOE080B-Le Temple Oublié.png",
+            "UOE081A-L_Héritage du Mordor.png": "UOE082B-L_Héritage du Mordor.png",
+            "UOE083A-Souvenir des Années Sombres.png": "UOE083B-Souvenir des Années Sombres.png",
+            "UOE084A-Autel Dédié à Sauron.png": "UOE084B-Autel Dédié à Sauron.png",
+            "UOE085A-Le Seigneur de la Terre du Milieu.png": "UOE085B-Le Seigneur de la Terre du Milieu.png"
         }
     },
     "Courroux destructeur": {
         "héros": [
-            "LRM001-Thorin Heaume-de-Pierre"
+            "LRM001-Thorin Heaume-de-Pierre.png"
         ],
         "joueurs": [
-            "LRM002-Soldat du Gondor",
-            "LRM003-Piliers des Rois",
-            "LRM004-Hobbite Prudente",
-            "LRM005-Tom Bombadillon !",
-            "LRM006-Hache de Durin",
-            "LRM007-Charge dans la Bataille",
-            "LRM008-Bandeau d_Argent",
-            "LRM009-Force Intérieure",
-            "LRM010-Tom Bombadil"
+            "LRM002-Soldat du Gondor.png",
+            "LRM003-Piliers des Rois.png",
+            "LRM004-Hobbite Prudente.png",
+            "LRM005-Tom Bombadillon !.png",
+            "LRM006-Hache de Durin.png",
+            "LRM007-Charge dans la Bataille.png",
+            "LRM008-Bandeau d_Argent.png",
+            "LRM009-Force Intérieure.png",
+            "LRM010-Tom Bombadil.png"
         ],
         "contrats": [
-            "LRM024A-L_Approche du Cambrioleur",
-            "LRM024B-L_Approche du Cambrioleur"
+            "LRM024A-L_Approche du Cambrioleur.png",
+            "LRM024B-L_Approche du Cambrioleur.png"
         ],
         "rencontres": [
             {
                 "name": "Courroux Destructeur",
                 "number_cards": 29,
                 "cards": {
-                    "LRM011-Thane Ulchor": 1,
-                    "LRM012-Champion de Rhun": 2,
-                    "LRM013-Franc-Tireur des Orientaux": 4,
-                    "LRM014-Porte de Dorwinion": 1,
-                    "LRM015-Place Contestée": 3,
-                    "LRM016-Maison Saccagée": 3,
-                    "LRM017-Barricade Improvisée": 3,
-                    "LRM018-Tour Capturée": 2,
-                    "LRM019-Fureur": 2,
-                    "LRM020-Pris au Dépourvu": 2,
-                    "LRM021-Combats de Rue": 2,
-                    "LRM022-Assiégés": 2,
-                    "LRM023-La Revanche d_Ulchor": 2
+                    "LRM011-Thane Ulchor.png": 1,
+                    "LRM012-Champion de Rhun.png": 2,
+                    "LRM013-Franc-Tireur des Orientaux.png": 4,
+                    "LRM014-Porte de Dorwinion.png": 1,
+                    "LRM015-Place Contestée.png": 3,
+                    "LRM016-Maison Saccagée.png": 3,
+                    "LRM017-Barricade Improvisée.png": 3,
+                    "LRM018-Tour Capturée.png": 2,
+                    "LRM019-Fureur.png": 2,
+                    "LRM020-Pris au Dépourvu.png": 2,
+                    "LRM021-Combats de Rue.png": 2,
+                    "LRM022-Assiégés.png": 2,
+                    "LRM023-La Revanche d_Ulchor.png": 2
                 }
             }
         ],
         "quêtes": [
-            "LRM025A-Dans les Murs",
-            "LRM025B-Dans les Murs",
-            "LRM026A-Repoussez-les",
-            "LRM026B-Repoussez-les"
+            "LRM025A-Dans les Murs.png",
+            "LRM025B-Dans les Murs.png",
+            "LRM026A-Repoussez-les.png",
+            "LRM026B-Repoussez-les.png"
         ],
         "flip_cards": {
-            "LRM024A-L_Approche du Cambrioleur": "LRM024B-L_Approche du Cambrioleur",
-            "LRM025A-Dans les Murs": "LRM025B-Dans les Murs",
-            "LRM026A-Repoussez-les": "LRM026B-Repoussez-les"
+            "LRM024A-L_Approche du Cambrioleur.png": "LRM024B-L_Approche du Cambrioleur.png",
+            "LRM025A-Dans les Murs.png": "LRM025B-Dans les Murs.png",
+            "LRM026A-Repoussez-les.png": "LRM026B-Repoussez-les.png"
         }
     },
     "La Cité d'Ulfast": {
         "héros": [
-            "LRM027-Lothiriel"
+            "LRM027-Lothiriel.png"
         ],
         "joueurs": [
-            "LRM028-Angbor l_Intrépide",
-            "LRM029-Guidés par la Nécessité",
-            "LRM030-Sentinelle Sylvestre",
-            "LRM031-Arc Long",
-            "LRM032-Hache de Guerre",
-            "LRM033-Force et Courage",
-            "LRM034-Chevalier de Belfalas",
-            "LRM035-Cor de la Marche",
-            "LRM036-Ost des Galadhrim"
+            "LRM028-Angbor l_Intrépide.png",
+            "LRM029-Guidés par la Nécessité.png",
+            "LRM030-Sentinelle Sylvestre.png",
+            "LRM031-Arc Long.png",
+            "LRM032-Hache de Guerre.png",
+            "LRM033-Force et Courage.png",
+            "LRM034-Chevalier de Belfalas.png",
+            "LRM035-Cor de la Marche.png",
+            "LRM036-Ost des Galadhrim.png"
         ],
         "contrats": [
-            "LRM049A-Les Trois Chasseurs, en Avant !",
-            "LRM049B-Les Trois Chasseurs, en Avant !"
+            "LRM049A-Les Trois Chasseurs, en Avant !.png",
+            "LRM049B-Les Trois Chasseurs, en Avant !.png"
         ],
         "rencontres": [
             {
                 "name": "La Cité d'Ulfast",
                 "number_cards": 27,
                 "cards": {
-                    "LRM037-Garde de la Cité": 1,
-                    "LRM038-Sentinelle d_Ulfast": 3,
-                    "LRM039-L_Élite du Roi": 2,
-                    "LRM040-Agent d_Ulchor": 2,
-                    "LRM041-Les Jardins du Roi": 2,
-                    "LRM042-Arcade Protégée": 3,
-                    "LRM043-Marché Bondé": 2,
-                    "LRM044-Rues d_Ulfast": 3,
-                    "LRM045-Aux Aguets": 2,
-                    "LRM046-Nos avons été Repérés !": 3,
-                    "LRM047-Patrouilles dans les Rues": 3,
-                    "LRM048-Le Jeu du Chat et de la Souris": 1
+                    "LRM037-Garde de la Cité.png": 1,
+                    "LRM038-Sentinelle d_Ulfast.png": 3,
+                    "LRM039-L_Élite du Roi.png": 2,
+                    "LRM040-Agent d_Ulchor.png": 2,
+                    "LRM041-Les Jardins du Roi.png": 2,
+                    "LRM042-Arcade Protégée.png": 3,
+                    "LRM043-Marché Bondé.png": 2,
+                    "LRM044-Rues d_Ulfast.png": 3,
+                    "LRM045-Aux Aguets.png": 2,
+                    "LRM046-Nos avons été Repérés !.png": 3,
+                    "LRM047-Patrouilles dans les Rues.png": 3,
+                    "LRM048-Le Jeu du Chat et de la Souris.png": 1
                 }
             }
         ],
         "quêtes": [
-            "LRM050A-A la Recherche d_Ulchor",
-            "LRM050B-A la Recherche d_Ulchor",
-            "LRM051A-Tenter de Passer Inaperçu",
-            "LRM051B-Tenter de Passer Inaperçu",
-            "LRM052A-Attirer l_Attention",
-            "LRM052B-Attirer l_Attention",
-            "LRM053A-Le Piège d_Ulchor",
-            "LRM053B-Le Piège d_Ulchor"
+            "LRM050A-A la Recherche d_Ulchor.png",
+            "LRM050B-A la Recherche d_Ulchor.png",
+            "LRM051A-Tenter de Passer Inaperçu.png",
+            "LRM051B-Tenter de Passer Inaperçu.png",
+            "LRM052A-Attirer l_Attention.png",
+            "LRM052B-Attirer l_Attention.png",
+            "LRM053A-Le Piège d_Ulchor.png",
+            "LRM053B-Le Piège d_Ulchor.png"
         ],
         "flip_cards": {
-            "LRM049A-Les Trois Chasseurs, en Avant !": "LRM049B-Les Trois Chasseurs, en Avant !",
-            "LRM050A-A la Recherche d_Ulchor": "LRM050B-A la Recherche d_Ulchor",
-            "LRM051A-Tenter de Passer Inaperçu": "LRM051B-Tenter de Passer Inaperçu",
-            "LRM052A-Attirer l_Attention": "LRM052B-Attirer l_Attention",
-            "LRM053A-Le Piège d_Ulchor": "LRM053B-Le Piège d_Ulchor"
+            "LRM049A-Les Trois Chasseurs, en Avant !.png": "LRM049B-Les Trois Chasseurs, en Avant !.png",
+            "LRM050A-A la Recherche d_Ulchor.png": "LRM050B-A la Recherche d_Ulchor.png",
+            "LRM051A-Tenter de Passer Inaperçu.png": "LRM051B-Tenter de Passer Inaperçu.png",
+            "LRM052A-Attirer l_Attention.png": "LRM052B-Attirer l_Attention.png",
+            "LRM053A-Le Piège d_Ulchor.png": "LRM053B-Le Piège d_Ulchor.png"
         }
     },
     "Le Défi des Gens-des-Chariots": {
         "héros": [
-            "LRM054-Saroumane"
+            "LRM054-Saroumane.png"
         ],
         "joueurs": [
-            "LRM055-Pouvoir de Commander",
-            "LRM056-Aux Cors !",
-            "LRM057-Soldat de l_Isengard",
-            "LRM058-Vue Perçante",
+            "LRM055-Pouvoir de Commander.png",
+            "LRM056-Aux Cors !.png",
+            "LRM057-Soldat de l_Isengard.png",
+            "LRM058-Vue Perçante.png",
             "LRM059-Nori.png",
-            "LRM060-Ceinture Dorée",
-            "LRM061-Éclaireur Rohirrim",
-            "LRM062-Le Rassemblement du Rohan",
-            "LRM063-Bâton de Saroumane"
+            "LRM060-Ceinture Dorée.png",
+            "LRM061-Éclaireur Rohirrim.png",
+            "LRM062-Le Rassemblement du Rohan.png",
+            "LRM063-Bâton de Saroumane.png"
         ],
         "contrats": [
-            "LRM074A-Le Vagabond Gris",
-            "LRM074B-Le Vagabond Gris"
+            "LRM074A-Le Vagabond Gris.png",
+            "LRM074B-Le Vagabond Gris.png"
         ],
         "rencontres": [
             {
                 "name": "Le Défi des Gens-des-Chariots",
                 "number_cards": 25,
                 "cards": {
-                    "LRM064-Les Gens-des-Chariots": 1,
-                    "LRM065-Les Concurrents": 1,
-                    "LRM066-Championne des Gens-des-Chariots": 1,
-                    "LRM067-Coureur Agressif": 4,
-                    "LRM068-Conducteur de Char": 3,
-                    "LRM069-Vétéran des Gens-des-Chariots": 3,
-                    "LRM070-Défilé Étroit": 3,
-                    "LRM071-Circuit Embouteillé": 2,
-                    "LRM072-Rebord du Ravin": 2,
-                    "LRM073-Char des Gens-des-Chariots": 2,
-                    "LRM073-La Ruse de la Championne": 3
+                    "LRM064-Les Gens-des-Chariots.png": 1,
+                    "LRM065-Les Concurrents.png": 1,
+                    "LRM066-Championne des Gens-des-Chariots.png": 1,
+                    "LRM067-Coureur Agressif.png": 4,
+                    "LRM068-Conducteur de Char.png": 3,
+                    "LRM069-Vétéran des Gens-des-Chariots.png": 3,
+                    "LRM070-Défilé Étroit.png": 3,
+                    "LRM071-Circuit Embouteillé.png": 2,
+                    "LRM072-Rebord du Ravin.png": 2,
+                    "LRM073-Char des Gens-des-Chariots.png": 2,
+                    "LRM073-La Ruse de la Championne.png": 3
                 }
             }
         ],
         "quêtes": [
-            "LRM075A-Le Camp des Gens-des-Chariots",
-            "LRM075B-Le Camp des Gens-des-Chariots",
-            "LRM076A-Les Premières Minutes",
-            "LRM076B-Les Premières Minutes",
-            "LRM077A-Le Virage Serré",
-            "LRM077B-Le Virage Serré",
-            "LRM078A-Le Côté Opposé",
-            "LRM078B-Le Côté Opposé",
-            "LRM079A-La Côte à Gravir",
-            "LRM079B-La Côte à Gravir",
-            "LRM080A-La Dernière Ligne Courbe",
-            "LRM080B-La Dernière Ligne Courbe"
+            "LRM075A-Le Camp des Gens-des-Chariots.png",
+            "LRM075B-Le Camp des Gens-des-Chariots.png",
+            "LRM076A-Les Premières Minutes.png",
+            "LRM076B-Les Premières Minutes.png",
+            "LRM077A-Le Virage Serré.png",
+            "LRM077B-Le Virage Serré.png",
+            "LRM078A-Le Côté Opposé.png",
+            "LRM078B-Le Côté Opposé.png",
+            "LRM079A-La Côte à Gravir.png",
+            "LRM079B-La Côte à Gravir.png",
+            "LRM080A-La Dernière Ligne Courbe.png",
+            "LRM080B-La Dernière Ligne Courbe.png"
         ],
         "flip_cards": {
-            "LRM074A-Le Vagabond Gris": "LRM074B-Le Vagabond Gris",
-            "LRM075A-Le Camp des Gens-des-Chariots": "LRM075B-Le Camp des Gens-des-Chariots",
-            "LRM076A-Les Premières Minutes": "LRM076B-Les Premières Minutes",
-            "LRM077A-Le Virage Serré": "LRM077B-Le Virage Serré",
-            "LRM078A-Le Côté Opposé": "LRM078B-Le Côté Opposé",
-            "LRM079A-La Côte à Gravir": "LRM079B-La Côte à Gravir",
-            "LRM080A-La Dernière Ligne Courbe": "LRM080B-La Dernière Ligne Courbe"
+            "LRM074A-Le Vagabond Gris.png": "LRM074B-Le Vagabond Gris.png",
+            "LRM075A-Le Camp des Gens-des-Chariots.png": "LRM075B-Le Camp des Gens-des-Chariots.png",
+            "LRM076A-Les Premières Minutes.png": "LRM076B-Les Premières Minutes.png",
+            "LRM077A-Le Virage Serré.png": "LRM077B-Le Virage Serré.png",
+            "LRM078A-Le Côté Opposé.png": "LRM078B-Le Côté Opposé.png",
+            "LRM079A-La Côte à Gravir.png": "LRM079B-La Côte à Gravir.png",
+            "LRM080A-La Dernière Ligne Courbe.png": "LRM080B-La Dernière Ligne Courbe.png"
         }
     },
     "Sous les Monts de Cendre": {
         "héros": [
-            "LRM081-Gildor Inglorion"
+            "LRM081-Gildor Inglorion.png"
         ],
         "joueurs": [
-            "LRM082-Exilée Errante",
-            "LRM083-Épée Vaillante",
-            "LRM084-Pierre d_Elostirion",
-            "LRM085-Bien Conservé",
-            "LRM086-Maître Archer du Nord",
-            "LRM087-Attaque Impétueuse",
-            "LRM088-Odon Fierpied",
-            "LRM089-Mettre au Défi",
-            "LRM090-Dissimulé sous un Casque"
+            "LRM082-Exilée Errante.png",
+            "LRM083-Épée Vaillante.png",
+            "LRM084-Pierre d_Elostirion.png",
+            "LRM085-Bien Conservé.png",
+            "LRM086-Maître Archer du Nord.png",
+            "LRM087-Attaque Impétueuse.png",
+            "LRM088-Odon Fierpied.png",
+            "LRM089-Mettre au Défi.png",
+            "LRM090-Dissimulé sous un Casque.png"
         ],
         "contrats": [
-            "LRM091-Conseil des Sages"
+            "LRM091-Conseil des Sages.png"
         ],
         "rencontres": [
             {
                 "name": "Sous les Monts de Cendre",
                 "number_cards": 29,
                 "cards": {
-                    "LRM092-Les Tunnels de Torech Gorgor": 1,
-                    "LRM093-Un Antre pour les Bêtes": 1,
-                    "LRM094-Ténèbres Insondables": 1,
-                    "LRM095-Bête sans Nom": 2,
-                    "LRM096-Troll des Cavernes du Mordor": 2,
-                    "LRM097-Loup-Garou des Monts de Cendre": 3,
-                    "LRM098-Rejeton de Shelob": 3,
-                    "LRM099-Patrouille de Torech Gorgor": 2,
-                    "LRM100-Gouffre Ardent": 3,
-                    "LRM101-Profondeurs Hideuses": 2,
-                    "LRM102-Passage Orque": 2,
-                    "LRM103-Provisions Pillées": 3,
-                    "LRM104-Odeur de Brûlé": 2,
-                    "LRM105-Ombres Lovées": 2
+                    "LRM092-Les Tunnels de Torech Gorgor.png": 1,
+                    "LRM093-Un Antre pour les Bêtes.png": 1,
+                    "LRM094-Ténèbres Insondables.png": 1,
+                    "LRM095-Bête sans Nom.png": 2,
+                    "LRM096-Troll des Cavernes du Mordor.png": 2,
+                    "LRM097-Loup-Garou des Monts de Cendre.png": 3,
+                    "LRM098-Rejeton de Shelob.png": 3,
+                    "LRM099-Patrouille de Torech Gorgor.png": 2,
+                    "LRM100-Gouffre Ardent.png": 3,
+                    "LRM101-Profondeurs Hideuses.png": 2,
+                    "LRM102-Passage Orque.png": 2,
+                    "LRM103-Provisions Pillées.png": 3,
+                    "LRM104-Odeur de Brûlé.png": 2,
+                    "LRM105-Ombres Lovées.png": 2
                 }
             }
         ],
         "quêtes": [
-            "LRM106A-Passage vers le Mordor",
-            "LRM106B-Passage vers le Mordor",
-            "LRM107A-Un Endroit Maléfique",
-            "LRM107B-Un Endroit Maléfique"
+            "LRM106A-Passage vers le Mordor.png",
+            "LRM106B-Passage vers le Mordor.png",
+            "LRM107A-Un Endroit Maléfique.png",
+            "LRM107B-Un Endroit Maléfique.png"
         ],
         "flip_cards": {
-            "LRM106A-Passage vers le Mordor": "LRM106B-Passage vers le Mordor",
-            "LRM107A-Un Endroit Maléfique": "LRM107B-Un Endroit Maléfique"
+            "LRM106A-Passage vers le Mordor.png": "LRM106B-Passage vers le Mordor.png",
+            "LRM107A-Un Endroit Maléfique.png": "LRM107B-Un Endroit Maléfique.png"
         }
     },
     "La Terre des Lamentations": {
         "héros": [
-            "LRM108-Gwaihir"
+            "LRM108-Gwaihir.png"
         ],
         "joueurs": [
-            "LRM109-Archer Hobbit",
-            "LRM110-Livre Rouge de la Marche de l_Ouest",
-            "LRM111-Messagère de Dale",
-            "LRM112-Chant de Guérison",
-            "LRM113-Émissaire des Aigles",
-            "LRM114-La Plan de Bilbon",
-            "LRM115-Pipe de Rechange",
-            "LRM116-Fumer et Penser",
+            "LRM109-Archer Hobbit.png",
+            "LRM110-Livre Rouge de la Marche de l_Ouest.png",
+            "LRM111-Messagère de Dale.png",
+            "LRM112-Chant de Guérison.png",
+            "LRM113-Émissaire des Aigles.png",
+            "LRM114-La Plan de Bilbon.png",
+            "LRM115-Pipe de Rechange.png",
+            "LRM116-Fumer et Penser.png",
             "LRM117-Wilyador.png"
         ],
         "contrats": [
-            "LRM134A-Messager du Roi",
-            "LRM134B-Messager du Roi"
+            "LRM134A-Messager du Roi.png",
+            "LRM134B-Messager du Roi.png"
         ],
         "rencontres": [
             {
@@ -454,32 +455,32 @@
                     "LRM118-Ulwarth.png": 1,
                     "LRM119-Lorgan.png": 1,
                     "LRM120-Borlach.png": 1,
-                    "LRM121-La Caserne": 1,
-                    "LRM122-Quartiers des Esclaves": 1,
-                    "LRM123-La Réserve": 1,
+                    "LRM121-La Caserne.png": 1,
+                    "LRM122-Quartiers des Esclaves.png": 1,
+                    "LRM123-La Réserve.png": 1,
                     "LRM124-Edrahil.png": 1,
                     "LRM125-Arador.png": 1,
                     "LRM126-Farin.png": 1,
-                    "LRM127-Garde Oriental": 3,
-                    "LRM128-Esclavagiste de Nurn": 4,
-                    "LRM129-Champs Travaillés": 3,
-                    "LRM130-Tour de Guet": 3,
-                    "LRM131-Fouet de Contremaître": 2,
-                    "LRM132-Cruauté du Mordor": 3,
-                    "LRM133-Captifs Brisés": 2
+                    "LRM127-Garde Oriental.png": 3,
+                    "LRM128-Esclavagiste de Nurn.png": 4,
+                    "LRM129-Champs Travaillés.png": 3,
+                    "LRM130-Tour de Guet.png": 3,
+                    "LRM131-Fouet de Contremaître.png": 2,
+                    "LRM132-Cruauté du Mordor.png": 3,
+                    "LRM133-Captifs Brisés.png": 2
                 }
             }
         ],
         "quêtes": [
-            "LRM135A-Esclaves du Seigneur des Ténèbres",
-            "LRM135B-Esclaves du Seigneur des Ténèbres",
-            "LRM136A-Mener la Révolte",
-            "LRM136B-Mener la Révolte"
+            "LRM135A-Esclaves du Seigneur des Ténèbres.png",
+            "LRM135B-Esclaves du Seigneur des Ténèbres.png",
+            "LRM136A-Mener la Révolte.png",
+            "LRM136B-Mener la Révolte.png"
         ],
         "flip_cards": {
-            "LRM134A-Messager du Roi": "LRM134B-Messager du Roi",
-            "LRM135A-Esclaves du Seigneur des Ténèbres": "LRM135B-Esclaves du Seigneur des Ténèbres",
-            "LRM136A-Mener la Révolte": "LRM136B-Mener la Révolte"
+            "LRM134A-Messager du Roi.png": "LRM134B-Messager du Roi.png",
+            "LRM135A-Esclaves du Seigneur des Ténèbres.png": "LRM135B-Esclaves du Seigneur des Ténèbres.png",
+            "LRM136A-Mener la Révolte.png": "LRM136B-Mener la Révolte.png"
         }
     },
     "La Forteresse de Nurn": {
@@ -487,58 +488,59 @@
             "LRM137-Aragorn.png"
         ],
         "joueurs": [
-            "LRM138-Bouclier Poli",
-            "LRM139-Connaissances sur l_Ennemi",
+            "LRM138-Bouclier Poli.png",
+            "LRM139-Connaissances sur l_Ennemi.png",
             "LRM140-Haleth.png",
-            "LRM141-Savoir des hommes des Bois",
-            "LRM142-Lancier de l_Ouestfolde",
-            "LRM143-Pur-Sang Infatigable",
-            "LRM144-Voyageur des Monts Brumeux",
-            "LRM145-Un Chemin Désespéré",
+            "LRM141-Savoir des hommes des Bois.png",
+            "LRM142-Lancier de l_Ouestfolde.png",
+            "LRM143-Pur-Sang Infatigable.png",
+            "LRM144-Voyageur des Monts Brumeux.png",
+            "LRM145-Un Chemin Désespéré.png",
             "LRM146-Thorongil.png"
         ],
         "contrats": [
-            "LRM147-Lien d_Amitié"
+            "LRM147-Lien d_Amitié.png"
         ],
         "rencontres": [
             {
                 "name": "La Forteresse de Nurn",
                 "number_cards": 29,
                 "cards": {
-                    "LRM148-Thane Ulchor": 1,
-                    "LRM149-Soldat de Nurn": 3,
-                    "LRM150-Mercenaire Oriental": 2,
-                    "LRM151-Olog-Hai du Mordor": 2,
-                    "LRM152-Chiens de Garde": 3,
-                    "LRM153-Murs de la Forteresse": 2,
-                    "LRM154-Tour de Garde": 3,
-                    "LRM155-Place de Nurn": 3,
-                    "LRM156-Défense Tenace": 3,
-                    "LRM157-L_Influence du Seigneur des Ténèbres": 1,
-                    "LRM158-Les Donjons de Dol Rhugar": 1,
-                    "LRM161-164-Prendre le Château d_Assaut": 4,
-                    "LRM161-Garnison du Château": 1,
-                    "LRM162-Contre-Attaque Mortelle": 1,
-                    "LRM163-Pas de Quartier": 1,
-                    "LRM164-Bastion du Mordor": 1
+                    "LRM148-Thane Ulchor.png": 1,
+                    "LRM149-Soldat de Nurn.png": 3,
+                    "LRM150-Mercenaire Oriental.png": 2,
+                    "LRM151-Olog-Hai du Mordor.png": 2,
+                    "LRM152-Chiens de Garde.png": 3,
+                    "LRM153-Murs de la Forteresse.png": 2,
+                    "LRM154-Tour de Garde.png": 3,
+                    "LRM155-Place de Nurn.png": 3,
+                    "LRM156-Défense Tenace.png": 3,
+                    "LRM157-L_Influence du Seigneur des Ténèbres.png": 2,
+                    "LRM158-Les Donjons de Dol Rhugar.png": 1,
+                    // Même si il y a 4 cartes avec une face "Prendre le château d'assaut" il n'y en a qu'un exemplaire à chaque fois (les dos changent)
+                    "LRM161-164-Prendre le Château d_Assaut.png": 1,
+                    "LRM161-Garnison du Château.png": 1,
+                    "LRM162-Contre-Attaque Mortelle.png": 1,
+                    "LRM163-Pas de Quartier.png": 1,
+                    "LRM164-Bastion du Mordor.png": 1
                 }
             }
         ],
         "quêtes": [
-            "LRM159A-Assaut sur Dol Rhugar",
-            "LRM159B-Assaut sur Dol Rhugar",
-            "LRM160A-La Confrontation Finale",
-            "LRM160B-La Confrontation Finale"
+            "LRM159A-Assaut sur Dol Rhugar.png",
+            "LRM159B-Assaut sur Dol Rhugar.png",
+            "LRM160A-La Confrontation Finale.png",
+            "LRM160B-La Confrontation Finale.png"
         ],
         "copies": {},
         "flip_cards": {
-            "LRM159A-Assaut sur Dol Rhugar": "LRM159B-Assaut sur Dol Rhugar",
-            "LRM160A-La Confrontation Finale": "LRM160B-La Confrontation Finale",
-            "LRM161-164-Prendre le Château d_Assaut": [
-                "LRM161-Garnison du Château",
-                "LRM162-Contre-Attaque Mortelle",
-                "LRM163-Pas de Quartier",
-                "LRM164-Bastion du Mordor"
+            "LRM159A-Assaut sur Dol Rhugar.png": "LRM159B-Assaut sur Dol Rhugar.png",
+            "LRM160A-La Confrontation Finale.png": "LRM160B-La Confrontation Finale.png",
+            "LRM161-164-Prendre le Château d_Assaut.png": [
+                "LRM161-Garnison du Château.png",
+                "LRM162-Contre-Attaque Mortelle.png",
+                "LRM163-Pas de Quartier.png",
+                "LRM164-Bastion du Mordor.png"
             ]
         }
     }
