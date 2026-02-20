@@ -103,7 +103,7 @@ def generate_quests(extension: dict, flip_cards: dict, root_pictures: pathlib.Pa
 
 
 def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict) -> list:
-    print(f"Génération des cartes : {cycle_data[infos.CYCLE_NAME]}")
+    print(f"\n========== Génération des cartes : {cycle_data[infos.CYCLE_NAME]} ==========")
     pictures_path: pathlib.Path = pathlib.Path.joinpath(root_pictures, cycle_data[infos.CYCLE_FOLDER])
     print(f"Dossier des images : {pictures_path}")
     result: list = []
@@ -114,8 +114,9 @@ def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict) -
         result.extend(heros_cards)
         player_cards = generate_players(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER])
         result.extend(player_cards)
-        contract_cards = generate_contracts(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER])
-        result.extend(contract_cards)
+        if infos.EXTENSION_CONTRACTS in extension_data:
+            contract_cards = generate_contracts(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER])
+            result.extend(contract_cards)
         encounter_cards = generate_encounters(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_ENCOUNTER])
         result.extend(encounter_cards)
         quest_cards = generate_quests(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path)

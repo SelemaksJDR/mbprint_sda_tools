@@ -1,4 +1,5 @@
 import infos
+import pathlib
 
 def validate_field(json_data: dict, name: str) -> bool:
     if name not in json_data:
@@ -27,9 +28,10 @@ def validate_extension(extension_data: dict) -> bool:
     # Joueurs
     if validate_string_array(json_data=extension_data, name=infos.EXTENSION_PLAYERS) is False:
         return False
-    # Contrats
-    if validate_string_array(json_data=extension_data, name=infos.EXTENSION_CONTRACTS) is False:
-        return False
+    # Contrats optionel
+    if infos.EXTENSION_CONTRACTS in extension_data:
+        if validate_string_array(json_data=extension_data, name=infos.EXTENSION_CONTRACTS) is False:
+            return False
     # Quêtes
     if validate_string_array(json_data=extension_data, name=infos.EXTENSION_QUESTS) is False:
         return False
