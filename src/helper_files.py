@@ -98,9 +98,6 @@ def validate_cycle_json(cycle_data: dict) -> bool:
     return True
 
 
-# flag
-IS_FIRST: bool = True
-
 def path_exists_with_fix(img_path: pathlib.Path, fix_config_object: dict) -> bool | pathlib.Path:
     if pathlib.Path.exists(img_path) is False:
         # Recherche dans le fichier de fix
@@ -109,12 +106,9 @@ def path_exists_with_fix(img_path: pathlib.Path, fix_config_object: dict) -> boo
             fixed_path = img_path.parent / pathlib.Path(pathlib.Path(fixed_name).name)
             if img_path.name == fixed_path.name:
                 if pathlib.Path.exists(error_path) is True:
-                    global IS_FIRST
-                    if IS_FIRST is True:
-                        IS_FIRST = False
-                        print(f"[ATTENTION] Le fichier fix_config.jsonc est nécessaire pour trouver certains chemins. Vous devriez utiliser le script fix_files.py")
+                    print(f"[ATTENTION] Le fichier {fixed_path.name} est remplacé par {error_path.name}. Vous devriez utiliser le script fix_files.py")
                     return True, error_path
                 print(f"[ERREUR] Le fichier {img_path.name} n'est pas présent dans le dossier {img_path.parent} et n'a pas d'autre nom")
-                return False, img_path
+                return False, None
     return True, img_path
 

@@ -43,11 +43,17 @@ def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> lis
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", required=True, help='jsonc de configuration')
+    parser.add_argument("--config", required=True, help="jsonc de configuration")
+    parser.add_argument("--validate", required=False, action="store_true", help="indique si il faut seulement valider")
     args = parser.parse_args()
     # Chemin vers le fichier de configuration
     config_path: pathlib.Path = pathlib.Path.absolute(pathlib.Path(args.config))
     print(f"Fichier de configuration pour generate_cards : {config_path}")
+
+    # Flag qui indique si le script valide seulement les cycles
+    validate_only: bool = args.validate
+    if validate_only:
+        print("Le script valide seulement les cibles")
 
     workspace = None
     config_object = None
@@ -76,6 +82,7 @@ if __name__ == '__main__':
     cycles : list = get_cycles_from_workspace(config_folder, cycles_object)
     # génération des listes de cartes par cycle
     cards: list = []
+    encounters_infos: dict = {}
     for cycle in cycles:
         cycle_data: dict = None
         with open(cycle, 'r') as file:
@@ -83,11 +90,22 @@ if __name__ == '__main__':
             if helper_files.validate_cycle_json(cycle_data) is False:
                 continue
         # Génère les cartes avec le bon dos et le bon nombre d'exemplaires
-        cards.extend(cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs))
-    # génération des images
-    cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, fix_config_object=fix_config_object, backs=backs)
-    # Generer le PDF
-    pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
-    pdf_folder.mkdir(parents=True, exist_ok=True)
-    pdf_output = pdf_folder / f"0_FINAL.pdf"
-    generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
+        cards_generated, encounters_generated = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs, fix_object=fix_config_object)
+        cards.extend(cards_generated)
+        encounters_infos.update(encounters_generated)
+    all_is_good: bool = True
+    for encounter, status in encounters_infos.items():
+        if status is False:
+            print(f"[ERREUR] La série {encounter} n'est pas correctement configurée")
+            all_is_good = False
+    if all_is_good:
+        print(f"[OK] Toutes les séries sont correctement configurées")
+
+    if validate_only is False:
+        # génération des images
+        cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
+        # Generer le PDF
+        pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
+        pdf_folder.mkdir(parents=True, exist_ok=True)
+        pdf_output = pdf_folder / f"0_FINAL.pdf"
+        generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
