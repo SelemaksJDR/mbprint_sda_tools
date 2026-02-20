@@ -74,14 +74,14 @@ if __name__ == '__main__':
     cycles_object = config_object["cycles"]
     cycles : list = get_cycles_from_workspace(config_folder, cycles_object)
     # génération des listes de cartes par cycle
+    cards: list = []
     for cycle in cycles:
         cycle_data: dict = None
         with open(cycle, 'r') as file:
             cycle_data = json5.load(file)
             if helper_files.validate_cycle_json(cycle_data) is False:
                 continue
-            print(f"Le fichier {cycle} est valide.")
         # Génère les cartes avec le bon dos et le bon nombre d'exemplaires
-        cards = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs)
+        cards.extend(cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs))
     # génération des images
-    cards_generator.generate_images(cards=cards, result_folder=result_folder)
+    cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, fix_config_object=fix_config_object, backs=backs)

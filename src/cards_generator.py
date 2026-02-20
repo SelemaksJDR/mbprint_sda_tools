@@ -6,6 +6,7 @@ import helper_files
 import infos
 import itertools
 import pathlib
+from from_clint_cheawood.generepdf import convert_image_to_bleed
 
 
 def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path = None) -> list:
@@ -122,3 +123,50 @@ def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict) -
         quest_cards = generate_quests(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path)
         result.extend(quest_cards)
     return result
+
+
+def get_and_create_bleed_img(card, fix_config_object: dict, cards_folder: pathlib.Path):
+        orig_img_exists, orig_img = helper_files.path_exists_with_fix(card, fix_config_object)
+        if orig_img_exists is False:
+            return False, pathlib.Path()
+        dest_img_name = f"converted-{orig_img.name}"
+        dest_img = cards_folder / dest_img_name
+        # Si l'image n'existe pas déjà, elle est créée
+        dest_img = convert_image_to_bleed(input_file=orig_img, output_dir=cards_folder, prefix="converted")
+        return True, pathlib.Path.absolute(dest_img)
+
+
+def generate_images(cards: list, result_folder: pathlib.Path, fix_config_object: dict, backs) -> list:
+    cards_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("cards"))
+    cards_folder.mkdir(parents=True, exist_ok=True)
+    cards_with_bleed: list = []
+
+    backs_path = [pathlib.Path.absolute(pathlib.Path(back)) for type, back in backs.items()]
+    backs_with_bleed: dict = {}
+
+    for back in backs_path:
+        back_exists, back_img = get_and_create_bleed_img(card=back, fix_config_object=fix_config_object, cards_folder=cards_folder)
+        if back_exists is False:
+            continue
+        backs_with_bleed[back] = back_img
+
+    for card in cards:
+        # Récupère les images
+        front_exists, front_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_A], fix_config_object=fix_config_object, cards_folder=cards_folder)
+        if front_exists is False:
+            continue
+        if card[infos.CARDS_FACE_B] not in backs_with_bleed.keys():
+            back_exists, back_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_B], fix_config_object=fix_config_object, cards_folder=cards_folder)
+            if back_exists is False:
+                continue
+        else:
+            back_img = backs_with_bleed[card[infos.CARDS_FACE_B]]
+
+        # Ajoute les images à la liste à créer
+        for _ in range(0, card[infos.CARDS_EXEMPLAIRES]):
+            # Front
+            cards_with_bleed.append(front_img)
+            # Back
+            cards_with_bleed.append(back_img)
+    return cards_with_bleed
+
