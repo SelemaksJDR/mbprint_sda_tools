@@ -7,352 +7,491 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "Les Sables de Harad": {
-        "copies": {
-            "LSH001-Gimli": 1,
-            "LSH002-Legolas": 1,
-            "LSH003-Archer de Vertbois": 3,
-            "LSH004-Garde d_Erebor": 3,
-            "LSH005-Frontalier Semi-Homme": 3,
-            "LSH006-Dunadan Vigilant": 3,
-            "LSH007-Amitié Improbable": 3,
-            "LSH008-Bien Renseignés": 3,
-            "LSH009-Obstinés": 3,
-            "LSH010-Bouclier de Nain": 3,
-            "LSH011-Coutelas de la Forêt Noire": 3,
-            "LSH012-La route se Poursuit": 3,
-            "LSH013-La Tempête Vient": 3,
-            "LSH014-Emparez-vous d_Eux": 1,
-            "LSH015-Sentinelle d_Umbar": 5,
-            "LSH016-Venelle": 2,
-            "LSH017-Rue d_Umbar": 2,
-            "LSH018-Place d_Umbar": 3,
-            "LSH019-Port de Harad": 2,
-            "LSH020-Domaine Haradrim": 2,
-            "LSH021-Poursuivis par l_Ennemi": 2,
-            "LSH022-En Quête d_Ombre": 1,
-            "LSH023-Grand Ver": 4,
-            "LSH024-Charognard": 2,
-            "LSH025-Sables Brûlants": 4,
-            "LSH026-Hamada Aride": 2,
-            "LSH027-Oued Asséché": 2,
-            "LSH028-Mirage": 2,
-            "LSH029-Chaleur Insupportable": 2,
-            "LSH030-Soleil Brûlant": 2,
-            "LSH031-Kahliel": 1,
-            "LSH032-Firyal": 1,
-            "LSH033-Yazan": 1,
-            "LSH034-Jubayr": 1,
-            "LSH035-Exécuteurs de Sauron": 4,
-            "LSH036-Boma Suderon": 2,
-            "LSH037-Hutte du Village": 2,
-            "LSH038-Attaque Brutale": 2,
-            "LSH039-Submergés par les Orques": 3,
-            "LSH040-Champion Suderon": 1,
-            "LSH041-Capitaine Suderon": 1,
-            "LSH042-Soldat Suderon": 3,
-            "LSH043-Archer Suderon": 4,
-            "LSH044-Nulle Part où se Cacher": 3,
-            "LSH045-En Territoire Ennemi": 1,
-            "LSH046-Compagnon Blessé": 3,
-            "LSH047-Affaibli": 2,
-            "LSH048-Trouver de l_Eau": 1,
-            "LSH049-Hautes Dunes": 3,
-            "LSH050-Oasis du Désert": 2,
-            "LSH051-Tempête de Sable": 2,
-            "LSH052-Coup de Chaleur": 2,
-            "LSH053-Préparer un Remède": 1,
-            "LSH054-Vipère des Sables": 2,
-            "LSH055-Scorpion Géant": 3,
-            "LSH056-Piste dans la Jungle": 2,
-            "LSH057-Clairière dans la Forêt": 3,
-            "LSH058-Jungle Dense": 3,
-            "LSH059-Envahi par la Végétation": 2,
-            "LSH060-Uruks de l_Oeil": 1,
-            "LSH061-Chef Uruk": 1,
-            "LSH062-Uruk du Mordor": 3,
-            "LSH063-Chevaucheur de Warg Uruk": 2,
-            "LSH064-Warg du Mordor": 2,
-            "LSH065-Peur du Mordor": 2,
-            "LSH066A-Coincés à Umbar": 1,
-            "LSH066B-Concés à Umbar": 1,
-            "LSH067A-Fuir la Cité": 1,
-            "LSH067B-Fuir la Cité": 1,
-            "LSH068A-Le Désert de Harad": 1,
-            "LSH068B-Le Désert de Harad": 1,
-            "LSH069A-Sous le Soleil Implacable": 1,
-            "LSH069B-Sous le Soleil Implacable": 1,
-            "LSH070A-Créatures de Légende": 1,
-            "LSH070B-Créatures de légende": 1,
-            "LSH071A-Attaque Surprise": 1,
-            "LSH071B-Attaque Surprise": 1,
-            "LSH072A-Trouver les Autres": 1,
-            "LSH072B-Trouver les autres": 1,
-            "LSH073A-Libérer les Prisonniers": 1,
-            "LSH073B-Libérer les Prisonniers": 1,
-            "LSH074A-Fuite dans la Jungle": 1,
-            "LSH074B-Fuite dans la Jungle": 1
-        },
+        "héros": [
+            "LSH001-Gimli.png",
+            "LSH002-Legolas.png"
+        ],
+        "joueurs": [
+            "LSH003-Archer de Vertbois.png",
+            "LSH004-Garde d_Erebor.png",
+            "LSH005-Frontalier Semi-Homme.png",
+            "LSH006-Dunadan Vigilant.png",
+            "LSH007-Amitié Improbable.png",
+            "LSH008-Bien Renseignés.png",
+            "LSH009-Obstinés.png",
+            "LSH010-Bouclier de Nain.png",
+            "LSH011-Coutelas de la Forêt Noire.png",
+            "LSH012-La route se Poursuit.png",
+            "LSH013-La Tempête Vient.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Fuite d'Umbar",
+                "number_cards": 19,
+                "cards": {
+                    "LSH014-Emparez-vous d_Eux.png": 1,
+                    "LSH015-Sentinelle d_Umbar.png": 5,
+                    "LSH016-Venelle.png": 2,
+                    "LSH017-Rue d_Umbar.png": 2,
+                    "LSH018-Place d_Umbar.png": 3,
+                    "LSH019-Port de Harad.png": 2,
+                    "LSH020-Domaine Haradrim.png": 2,
+                    "LSH021-Poursuivis par l_Ennemi.png": 2
+                }
+            },
+            {
+                "name": "La Traversée du Desert",
+                "number_cards": 21,
+                "cards": {
+                    "LSH022-En Quête d_Ombre.png": 1,
+                    "LSH023-Grand Ver.png": 4,
+                    "LSH024-Charognard.png": 2,
+                    "LSH025-Sables Brûlants.png": 4,
+                    "LSH026-Hamada Aride.png": 2,
+                    "LSH027-Oued Asséché.png": 2,
+                    "LSH028-Mirage.png": 2,
+                    "LSH029-Chaleur Insupportable.png": 2,
+                    "LSH030-Soleil Brûlant.png": 2
+                }
+            },
+            {
+                "name": "Le Souffle du Mordor",
+                "number_cards": 17,
+                "cards": {
+                    "LSH031-Kahliel.png": 1,
+                    "LSH032-Firyal.png": 1,
+                    "LSH033-Yazan.png": 1,
+                    "LSH034-Jubayr.png": 1,
+                    "LSH035-Exécuteurs de Sauron.png": 4,
+                    "LSH036-Boma Suderon.png": 2,
+                    "LSH037-Hutte du Village.png": 2,
+                    "LSH038-Attaque Brutale.png": 2,
+                    "LSH039-Submergés par les Orques.png": 3
+                }
+            },
+            {
+                "name": "Soldats de Harad",
+                "number_cards": 12,
+                "cards": {
+                    "LSH040-Champion Suderon.png": 1,
+                    "LSH041-Capitaine Suderon.png": 1,
+                    "LSH042-Soldat Suderon.png": 3,
+                    "LSH043-Archer Suderon.png": 4,
+                    "LSH044-Nulle Part où se Cacher.png": 3
+                }
+            },
+            {
+                "name": "Territoire de Harad",
+                "number_cards": 6,
+                "cards": {
+                    "LSH045-En Territoire Ennemi.png": 1,
+                    "LSH046-Compagnon Blessé.png": 3,
+                    "LSH047-Affaibli.png": 2
+                }
+            },
+            {
+                "name": "Sables du Desert",
+                "number_cards": 10,
+                "cards": {
+                    "LSH048-Trouver de l_Eau.png": 1,
+                    "LSH049-Hautes Dunes.png": 3,
+                    "LSH050-Oasis du Désert.png": 2,
+                    "LSH051-Tempête de Sable.png": 2,
+                    "LSH052-Coup de Chaleur.png": 2
+                }
+            },
+            {
+                "name": "Créatures du Desert",
+                "number_cards": 6,
+                "cards": {
+                    "LSH053-Préparer un Remède.png": 1,
+                    "LSH054-Vipère des Sables.png": 2,
+                    "LSH055-Scorpion Géant.png": 3
+                }
+            },
+            {
+                "name": "Jungle Forestière",
+                "number_cards": 10,
+                "cards": {
+                    "LSH056-Piste dans la Jungle.png": 2,
+                    "LSH057-Clairière dans la Forêt.png": 3,
+                    "LSH058-Jungle Dense.png": 3,
+                    "LSH059-Envahi par la Végétation.png": 2
+                }
+            },
+            {
+                "name": "Orques du Mordor",
+                "number_cards": 11,
+                "cards": {
+                    "LSH060-Uruks de l_Oeil.png": 1,
+                    "LSH061-Chef Uruk.png": 1,
+                    "LSH062-Uruk du Mordor.png": 3,
+                    "LSH063-Chevaucheur de Warg Uruk.png": 2,
+                    "LSH064-Warg du Mordor.png": 2,
+                    "LSH065-Peur du Mordor.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "LSH066A-Coincés à Umbar.png",
+            "LSH066B-Concés à Umbar.png",
+            "LSH067A-Fuir la Cité.png",
+            "LSH067B-Fuir la Cité.png",
+            "LSH068A-Le Désert de Harad.png",
+            "LSH068B-Le Désert de Harad.png",
+            "LSH069A-Sous le Soleil Implacable.png",
+            "LSH069B-Sous le Soleil Implacable.png",
+            "LSH070A-Créatures de Légende.png",
+            "LSH070B-Créatures de légende.png",
+            "LSH071A-Attaque Surprise.png",
+            "LSH071B-Attaque Surprise.png",
+            "LSH072A-Trouver les Autres.png",
+            "LSH072B-Trouver les autres.png",
+            "LSH073A-Libérer les Prisonniers.png",
+            "LSH073B-Libérer les Prisonniers.png",
+            "LSH074A-Fuite dans la Jungle.png",
+            "LSH074B-Fuite dans la Jungle.png"
+        ],
         "flip_cards": {
-            "LSH066A-Coincés à Umbar": "LSH066B-Concés à Umbar",
-            "LSH067A-Fuir la Cité": "LSH067B-Fuir la Cité",
-            "LSH068A-Le Désert de Harad": "LSH068B-Le Désert de Harad",
-            "LSH069A-Sous le Soleil Implacable": "LSH069B-Sous le Soleil Implacable",
-            "LSH070A-Créatures de Légende": "LSH070B-Créatures de légende",
-            "LSH071A-Attaque Surprise": "LSH071B-Attaque Surprise",
-            "LSH072A-Trouver les Autres": "LSH072B-Trouver les autres",
-            "LSH073A-Libérer les Prisonniers": "LSH073B-Libérer les Prisonniers",
-            "LSH074A-Fuite dans la Jungle": "LSH074B-Fuite dans la Jungle"
+            "LSH066A-Coincés à Umbar.png": "LSH066B-Concés à Umbar.png",
+            "LSH067A-Fuir la Cité.png": "LSH067B-Fuir la Cité.png",
+            "LSH068A-Le Désert de Harad.png": "LSH068B-Le Désert de Harad.png",
+            "LSH069A-Sous le Soleil Implacable.png": "LSH069B-Sous le Soleil Implacable.png",
+            "LSH070A-Créatures de Légende.png": "LSH070B-Créatures de légende.png",
+            "LSH071A-Attaque Surprise.png": "LSH071B-Attaque Surprise.png",
+            "LSH072A-Trouver les Autres.png": "LSH072B-Trouver les autres.png",
+            "LSH073A-Libérer les Prisonniers.png": "LSH073B-Libérer les Prisonniers.png",
+            "LSH074A-Fuite dans la Jungle.png": "LSH074B-Fuite dans la Jungle.png"
         }
     },
     "Les Mûmakil": {
-        "copies": {
-            "HAR001-Kahliel": 1,
-            "HAR002-Garde d_Andrath": 3,
-            "HAR003-Préparatifs de Bataille": 3,
-            "HAR004-Yazan": 3,
-            "HAR005-Ne plus Attendre": 3,
-            "HAR006-Jubayr": 3,
-            "HAR007-Pipe de Nain": 3,
-            "HAR008-Firyal": 3,
-            "HAR009-Un Lapereau Pris au Piège": 3,
-            "HAR010-Coiffe de Kahliel": 3,
-            "HAR011-Lasso de Crin": 1,
-            "HAR012-Lance Empoisonnée": 1,
-            "HAR013-Fosse": 1,
-            "HAR014-Collet de Lianes": 1,
-            "HAR015-Mumak Sauvage": 4,
-            "HAR016-Tigre de Harad": 1,
-            "HAR017-Grand Singe Territorial": 4,
-            "HAR018-Python Étrangleur": 2,
-            "HAR019-Mille-Pattes Géant": 2,
-            "HAR020-Piste du Mumak": 4,
-            "HAR021-Oliphant Paniqué": 2,
-            "HAR022-Le Sud Sauvage": 2,
-            "HAR023-Forte Fièvre": 2,
-            "HAR024-Insectes Piquants": 2,
-            "HAR025-Gardiens de la Jungle": 1,
-            "HAR026A-Bienvenue dans la Jungle": 1,
-            "HAR026B-Bienvenue dans la Jungle": 1,
-            "HAR027A-Capturer les Oliphants": 1,
-            "HAR027B-Capturer les Oliphants": 1
-        },
+        "héros": [
+            "HAR001-Kahliel.png"
+        ],
+        "joueurs": [
+            "HAR002-Garde d_Andrath.png",
+            "HAR003-Préparatifs de Bataille.png",
+            "HAR004-Yazan.png",
+            "HAR005-Ne plus Attendre.png",
+            "HAR006-Jubayr.png",
+            "HAR007-Pipe de Nain.png",
+            "HAR008-Firyal.png",
+            "HAR009-Un Lapereau Pris au Piège.png",
+            "HAR010-Coiffe de Kahliel.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Mûmakil",
+                "number_cards": 30,
+                "cards": {
+                    "HAR011-Lasso de Crin.png": 1,
+                    "HAR012-Lance Empoisonnée.png": 1,
+                    "HAR013-Fosse.png": 1,
+                    "HAR014-Collet de Lianes.png": 1,
+                    "HAR015-Mumak Sauvage.png": 4,
+                    "HAR016-Tigre de Harad.png": 1,
+                    "HAR017-Grand Singe Territorial.png": 4,
+                    "HAR018-Python Étrangleur.png": 2,
+                    "HAR019-Mille-Pattes Géant.png": 2,
+                    "HAR020-Piste du Mumak.png": 4,
+                    "HAR021-Oliphant Paniqué.png": 2,
+                    "HAR022-Le Sud Sauvage.png": 2,
+                    "HAR023-Forte Fièvre.png": 2,
+                    "HAR024-Insectes Piquants.png": 2,
+                    "HAR025-Gardiens de la Jungle.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR026A-Bienvenue dans la Jungle.png",
+            "HAR026B-Bienvenue dans la Jungle.png",
+            "HAR027A-Capturer les Oliphants.png",
+            "HAR027B-Capturer les Oliphants.png"
+        ],
         "flip_cards": {
-            "HAR026A-Bienvenue dans la Jungle": "HAR026B-Bienvenue dans la Jungle",
-            "HAR027A-Capturer les Oliphants": "HAR027B-Capturer les Oliphants"
+            "HAR026A-Bienvenue dans la Jungle.png": "HAR026B-Bienvenue dans la Jungle.png",
+            "HAR027A-Capturer les Oliphants.png": "HAR027B-Capturer les Oliphants.png"
         }
     },
     "Course en Harad": {
-        "copies": {
-            "HAR028-Thurindir": 1,
-            "HAR029-Homme de la Tribu de Kahliel": 3,
-            "HAR030-Étalon du Nord": 3,
-            "HAR031-Puissant Guerrier": 3,
-            "HAR032-Fiers Chasseurs": 3,
-            "HAR033-Défricheur Dunedain": 3,
-            "HAR034-Demi-tour": 3,
-            "HAR035-Conlon d_Eryn Galen": 3,
-            "HAR036-Explorer les Chemins Secrets": 3,
-            "HAR037-Intendant d_Orthanc": 3,
-            "HAR038-Mumak Dompté": 4,
-            "HAR039-La Harnen": 1,
-            "HAR040-Étendue de Harad": 2,
-            "HAR041-Erg Brûlant": 3,
-            "HAR042-Route de Harad": 2,
-            "HAR043-Poursuivant Uruk": 4,
-            "HAR044-Warg Galopant": 3,
-            "HAR045-Poursuivants du Mordor": 2,
-            "HAR046-Hurlant à leurs Trousses": 3,
-            "HAR047A-Départ": 1,
-            "HAR047B-Départ": 1,
-            "HAR048A-En Route pour le Nord": 1,
-            "HAR048B-En Route pour le Nord": 1,
-            "HAR049A-Pourchassés en Harad": 1,
-            "HAR049B-Pourchassés en Harad": 1,
-            "HAR050A-Le Gué de la Harnen": 1,
-            "HAR050B-Le Gué de la Harnen": 1,
-            "HAR051C-Départ": 1,
-            "HAR051D-Départ": 1,
-            "HAR052C-En Route pour le Nord": 1,
-            "HAR052D-En Route pour le Nord": 1,
-            "HAR053C-Pourchassés en Harad": 1,
-            "HAR053D-Pourchassés en Harad": 1,
-            "HAR054C-Le Gué de la Harnen": 1,
-            "HAR054D-Le Gué de la Harnen": 1
-        },
+        "héros": [
+            "HAR028-Thurindir.png"
+        ],
+        "joueurs": [
+            "HAR029-Homme de la Tribu de Kahliel.png",
+            "HAR030-Étalon du Nord.png",
+            "HAR031-Puissant Guerrier.png",
+            "HAR032-Fiers Chasseurs.png",
+            "HAR033-Défricheur Dunedain.png",
+            "HAR034-Demi-tour.png",
+            "HAR035-Conlon d_Eryn Galen.png",
+            "HAR036-Explorer les Chemins Secrets.png",
+            "HAR037-Intendant d_Orthanc.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Course en Harad",
+                "number_cards": 24,
+                "cards": {
+                    "HAR038-Mumak Dompté.png": 4,
+                    "HAR039-La Harnen.png": 1,
+                    "HAR040-Étendue de Harad.png": 2,
+                    "HAR041-Erg Brûlant.png": 3,
+                    "HAR042-Route de Harad.png": 2,
+                    "HAR043-Poursuivant Uruk.png": 4,
+                    "HAR044-Warg Galopant.png": 3,
+                    "HAR045-Poursuivants du Mordor.png": 2,
+                    "HAR046-Hurlant à leurs Trousses.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR047A-Départ.png",
+            "HAR047B-Départ.png",
+            "HAR048A-En Route pour le Nord.png",
+            "HAR048B-En Route pour le Nord.png",
+            "HAR049A-Pourchassés en Harad.png",
+            "HAR049B-Pourchassés en Harad.png",
+            "HAR050A-Le Gué de la Harnen.png",
+            "HAR050B-Le Gué de la Harnen.png",
+            "HAR051C-Départ.png",
+            "HAR051D-Départ.png",
+            "HAR052C-En Route pour le Nord.png",
+            "HAR052D-En Route pour le Nord.png",
+            "HAR053C-Pourchassés en Harad.png",
+            "HAR053D-Pourchassés en Harad.png",
+            "HAR054C-Le Gué de la Harnen.png",
+            "HAR054D-Le Gué de la Harnen.png"
+        ],
         "flip_cards": {
-            "HAR047A-Départ": "HAR047B-Départ",
-            "HAR048A-En Route pour le Nord": "HAR048B-En Route pour le Nord",
-            "HAR049A-Pourchassés en Harad": "HAR049B-Pourchassés en Harad",
-            "HAR050A-Le Gué de la Harnen": "HAR050B-Le Gué de la Harnen",
-            "HAR051C-Départ": "HAR051D-Départ",
-            "HAR052C-En Route pour le Nord": "HAR052D-En Route pour le Nord",
-            "HAR053C-Pourchassés en Harad": "HAR053D-Pourchassés en Harad",
-            "HAR054C-Le Gué de la Harnen": "HAR054D-Le Gué de la Harnen"
+            "HAR047A-Départ.png": "HAR047B-Départ.png",
+            "HAR048A-En Route pour le Nord.png": "HAR048B-En Route pour le Nord.png",
+            "HAR049A-Pourchassés en Harad.png": "HAR049B-Pourchassés en Harad.png",
+            "HAR050A-Le Gué de la Harnen.png": "HAR050B-Le Gué de la Harnen.png",
+            "HAR051C-Départ.png": "HAR051D-Départ.png",
+            "HAR052C-En Route pour le Nord.png": "HAR052D-En Route pour le Nord.png",
+            "HAR053C-Pourchassés en Harad.png": "HAR053D-Pourchassés en Harad.png",
+            "HAR054C-Le Gué de la Harnen.png": "HAR054D-Le Gué de la Harnen.png"
         }
     },
     "Sous les Sables": {
-        "copies": {
-            "HAR055-Hirgon": 1,
-            "HAR056-Lance des Haradrim": 3,
-            "HAR057-Groupe de Chasse": 3,
-            "HAR058-La Flèche Rouge": 3,
-            "HAR059-Monter la Garde": 3,
-            "HAR060-Cavalier de Rohan": 3,
-            "HAR061-Chant au Coin du Feu": 3,
-            "HAR062-Guetteur Dunedain": 3,
-            "HAR063-Rôdeur Vaillant": 3,
-            "HAR064-Les Peuples Libres": 3,
-            "HAR065-Mère de la Nuée": 1,
-            "HAR066-Gardien du Nid": 3,
-            "HAR067-Rejeton Aranéide": 5,
-            "HAR068-Fouissements d_Araignées": 2,
-            "HAR069-Tunnel Plongé dans le Noir": 2,
-            "HAR070-Nid de Vermines": 2,
-            "HAR071-Caverne Envahie de Toiles": 3,
-            "HAR072-Passage Bloqué": 3,
-            "HAR073-Détournés du Bon Chemin": 3,
-            "HAR074-Attrapés par les Araignées": 3,
-            "HAR075-Perdus sous Terre": 1,
-            "HAR076A-Fouiller les Cavernes": 1,
-            "HAR076B-Fouiller les Cavernes": 1,
-            "HAR077A-Se Rapprocher": 1,
-            "HAR077B-Se Rapprocher": 1,
-            "HAR078A-Le Nid des Araignées": 1,
-            "HAR078B-Les Nid des Araignées": 1,
-            "HAR079-Mauvaise Piste": 1,
-            "HAR080-Bonne Piste": 1
-        },
+        "héros": [
+            "HAR055-Hirgon.png"
+        ],
+        "joueurs": [
+            "HAR056-Lance des Haradrim.png",
+            "HAR057-Groupe de Chasse.png",
+            "HAR058-La Flèche Rouge.png",
+            "HAR059-Monter la Garde.png",
+            "HAR060-Cavalier de Rohan.png",
+            "HAR061-Chant au Coin du Feu.png",
+            "HAR062-Guetteur Dunedain.png",
+            "HAR063-Rôdeur Vaillant.png",
+            "HAR064-Les Peuples Libres.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Sous les Sables",
+                // Les cartes sont numérotés jusqu'à 30 mais il y a une carte double face
+                "number_cards": 29,
+                "cards": {
+                    "HAR065-Mère de la Nuée.png": 1,
+                    "HAR066-Gardien du Nid.png": 3,
+                    "HAR067-Rejeton Aranéide.png": 5,
+                    "HAR068-Fouissements d_Araignées.png": 2,
+                    "HAR069-Tunnel Plongé dans le Noir.png": 2,
+                    "HAR070-Nid de Vermines.png": 2,
+                    "HAR071-Caverne Envahie de Toiles.png": 3,
+                    "HAR072-Passage Bloqué.png": 3,
+                    "HAR073-Détournés du Bon Chemin.png": 3,
+                    "HAR074-Attrapés par les Araignées.png": 3,
+                    "HAR075-Perdus sous Terre.png": 1,
+                    "HAR079-Mauvaise Piste.png": 1,
+                    "HAR080-Bonne Piste.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR076A-Fouiller les Cavernes.png",
+            "HAR076B-Fouiller les Cavernes.png",
+            "HAR077A-Se Rapprocher.png",
+            "HAR077B-Se Rapprocher.png",
+            "HAR078A-Le Nid des Araignées.png",
+            "HAR078B-Les Nid des Araignées.png"
+        ],
         "flip_cards": {
-            "HAR076A-Fouiller les Cavernes": "HAR076B-Fouiller les Cavernes",
-            "HAR077A-Se Rapprocher": "HAR077B-Se Rapprocher",
-            "HAR078A-Le Nid des Araignées": "HAR078B-Les Nid des Araignées",
-            "HAR079-Mauvaise Piste": "HAR080-Bonne Piste"
+            "HAR076A-Fouiller les Cavernes.png": "HAR076B-Fouiller les Cavernes.png",
+            "HAR077A-Se Rapprocher.png": "HAR077B-Se Rapprocher.png",
+            "HAR078A-Le Nid des Araignées.png": "HAR078B-Les Nid des Araignées.png",
+            "HAR079-Mauvaise Piste.png": "HAR080-Bonne Piste.png"
         }
     },
     "Le Serpent Noir": {
-        "copies": {
-            "HAR081-Fastred": 1,
-            "HAR082-Chant d_Espoir": 3,
-            "HAR083-Éclater en Chants": 3,
-            "HAR084-Défenseur de Cair Andros": 3,
-            "HAR085-Serment d_Eorl": 3,
-            "HAR086-Éclaireur Intrépide": 3,
-            "HAR087-Rallier l_Ouest": 3,
-            "HAR088-Pipe des Dunedain": 3,
-            "HAR089-Vieux Tobie": 3,
-            "HAR090-Réfugiée Suderonne": 3,
-            "HAR091-Bannière du Serpent": 1,
-            "HAR092-La Tenue du Serpent": 1,
-            "HAR093-Convocation du Mordor": 1,
-            "HAR094-Le Serpent Noir": 1,
-            "HAR095-Garde du Serpent": 4,
-            "HAR096-La Redoute du Serpent": 2,
-            "HAR097-Tour Privée de Toit": 2,
-            "HAR098-Bastion du Désert": 3,
-            "HAR099-Camp Suderon": 3,
-            "HAR100-Cour Démolie": 3,
-            "HAR101-Hardi et Menaçant": 3,
-            "HAR102-Pas de Quartier": 2,
-            "HAR103-Chaos dans la Nuit": 2,
-            "HAR104-Ne les Laissez pas s_Échapper": 1,
-            "HAR106A-Le Fort de la Croisée des Chemins": 1,
-            "HAR106B-Le Fort de la Croisée des Chemins": 1,
-            "HAR107A-Bataille au Camp": 1,
-            "HAR107B-Bataille au Camp": 1,
-            "HAR108A-Vaincre le Serpent": 1,
-            "HAR108B-Vaincre le Serpent": 1
-        },
+        "héros": [
+            "HAR081-Fastred.png"
+        ],
+        "joueurs": [
+            "HAR082-Chant d_Espoir.png",
+            "HAR083-Éclater en Chants.png",
+            "HAR084-Défenseur de Cair Andros.png",
+            "HAR085-Serment d_Eorl.png",
+            "HAR086-Éclaireur Intrépide.png",
+            "HAR087-Rallier l_Ouest.png",
+            "HAR088-Pipe des Dunedain.png",
+            "HAR089-Vieux Tobie.png",
+            "HAR090-Réfugiée Suderonne.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Serpent Noir",
+                "number_cards": 29,
+                "cards": {
+                    "HAR091-Bannière du Serpent.png": 1,
+                    "HAR092-La Tenue du Serpent.png": 1,
+                    "HAR093-Convocation du Mordor.png": 1,
+                    "HAR094-Le Serpent Noir.png": 1,
+                    "HAR095-Garde du Serpent.png": 4,
+                    "HAR096-La Redoute du Serpent.png": 2,
+                    "HAR097-Tour Privée de Toit.png": 2,
+                    "HAR098-Bastion du Désert.png": 3,
+                    "HAR099-Camp Suderon.png": 3,
+                    "HAR100-Cour Démolie.png": 3,
+                    "HAR101-Hardi et Menaçant.png": 3,
+                    "HAR102-Pas de Quartier.png": 2,
+                    "HAR103-Chaos dans la Nuit.png": 2,
+                    "HAR104-Ne les Laissez pas s_Échapper.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR106A-Le Fort de la Croisée des Chemins.png",
+            "HAR106B-Le Fort de la Croisée des Chemins.png",
+            "HAR107A-Bataille au Camp.png",
+            "HAR107B-Bataille au Camp.png",
+            "HAR108A-Vaincre le Serpent.png",
+            "HAR108B-Vaincre le Serpent.png"
+        ],
         "flip_cards": {
-            "HAR105A-Le Fort de la Croisée des Chemins": "HAR106B-Le Fort de la Croisée des Chemins",
-            "HAR107A-Bataille au Camp": "HAR107B-Bataille au Camp",
-            "HAR108A-Vaincre le Serpent": "HAR108B-Vaincre le Serpent"
+            "HAR106A-Le Fort de la Croisée des Chemins.png": "HAR106B-Le Fort de la Croisée des Chemins.png",
+            "HAR107A-Bataille au Camp.png": "HAR107B-Bataille au Camp.png",
+            "HAR108A-Vaincre le Serpent.png": "HAR108B-Vaincre le Serpent.png"
         }
     },
     "Les Cachots de Cirith Gurat": {
-        "copies": {
-            "HAR109-Foulque Bophin": 1,
-            "HAR110-Chevalier de Dale": 3,
-            "HAR111-Noble Diligent": 3,
-            "HAR112-Chevalier du Riddermark": 3,
-            "HAR113-Défense Acharnée": 3,
-            "HAR114-Survivant d_Eregion": 3,
-            "HAR115-Héritiers d_Earendil": 3,
-            "HAR116-Bouclefeuilles": 3,
-            "HAR117-Épée du Legs": 3,
-            "HAR118-Ouvrir l_Arsenal": 3,
-            "HAR119-Les Prisonniers de Cirith Gurat": 1,
-            "HAR120-Abaan": 1,
-            "HAR121-Geôlier de Cirth Gurat": 2,
-            "HAR122-Garde de la Prison": 3,
-            "HAR123-Warg du Cachot": 3,
-            "HAR124-Porte de Fer": 3,
-            "HAR125-Cellule de la Prison": 3,
-            "HAR126-Salle des Gardes Uruk": 2,
-            "HAR127-Mines de Cirith Gurat": 3,
-            "HAR128-Salle de Torture": 2,
-            "HAR129-Fait Prisonnier": 2,
-            "HAR130-Torturés par les Orques": 3,
-            "HAR131-Capturés !": 1,
-            "HAR132A-Sauver les Prisonniers": 1,
-            "HAR132B-Sauver les Prisonniers": 1,
-            "HAR133A-Se Glisser Derrière les Gardes": 1,
-            "HAR133B-Se Glisser Derrière les Gardes": 1,
-            "HAR134A-Combattre pour s_Enfuir": 1,
-            "HAR134B-Combattre pour s_Enfuir": 1
-        },
+        "héros": [
+            "HAR109-Foulque Bophin.png"
+        ],
+        "joueurs": [
+            "HAR110-Chevalier de Dale.png",
+            "HAR111-Noble Diligent.png",
+            "HAR112-Chevalier du Riddermark.png",
+            "HAR113-Défense Acharnée.png",
+            "HAR114-Survivant d_Eregion.png",
+            "HAR115-Héritiers d_Earendil.png",
+            "HAR116-Bouclefeuilles.png",
+            "HAR117-Épée du Legs.png",
+            "HAR118-Ouvrir l_Arsenal.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Cachots de Cirith Gurat",
+                "number_cards": 29,
+                "cards": {
+                    "HAR119-Les Prisonniers de Cirith Gurat.png": 1,
+                    "HAR120-Abaan.png": 1,
+                    "HAR121-Geôlier de Cirth Gurat.png": 2,
+                    "HAR122-Garde de la Prison.png": 3,
+                    "HAR123-Warg du Cachot.png": 3,
+                    "HAR124-Porte de Fer.png": 3,
+                    "HAR125-Cellule de la Prison.png": 3,
+                    "HAR126-Salle des Gardes Uruk.png": 2,
+                    "HAR127-Mines de Cirith Gurat.png": 3,
+                    "HAR128-Salle de Torture.png": 2,
+                    "HAR129-Fait Prisonnier.png": 2,
+                    "HAR130-Torturés par les Orques.png": 3,
+                    "HAR131-CApturés !.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR132A-Sauver les Prisonniers.png",
+            "HAR132B-Sauver les Prisonniers.png",
+            "HAR133A-Se Glisser Derrière les Gardes.png",
+            "HAR133B-Se Glisser Derrière les Gardes.png",
+            "HAR134A-Combattre pour s_Enfuir.png",
+            "HAR134B-Combattre pour s_Enfuir.png"
+        ],
         "flip_cards": {
-            "HAR132A-Sauver les Prisonniers": "HAR132B-Sauver les Prisonniers",
-            "HAR133A-Se Glisser Derrière les Gardes": "HAR133B-Se Glisser Derrière les Gardes",
-            "HAR134A-Combattre pour s_Enfuir": "HAR134B-Combattre pour s_Enfuir"
+            "HAR132A-Sauver les Prisonniers.png": "HAR132B-Sauver les Prisonniers.png",
+            "HAR133A-Se Glisser Derrière les Gardes.png": "HAR133B-Se Glisser Derrière les Gardes.png",
+            "HAR134A-Combattre pour s_Enfuir.png": "HAR134B-Combattre pour s_Enfuir.png"
         }
     },
     "Les Gués du Poros": {
-        "copies": {
-            "HAR135-Vifsorbier": 1,
-            "HAR136-Halfast Gamegie": 3,
-            "HAR137-Rempart de l_Ouest": 3,
-            "HAR138-Gardien Beornide": 3,
-            "HAR139-Suivis": 3,
-            "HAR140-Fuite en Mer": 3,
-            "HAR141-Rôdeur d_Emyn Arnen": 3,
-            "HAR142-Le Barrage se Rompt": 3,
-            "HAR143-Anneau Magique": 3,
-            "HAR144-Vent de la Mer": 3,
-            "HAR145-Garnison du Poros": 1,
-            "HAR146-Le Serpent Noir": 1,
-            "HAR147-Cavalier Suderon": 2,
-            "HAR148-Maraudeur Uruk": 2,
-            "HAR149-Warg du Désert": 2,
-            "HAR150-Contrée Désolée": 3,
-            "HAR151-Désolation du Harondor": 4,
-            "HAR152-La Mort aux Trousses": 2,
-            "HAR153-Contreforts du Mordor": 3,
-            "HAR154-Vallon Ombreux": 2,
-            "HAR155-Montagnes de l_Ombre": 2,
-            "HAR156-Trouver un Moyen de Redescendre": 1,
-            "HAR157A-Fuite au Gondor": 1,
-            "HAR157B-Fuite au Gondor": 1,
-            "HAR158A-Le Sentier du Désert": 1,
-            "HAR158B-Le Sentier du Désert": 1,
-            "HAR159A-L_Ephel Duath": 1,
-            "HAR159B-L_Ephel Duath": 1,
-            "HAR160A-Créatures Mortelles": 1,
-            "HAR160B-Créatures Mortelles": 1,
-            "HAR161A-Poursuite des Suderons": 1,
-            "HAR161B-Poursuite des Suderons": 1,
-            "HAR162A-Patrouilles Orques": 1,
-            "HAR162B-Patrouilles Orques": 1,
-            "HAR163A-Bataille aux Gués": 1,
-            "HAR163B-Bataille aux Gués": 1
-        },
+        "héros": [
+            "HAR135-Vifsorbier.png"
+        ],
+        "joueurs": [
+            "HAR136-Halfast Gamegie.png",
+            "HAR137-Rempart de l_Ouest.png",
+            "HAR138-Gardien Beornide.png",
+            "HAR139-Suivis.png",
+            "HAR140-Fuite en Mer.png",
+            "HAR141-Rôdeur d_Emyn Arnen.png",
+            "HAR142-Le Barrage se Rompt.png",
+            "HAR143-Anneau Magique.png",
+            "HAR144-Vent de la Mer.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Gués du Poros",
+                "number_cards": 17,
+                "cards": {
+                    "HAR145-Garnison du Poros.png": 1,
+                    "HAR146-Le Serpent Noir.png": 1,
+                    "HAR147-Cavalier Suderon.png": 2,
+                    "HAR148-Maraudeur Uruk.png": 2,
+                    "HAR149-Warg du Désert.png": 2,
+                    "HAR150-Contrée Désolée.png": 3,
+                    "HAR151-Désolation du Harondor.png": 4,
+                    "HAR152-La Mort aux Trousses.png": 2
+                }
+            },
+            {
+                "name": "Montagnes de l'Ombre",
+                "number_cards": 8,
+                "cards": {
+                    "HAR153-Contreforts du Mordor.png": 3,
+                    "HAR154-Vallon Ombreux.png": 2,
+                    "HAR155-Montagnes de l_Ombre.png": 2,
+                    "HAR156-Trouver un Moyen de Redescendre.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HAR157A-Fuite au Gondor.png",
+            "HAR157B-Fuite au Gondor.png",
+            "HAR158A-Le Sentier du Désert.png",
+            "HAR158B-Le Sentier du Désert.png",
+            "HAR159A-L_Ephel Duath.png",
+            "HAR159B-L_Ephel Duath.png",
+            "HAR160A-Créatures Mortelles.png",
+            "HAR160B-Créatures Mortelles.png",
+            "HAR161A-Poursuite des Suderons.png",
+            "HAR161B-Poursuite des Suderons.png",
+            "HAR162A-Patrouilles Orques.png",
+            "HAR162B-Patrouilles Orques.png",
+            "HAR163A-Bataille aux Gués.png",
+            "HAR163B-Bataille aux Gués.png"
+        ],
         "flip_cards": {
-            "HAR157A-Fuite au Gondor": "HAR157B-Fuite au Gondor",
-            "HAR158A-Le Sentier du Désert": "HAR158B-Le Sentier du Désert",
-            "HAR159A-L_Ephel Duath": "HAR159B-L_Ephel Duath",
-            "HAR160A-Créatures Mortelles": "HAR160B-Créatures Mortelles",
-            "HAR161A-Poursuite des Suderons": "HAR161B-Poursuite des Suderons",
-            "HAR162A-Patrouilles Orques": "HAR162B-Patrouilles Orques",
-            "HAR163A-Bataille aux Gués": "HAR163B-Bataille aux Gués"
+            "HAR157A-Fuite au Gondor.png": "HAR157B-Fuite au Gondor.png",
+            "HAR158A-Le Sentier du Désert.png": "HAR158B-Le Sentier du Désert.png",
+            "HAR159A-L_Ephel Duath.png": "HAR159B-L_Ephel Duath.png",
+            "HAR160A-Créatures Mortelles.png": "HAR160B-Créatures Mortelles.png",
+            "HAR161A-Poursuite des Suderons.png": "HAR161B-Poursuite des Suderons.png",
+            "HAR162A-Patrouilles Orques.png": "HAR162B-Patrouilles Orques.png",
+            "HAR163A-Bataille aux Gués.png": "HAR163B-Bataille aux Gués.png"
         }
     }
 }
