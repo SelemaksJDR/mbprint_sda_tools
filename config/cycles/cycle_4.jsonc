@@ -7,23 +7,469 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "L'Appel de l'Isengard": {
-        "heros": [
+        "héros": [
+            "LAI001-Éomer.png",
+            "LAI002-Grima.png"
         ],
         "joueurs": [
-        ],
-        "contrats": [
+            "LAI003-Saroumane.png",
+            "LAI004-Garde d_Orthanc.png",
+            "LAI005-Messager de l_Isengard.png",
+            "LAI006-Tirailleur de l_Ouestfolde.png",
+            "LAI007-Éleveuse de l_Ouestfolde.png",
+            "LAI008-Destrier du Rohan.png",
+            "LAI009-Lanterne d_Argent.png",
+            "LAI010-Clefs d_Orthanc.png",
+            "LAI011-Héritage de Numenor.png",
+            "LAI012-Somme de Connaissances.png",
+            "LAI013-La Voix de Saroumane.png",
+            "LAI014-Le Pouvoir d_Orthanc.png",
+            "LAI015-La Pierre de Vision.png",
         ],
         "rencontres": [
             {
-                "name": "",
-                "number_cards": 1,
+                "name": "Les Gués de l'Isen",
+                "number_cards": 16,
                 "cards": {
+                    "LAI016-Grima.png": 1,
+                    "LAI017-L_Ilot.png": 1,
+                    "LAI018-Gués de l_Isen.png": 1,
+                    "LAI019-La Route du Roi.png": 1,
+                    "LAI020-Trouée du Rohan.png": 1,
+                    "LAI021-Piller et Brûler.png": 1,
+                    "LAI022-Du Haut des Collines.png": 1,
+                    "LAI023-Mauvaises Nouvelles.png": 1
+                }
+            },
+            {
+                "name": "Chasse à l'Orque",
+                "number_cards": 18,
+                "cards": {
+                    "LAI024-Mugash.png": 1,
+                    "LAI025-Garde de Mugash.png": 1,
+                    "LAI026-Orque du Methedras.png": 1,
+                    "LAI027-Methedras.png": 1,
+                    "LAI028-Caverne de Orques.png": 1,
+                    "LAI029-Repaire de Mugash.png": 1,
+                    "LAI030-Territoire Orque.png": 1
+                }
+            },
+            {
+                "name": "À Fangorn",
+                "number_cards": 19,
+                "cards": {
+                    "LAI031-Mugash.png": 1,
+                    "LAI032-Lisière de Fangorn.png": 1,
+                    "LAI033-Huorn au Coeur Sombre.png": 1,
+                    "LAI034-Huorn Courroucé.png": 1,
+                    "LAI035-Huorn Meurtrier.png": 1,
+                    "LAI036-Coeur de Fangorn.png": 1,
+                    "LAI037-La Malveillance de la Forêt.png": 1
+                }
+            },
+            {
+                "name": "Orques des Monts Brumeux",
+                "number_cards": 10,
+                "cards": {
+                    "LAI038-Franc-Tireur Orque.png": 1,
+                    "LAI039-Chasseur Orque.png": 1,
+                    "LAI040-Limier Orque.png": 1,
+                    "LAI041-Battue Orque.png": 1
+                }
+            },
+            {
+                "name": "Pillards du Pays de Dun",
+                "number_cards": 9,
+                "cards": {
+                    "LAI042-Maraudeur de Dun.png": 1,
+                    "LAI043-Bandit Dunlending.png": 1,
+                    "LAI044-Pillard de Dun.png": 1,
+                    "LAI045-Vieilles Rancunes.png": 1
+                }
+            },
+            {
+                "name": "Guerriers du Pays de Dun",
+                "number_cards": 9,
+                "cards": {
+                    "LAI046-Barbare de Dun.png": 1,
+                    "LAI047-Chef de Clan de Dun.png": 1,
+                    "LAI048-Berserker de Dun.png": 1,
+                    "LAI049-Hommes Sauvages de Dun.png": 1
+                }
+            },
+            {
+                "name": "Forêt Ancienne",
+                "number_cards": 9,
+                "cards": {
+                    "LAI050-Forêt Ancienne.png": 1,
+                    "LAI051-Bois Inextricables.png": 1,
+                    "LAI052-Demi-Tour.png": 1
+                }
+            },
+            {
+                "name": "Terres Déchiquetées",
+                "number_cards": 9,
+                "cards": {
+                    "LAI053-Loup Errant.png": 1,
+                    "LAI054-Terres Déchiquetées.png": 1,
+                    "LAI055-A l_Abri !.png": 1
+                }
+            },
+            {
+                "name": "Voyageurs Fatigués",
+                "number_cards": 7,
+                "cards": {
+                    "LAI056-A Court de Nourriture.png": 1,
+                    "LAI057-Hors des Sentiers Battus.png": 1,
+                    "LAI058-Besoin de Repos.png": 1
+                }
+            },
+        ],
+        "quêtes": [
+            "LAI059a-Combat aux Gués.png",
+            "LAI059b-Combat aux Gués.png",
+            "LAI060a-Attaque Dunlending.png",
+            "LAI060b-Attaque Dunlending.png",
+            "LAI061a-Tenez les Gués.png",
+            "LAI061b-Tenez les Gués.png",
+            "LAI062a-Ordres d_Orthanc.png",
+            "LAI062b-Ordres d_Orthanc.png",
+            "LAI063a-A la Recherche de Mugash.png",
+            "LAI063b-A la Recherche de Mugash.png",
+            "LAI064a-Le Trophée du Magicien.png",
+            "LAI064b-Le Trophée du Magicien.png",
+            "LAI065a-Dans les Bois.png",
+            "LAI065b-Dans les Bois.png",
+            "LAI066a-Fuite de Fangorn.png",
+            "LAI066b-Fuite de Fangorn.png",
+            "LAI067a-La Forêt en Colère.png",
+            "LAI067b-La Forêt en Colère.png"
+        ],
+        "flip_cards": {
+            "LAI059a-Combat aux Gués.png": "LAI059b-Combat aux Gués.png",
+            "LAI060a-Attaque Dunlending.png": "LAI060b-Attaque Dunlending.png",
+            "LAI061a-Tenez les Gués.png": "LAI061b-Tenez les Gués.png",
+            "LAI062a-Ordres d_Orthanc.png": "LAI062b-Ordres d_Orthanc.png",
+            "LAI063a-A la Recherche de Mugash.png": "LAI063b-A la Recherche de Mugash.png",
+            "LAI064a-Le Trophée du Magicien.png": "LAI064b-Le Trophée du Magicien.png",
+            "LAI065a-Dans les Bois.png": "LAI065b-Dans les Bois.png",
+            "LAI066a-Fuite de Fangorn.png": "LAI066b-Fuite de Fangorn.png",
+            "LAI067a-La Forêt en Colère.png": "LAI067b-La Forêt en Colère.png"
+        }
+    },
+    "Piégé au Pays de Dun !": {
+        "héros": [
+            "LCA001-Celeborn.png"
+        ],
+        "joueurs": [
+            "LCA002-Guide du Naith.png",
+            "LCA003-Rapide et Silencieux.png",
+            "LCA004-Piedardent.png",
+            "LCA005-De Justesse.png",
+            "LCA006-Marchand des Montagnes Bleues.png",
+            "LCA007-La Chute de Gil Galad.png",
+            "LCA008-Guetteur de l_Ithilien.png",
+            "LCA009-Les Gens des Arbres.png",
+            "LCA010-Le Conseil Blanc.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Piégé au Pays de Dun !",
+                "number_cards": 29,
+                "cards": {
+                    "LCA014-Chel Turch.png": 1,
+                    "LCA015-Ravin de Munuv Duv.png": 1,
+                    "LCA016-Vieille Route du Sud.png": 1,
+                    "LCA017-Chasseur du Clan du Sanglier.png": 3,
+                    "LCA018-Guerrier du Clan du Sanglier.png": 4,
+                    "LCA019-Contreforts des Hithaeglir.png": 2,
+                    "LCA020-Collines du Pays de Dun.png": 4,
+                    "LCA021-Plaines de l_Enedwaith.png": 3,
+                    "LCA022-Ruisseau des Hithaeglir.png": 4,
+                    "LCA023-Attaque Furieuse.png": 3,
+                    "LCA024-Embuscade Dunlending.png": 3
                 }
             }
         ],
         "quêtes": [
+            "LCA011A-La Route de Tharbad.png",
+            "LCA011B-La Route de Tharbad.png",
+            "LCA012A-Un Piège Bien Préparé.png",
+            "LCA012B-Un Piège Bien Préparé.png",
+            "LCA013A-Sans Retour Possible.png",
+            "LCA013B-Sans Retour Possible.png"
         ],
         "flip_cards": {
+            "LCA011A-La Route de Tharbad.png": "LCA011B-La Route de Tharbad.png",
+            "LCA012A-Un Piège Bien Préparé.png": "LCA012B-Un Piège Bien Préparé.png",
+            "LCA013A-Sans Retour Possible.png": "LCA013B-Sans Retour Possible.png"
+        }
+    },
+    "Les Trois Epreuves": {
+        "héros": [
+            "LCA025-Idraen.png"
+        ],
+        "joueurs": [
+            "LCA026-Éclaireur de Fondcombe.png",
+            "LCA027-Voix Contrefaites.png",
+            "LCA028-Rumil.png",
+            "LCA029-Mailles Elfiques.png",
+            "LCA030-Vagabond du Flot Gris.png",
+            "LCA031-Gardien de l_Arnor.png",
+            "LCA032-Message d_Elrond.png",
+            "LCA033-Pas Feutrés.png",
+            "LCA034-Broche Foliacée.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Trois Epreuves",
+                "number_cards": 27,
+                "cards": {
+                    "LCA040-Gardien des Sangliers.png": 1,
+                    "LCA041-Gardien des Loups.png": 1,
+                    "LCA042-Gardien des corbeaux.png": 1,
+                    "LCA043-Clef des Sangliers.png": 1,
+                    "LCA044-Clef des Loups.png": 1,
+                    "LCA045-Cles des Corbeaux.png": 1,
+                    "LCA046-Galgal des Collines.png": 1,
+                    "LCA047-Galgal Enfoui.png": 1,
+                    "LCA048-Galgal de Pierres.png": 1,
+                    "LCA049-Cercle Sanctifié.png": 1,
+                    "LCA050-Esprit de la Nature.png": 5,
+                    "LCA051-Forêt Maudite.png": 2,
+                    "LCA052-Contreforts Menaçants.png": 3,
+                    "LCA053-Malédiction Tribale.png": 2,
+                    "LCA054-La Furie du Gardien.png": 2,
+                    "LCA055-Obstination Forcenée.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "LCA035A-Les Épreuves Commencent.png",
+            "LCA035B-Les Épreuves Commencent.png",
+            "LCA036A-L_Épreuve de Force.png",
+            "LCA036B-L_Épreuve de Force.png",
+            "LCA037A-L_Épreuve de Persévérance.png",
+            "LCA037B-L_Épreuve de Persévérance.png",
+            "LCA038A-L_Épreuve d_Intuition.png",
+            "LCA038B-L_Épreuve d_Intuition.png",
+            "LCA039A-La Couronne d_Andouillers.png",
+            "LCA039B-La Couronne d_Andouillers.png"
+        ],
+        "flip_cards": {
+            "LCA035A-Les Épreuves Commencent.png": "LCA035B-Les Épreuves Commencent.png",
+            "LCA036A-L_Épreuve de Force.png": "LCA036B-L_Épreuve de Force.png",
+            "LCA037A-L_Épreuve de Persévérance.png": "LCA037B-L_Épreuve de Persévérance.png",
+            "LCA038A-L_Épreuve d_Intuition.png": "LCA038B-L_Épreuve d_Intuition.png",
+            "LCA039A-La Couronne d_Andouillers.png": "LCA039B-La Couronne d_Andouillers.png"
+        }
+    },
+    "Panique à Tharbad": {
+        "héros": [
+            "LCA056-Haldir de la Lorien.png"
+        ],
+        "joueurs": [
+            "LCA057-Héraut de l_Anorien.png",
+            "LCA058-O Lorien !.png",
+            "LCA059-Gwaihir.png",
+            "LCA060-A la Poursuite de l_Ennemi.png",
+            "LCA061-Courage Éveillé.png",
+            "LCA062-Libre de Choisir.png",
+            "LCA063-Ménestrel des Galadhrims.png",
+            "LCA064-Lembas.png",
+            "LCA065-Défenseur du Naith.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Panique à Tharbad",
+                "number_cards": 30,
+                "cards": {
+                    "LCA068-Nalir.png": 1,
+                    "LCA069-La Chope Vide.png": 1,
+                    "LCA070-Bellach.png": 1,
+                    "LCA071-Le Gué de Tharbad.png": 1,
+                    "LCA072-Espion du Mordor.png": 4,
+                    "LCA073-Maraudeur de Bellach.png": 2,
+                    "LCA074-Rues de Tharbard.png": 2,
+                    "LCA075-Refuge de Tharbad.png": 2,
+                    "LCA076-Ruines du Second Âge.png": 2,
+                    "LCA077-Auberge Miteuse.png": 2,
+                    "LCA078-Allée Cachée.png": 2,
+                    "LCA079-Toits Décrépits.png": 2,
+                    "LCA080-Surveillance Permanente.png": 2,
+                    "LCA081-Rassemblement Important.png": 2,
+                    "LCA082-Acculé.png": 2,
+                    "LCA083-Attrapez ce Nain !.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "LCA066A-Double Jeu.png",
+            "LCA066B-Double Jeu.png",
+            "LCA067A-Fuite de Tharbad.png",
+            "LCA067B-Fuite de Tharbad.png"
+        ],
+        "flip_cards": {
+            "LCA066A-Double Jeu.png": "LCA066B-Double Jeu.png",
+            "LCA067A-Fuite de Tharbad.png": "LCA067B-Fuite de Tharbad.png"
+        }
+    },
+    "Les Nîn-in-Eilph": {
+        "héros": [
+            "LCA084-Mablung.png"
+        ],
+        "joueurs": [
+            "LCA085-Suivez-moi !.png",
+            "LCA086-Serrons nos Ceintures.png",
+            "LCA087-Archer de Galadhon.png",
+            "LCA088-Arc des Galadhrim.png",
+            "LCA089-Voyageur du Celduin.png",
+            "LCA090-Île et Périls.png",
+            "LCA091-Défricheur de la Forêt Noire.png",
+            "LCA092-Pieds-Ailés.png",
+            "LCA093-Défenseur de l_Ouest.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Nîn-in-Eilph",
+                "number_cards": 24,
+                "cards": {
+                    "LCA102-Nalir.png": 1,
+                    "LCA103-Ancienne Créature des Marais.png": 1,
+                    "LCA104-Vipère des Marais Géante.png": 4,
+                    "LCA105-Nicbriqueux.png": 3,
+                    "LCA106-Marais de Roseaux.png": 3,
+                    "LCA107-Méandre du Glanduin.png": 3,
+                    "LCA108-Îlot Caché.png": 2,
+                    "LCA109-Marais Englouti.png": 3,
+                    "LCA110-Marécage Mouvant.png": 3,
+                    "LCA111-Choses des Temps Anciens.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LCA094A-Échapée de Tharbad.png",
+            "LCA094B-Échappée de Tharbad.png",
+            "LCA095-097A-Dans les Marais.png",
+            "LCA095B-Aucune Sortie en Vue.png",
+            "LCA096B-Un Passage Fatigant.png",
+            "LCA097B-Une Contrée Oubliée.png",
+            "LCA098-100A-Perdus à la Rivière des Cygnes.png",
+            "LCA098B-Marais Infranchissable.png",
+            "LCA099B-Un Marais Perfide.png",
+            "LCA100B-Créatures d_un Âge Oublié.png",
+            "LCA101A-Hors du Marais.png",
+            "LCA101B-Hors du Marais.png"
+        ],
+        "flip_cards": {
+            "LCA094A-Échapée de Tharbad.png": "LCA094B-Échappée de Tharbad.png",
+            "LCA095-097A-Dans les Marais.png": [
+                "LCA095B-Aucune Sortie en Vue.png",
+                "LCA096B-Un Passage Fatigant.png",
+                "LCA097B-Une Contrée Oubliée.png"
+            ],
+            "LCA098-100A-Perdus à la Rivière des Cygnes.png": [
+                "LCA098B-Marais Infranchissable.png",
+                "LCA099B-Un Marais Perfide.png",
+                "LCA100B-Créatures d_un Âge Oublié.png"
+            ],
+            "LCA101A-Hors du Marais.png": "LCA101B-Hors du Marais.png"
+        }
+    },
+    "Le Secret de Celebrimbor": {
+        "héros": [
+            "LCA112-Galadriel.png"
+        ],
+        "joueurs": [
+            "LCA113-Héritier de Mardil.png",
+            "LCA114-Oraphin.png",
+            "LCA115-Garde d_Henneth Annun.png",
+            "LCA116-Charge des Rohirrim.png",
+            "LCA117-Suivante de Galadriel.png",
+            "LCA118-Miroir de Galadriel.png",
+            "LCA119-Ent Errant.png",
+            "LCA120-Cape de la Lorien.png",
+            "LCA121-Nenya.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Secret de Celebrimbor",
+                "number_cards": 30,
+                "cards": {
+                    "LCA124-Bellach.png": 1,
+                    "LCA125-La Fouille des Orques.png": 1,
+                    "LCA126-La Cambre Secrète.png": 1,
+                    "LCA127-Moule de Celebrimbor.png": 1,
+                    "LCA128-Éclaireur de Bellach.png": 4,
+                    "LCA129-Orque Errant.png": 2,
+                    "LCA130-Place en Ruine.png": 3,
+                    "LCA131-Tour Effondrée.png": 2,
+                    "LCA132-Anciennes Fondations.png": 4,
+                    "LCA133-Vestiges de la Cité.png": 4,
+                    "LCA134-Découverts !.png": 2,
+                    "LCA135-Ruines Profanées.png": 3,
+                    "LCA136-Espions du Mordor.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "LCA122A-Les Ruines d_Ost-in-Edhil.png",
+            "LCA122B-Les Ruines d_Ost-In-Edhil.png",
+            "LCA123A-Le Serviteur de l_Ennemi.png",
+            "LCA123B-Le Serviteur de l_Ennemi.png"
+        ],
+        "flip_cards": {
+            "LCA122A-Les Ruines d_Ost-in-Edhil.png": "LCA122B-Les Ruines d_Ost-In-Edhil.png",
+            "LCA123A-Le Serviteur de l_Ennemi.png": "LCA123B-Le Serviteur de l_Ennemi.png"
+        }
+    },
+    "La Couronne d'Andouillers": {
+        "héros": [
+            "LCA137-Erkenbrand.png"
+        ],
+        "joueurs": [
+            "LCA138-Gardien du Gouffre de Helm.png",
+            "LCA139-Au Lever du Jour.png",
+            "LCA140-Capitaine du Gondor.png",
+            "LCA141-Ent Rugissant.png",
+            "LCA142-Piétinez-Les !.png",
+            "LCA143-Les Ombres se Dérobent.png",
+            "LCA144-Pas de Jugement Hâtif !.png",
+            "LCA145-Eaux de la Nimrodel.png",
+            "LCA146-Sylvebarbe.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Couronne d'Andouillers",
+                "number_cards": 29,
+                "cards": {
+                    "LCA150-Chef Turch.png": 1,
+                    "LCA151-Chef Corbeau.png": 1,
+                    "LCA152-Camp du Chef Corbeau.png": 1,
+                    "LCA153-Guerrier Corbeau.png": 4,
+                    "LCA154-Franc-Tireur Corbeau.png": 3,
+                    "LCA155-Campement de Guerre Corbeau.png": 4,
+                    "LCA156-Village Corbeau.png": 3,
+                    "LCA157-Champ de Bataille de Dun.png": 3,
+                    "LCA158-Territoire Corbeau.png": 2,
+                    "LCA159-Cri Retentissant.png": 3,
+                    "LCA160-Peuple Féroce.png": 2,
+                    "LCA161-Repoussés !.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "LCA147A-Bataille du Pays de Dun.png",
+            "LCA147B-Bataille du Pays de Dun.png",
+            "LCA148A-Le Clan du Corbeau.png",
+            "LCA148B-Le Clan du Corbeau.png",
+            "LCA149A-Le Dernier Combat.png",
+            "LCA149B-Le Dernier Combat.png"
+        ],
+        "flip_cards": {
+            "LCA147A-Bataille du Pays de Dun.png": "LCA147B-Bataille du Pays de Dun.png",
+            "LCA148A-Le Clan du Corbeau.png": "LCA148B-Le Clan du Corbeau.png",
+            "LCA149A-Le Dernier Combat.png": "LCA149B-Le Dernier Combat.png"
         }
     }
 }
