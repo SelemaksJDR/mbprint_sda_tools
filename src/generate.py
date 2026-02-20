@@ -56,9 +56,15 @@ if __name__ == '__main__':
     workspace = config_object["workspace"]
 
     # Récupération de la racine des fichiers images
-    root_pictures: pathlib.Path = pathlib.Path(workspace["root_pictures"])
+    root_pictures: pathlib.Path = pathlib.Path.absolute(pathlib.Path(workspace["root_pictures"]))
     # Récupération du dossier de configuration
-    config_folder: pathlib.Path = pathlib.Path(workspace["config_folder"])
+    config_folder: pathlib.Path = pathlib.Path.absolute(pathlib.Path(workspace["config_folder"]))
+    # Récupération du dossier de fix des filenames
+    fix_filenames_folder: pathlib.Path = config_folder.joinpath(pathlib.Path(workspace["fix_filenames"]))
+    fix_config_object: dict = {}
+    with open(fix_filenames_folder, 'r') as file:
+        fix_config_object = json5.load(file)
+        fix_config_object = fix_config_object["fix_filenames"]
     # Récupération du chemin vers le dossier de résultat
     result_folder: pathlib.Path = pathlib.Path(workspace["result_folder"])
     # Récupération du chemin vers les dos de carte

@@ -29,16 +29,16 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
                 multiple_result_card: list = []
                 for card_back in flip_cards[card]:
                     result_card_front: dict = {}
-                    result_card_front[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
-                    result_card_front[infos.CARDS_FACE_B] = pathlib.Path.joinpath(root_pictures, card_back)
+                    result_card_front[infos.CARDS_FACE_A] = pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card))
+                    result_card_front[infos.CARDS_FACE_B] = pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card_back))
                     result_card_front[infos.CARDS_EXEMPLAIRES] = occurrence
                     multiple_result_card.append(result_card_front)
                 result.extend(multiple_result_card)
                 # On arrête le traitement ici
                 continue
             # Cas général, il n'y a qu'un seul dos
-            result_card[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
-            result_card[infos.CARDS_FACE_B] = pathlib.Path.joinpath(root_pictures, flip_cards[card])
+            result_card[infos.CARDS_FACE_A] = pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card))
+            result_card[infos.CARDS_FACE_B] = pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, flip_cards[card]))
 
             result_card[infos.CARDS_EXEMPLAIRES] = occurrence
         elif card in facesB:
@@ -48,8 +48,8 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
             if back is None:
                 print(f"Aucun dos n'a été assigné à la carte {card}")
                 continue
-            result_card[infos.CARDS_FACE_A] = pathlib.Path.joinpath(root_pictures, card)
-            result_card[infos.CARDS_FACE_B] = pathlib.Path(back)
+            result_card[infos.CARDS_FACE_A] = pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card))
+            result_card[infos.CARDS_FACE_B] = pathlib.Path.absolute(pathlib.Path(back))
             result_card[infos.CARDS_EXEMPLAIRES] = occurrence
         result.append(result_card)
     return result

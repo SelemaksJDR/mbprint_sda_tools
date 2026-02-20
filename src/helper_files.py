@@ -67,6 +67,9 @@ def validate_config_json(config_data: dict) -> bool:
     if validate_field(config_data["workspace"], name="config_folder") is False:
         print(f"L'élément config_folder n'existe pas dans le workspace")
         return False
+    if validate_field(config_data["workspace"]["config_folder"], name="fix_filenames") is False:
+        print(f"L'élément fix_filenames n'existe pas dans le config_folder")
+        return False
     # Récupération du chemin vers le dossier de résultat
     if validate_field(config_data["workspace"], name="result_folder") is False:
         print(f"L'élément result_folder n'existe pas dans le workspace")
@@ -93,3 +96,25 @@ def validate_cycle_json(cycle_data: dict) -> bool:
             print(f"Erreur dans l'extension {extension}")
             return False
     return True
+
+
+# flag
+IS_FIRST: bool = True
+
+def path_exists_with_fix(img_path: pathlib.Path, fix_config_object: dict) -> bool | pathlib.Path:
+    if pathlib.Path.exists(img_path) is False:
+        # Recherche dans le fichier de fix
+        for error_name, fixed_name in fix_config_object.items():
+            error_path = img_path.parent / pathlib.Path(pathlib.Path(error_name).name)
+            fixed_path = img_path.parent / pathlib.Path(pathlib.Path(fixed_name).name)
+            if img_path.name == fixed_path.name:
+                if pathlib.Path.exists(error_path) is True:
+                    global IS_FIRST
+                    if IS_FIRST is True:
+                        IS_FIRST = False
+                        print(f"[ATTENTION] Le fichier fix_config.jsonc est nécessaire pour trouver certains chemins. Vous devriez utiliser le script fix_files.py")
+                    return True, error_path
+                print(f"[ERREUR] Le fichier {img_path.name} n'est pas présent dans le dossier {img_path.parent} et n'a pas d'autre nom")
+                return False, img_path
+    return True, img_path
+

@@ -11,7 +11,9 @@
         "backs":{
             "player_back": "./data/player_back.jpg",
             "encounter_back": "./data/encounter_back.jpg"
-        }
+        },
+        // en relatif depuis le fichier de config
+        "fix_filenames": "fix_config.jsonc"
     },
     // Cycles de cartes à imprimer
     "cycles": [
