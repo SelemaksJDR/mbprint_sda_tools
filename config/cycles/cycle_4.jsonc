@@ -24,7 +24,7 @@
             "LAI012-Somme de Connaissances.png",
             "LAI013-La Voix de Saroumane.png",
             "LAI014-Le Pouvoir d_Orthanc.png",
-            "LAI015-La Pierre de Vision.png",
+            "LAI015-La Pierre de Vision.png"
         ],
         "rencontres": [
             {
@@ -33,12 +33,12 @@
                 "cards": {
                     "LAI016-Grima.png": 1,
                     "LAI017-L_Ilot.png": 1,
-                    "LAI018-Gués de l_Isen.png": 1,
-                    "LAI019-La Route du Roi.png": 1,
-                    "LAI020-Trouée du Rohan.png": 1,
-                    "LAI021-Piller et Brûler.png": 1,
+                    "LAI018-Gués de l_Isen.png": 3,
+                    "LAI019-La Route du Roi.png": 2,
+                    "LAI020-Trouée du Rohan.png": 4,
+                    "LAI021-Piller et Brûler.png": 2,
                     "LAI022-Du Haut des Collines.png": 1,
-                    "LAI023-Mauvaises Nouvelles.png": 1
+                    "LAI023-Mauvaises Nouvelles.png": 2
                 }
             },
             {
@@ -46,12 +46,12 @@
                 "number_cards": 18,
                 "cards": {
                     "LAI024-Mugash.png": 1,
-                    "LAI025-Garde de Mugash.png": 1,
-                    "LAI026-Orque du Methedras.png": 1,
-                    "LAI027-Methedras.png": 1,
-                    "LAI028-Caverne de Orques.png": 1,
-                    "LAI029-Repaire de Mugash.png": 1,
-                    "LAI030-Territoire Orque.png": 1
+                    "LAI025-Garde de Mugash.png": 3,
+                    "LAI026-Orque du Methedras.png": 3,
+                    "LAI027-Methedras.png": 4,
+                    "LAI028-Caverne de Orques.png": 3,
+                    "LAI029-Repaire de Mugash.png": 2,
+                    "LAI030-Territoire Orque.png": 2
                 }
             },
             {
@@ -60,70 +60,70 @@
                 "cards": {
                     "LAI031-Mugash.png": 1,
                     "LAI032-Lisière de Fangorn.png": 1,
-                    "LAI033-Huorn au Coeur Sombre.png": 1,
-                    "LAI034-Huorn Courroucé.png": 1,
-                    "LAI035-Huorn Meurtrier.png": 1,
-                    "LAI036-Coeur de Fangorn.png": 1,
-                    "LAI037-La Malveillance de la Forêt.png": 1
+                    "LAI033-Huorn au Coeur Sombre.png": 4,
+                    "LAI034-Huorn Courroucé.png": 3,
+                    "LAI035-Huorn Meurtrier.png": 3,
+                    "LAI036-Coeur de Fangorn.png": 3,
+                    "LAI037-La Malveillance de la Forêt.png": 4
                 }
             },
             {
                 "name": "Orques des Monts Brumeux",
                 "number_cards": 10,
                 "cards": {
-                    "LAI038-Franc-Tireur Orque.png": 1,
-                    "LAI039-Chasseur Orque.png": 1,
-                    "LAI040-Limier Orque.png": 1,
-                    "LAI041-Battue Orque.png": 1
+                    "LAI038-Franc-Tireur Orque.png": 3,
+                    "LAI039-Chasseur Orque.png": 3,
+                    "LAI040-Limier Orque.png": 2,
+                    "LAI041-Battue Orque.png": 2
                 }
             },
             {
                 "name": "Pillards du Pays de Dun",
                 "number_cards": 9,
                 "cards": {
-                    "LAI042-Maraudeur de Dun.png": 1,
-                    "LAI043-Bandit Dunlending.png": 1,
-                    "LAI044-Pillard de Dun.png": 1,
-                    "LAI045-Vieilles Rancunes.png": 1
+                    "LAI042-Maraudeur de Dun.png": 3,
+                    "LAI043-Bandit Dunlending.png": 2,
+                    "LAI044-Pillard de Dun.png": 2,
+                    "LAI045-Vieilles Rancunes.png": 2
                 }
             },
             {
                 "name": "Guerriers du Pays de Dun",
                 "number_cards": 9,
                 "cards": {
-                    "LAI046-Barbare de Dun.png": 1,
-                    "LAI047-Chef de Clan de Dun.png": 1,
-                    "LAI048-Berserker de Dun.png": 1,
-                    "LAI049-Hommes Sauvages de Dun.png": 1
+                    "LAI046-Barbare de Dun.png": 2,
+                    "LAI047-Chef de Clan de Dun.png": 2,
+                    "LAI048-Berserker de Dun.png": 3,
+                    "LAI049-Hommes Sauvages de Dun.png": 2
                 }
             },
             {
                 "name": "Forêt Ancienne",
                 "number_cards": 9,
                 "cards": {
-                    "LAI050-Forêt Ancienne.png": 1,
-                    "LAI051-Bois Inextricables.png": 1,
-                    "LAI052-Demi-Tour.png": 1
+                    "LAI050-Forêt Ancienne.png": 3,
+                    "LAI051-Bois Inextricables.png": 3,
+                    "LAI052-Demi-Tour.png": 3
                 }
             },
             {
                 "name": "Terres Déchiquetées",
                 "number_cards": 9,
                 "cards": {
-                    "LAI053-Loup Errant.png": 1,
-                    "LAI054-Terres Déchiquetées.png": 1,
-                    "LAI055-A l_Abri !.png": 1
+                    "LAI053-Loup Errant.png": 3,
+                    "LAI054-Terres Déchiquetées.png": 3,
+                    "LAI055-A l_Abri !.png": 3
                 }
             },
             {
                 "name": "Voyageurs Fatigués",
                 "number_cards": 7,
                 "cards": {
-                    "LAI056-A Court de Nourriture.png": 1,
-                    "LAI057-Hors des Sentiers Battus.png": 1,
-                    "LAI058-Besoin de Repos.png": 1
+                    "LAI056-A Court de Nourriture.png": 3,
+                    "LAI057-Hors des Sentiers Battus.png": 2,
+                    "LAI058-Besoin de Repos.png": 2
                 }
-            },
+            }
         ],
         "quêtes": [
             "LAI059a-Combat aux Gués.png",
