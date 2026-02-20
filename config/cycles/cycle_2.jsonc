@@ -7,343 +7,475 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "Khazad-Dûm": {
-        "copies": {
-            "KHD001-Dwalin": 1,
-            "KHD002-Bifur": 1,
-            "KHD003-Ceinture de Narvi": 3,
-            "KHD004-Chant de Durin": 3,
-            "KHD005-Toujours Devant": 3,
-            "KHD006-Vétéran du Nanduhirion": 3,
-            "KHD007-Hache de Cavenain": 3,
-            "KHD008-Khazad Khazad": 3,
-            "KHD009-Mineur de Zigil": 3,
-            "KHD10-Serein face aux ténèbres": 3,
-            "KHD11-Archiviste d_erebor": 3,
-            "KHD12-Savoir Ancestral": 3,
-            "KHD13-Bottes d_Erebor": 3,
-            "KHD14-Chef de Patrouille": 2,
-            "KHD15-Traces de Combat": 5,
-            "KHD16-Porte Est": 1,
-            "KHD17-Première Salle": 1,
-            "KHD18-Pont de Khazad-Dum": 1,
-            "KHD19-Escaliers de Nain": 2,
-            "KHD20-Troll des cavernes": 2,
-            "KHD21-Sonneur de Cor Orque": 1,
-            "KHD22-Menace Cachée": 2,
-            "KHD23-Salle Supérieure": 3,
-            "KHD24-Livre de Marzaboul": 1,
-            "KHD25-La Peur Sans Nom": 1,
-            "KHD26-Nouvelle Diablerie": 3,
-            "KHD27-Ombre de la Peur": 3,
-            "KHD28-Au-Delà de vos Pouvoirs": 4,
-            "KHD29-Outils Abandonnés": 1,
-            "KHD30-Chef du Puits": 1,
-            "KHD31-Lancier Gobelin": 5,
-            "KHD32-Archer Gobelin": 2,
-            "KHD33-Amas d_Ossements": 3,
-            "KHD34-Armurerie Pillée": 2,
-            "KHD35-Poursuivant gobelin": 4,
-            "KHD36-Embranchement": 3,
-            "KHD37-Galerie Obscure": 2,
-            "KHD38-Puits de Mine de Zigil": 3,
-            "KHD39-Multiples chemins": 1,
-            "KHD40-Faible Flamme": 3,
-            "KHD41-Torche des Cavernes": 1,
-            "KHD42-Grand Troll des Cavernes": 2,
-            "KHD43-Tambour Orque": 1,
-            "KHD44-Gobelin Errant": 3,
-            "KHD45-Rencontre Hasardeuse": 3,
-            "KHD46-Massés dans les Profondeurs": 2,
-            "KHD47-Les Racines de la Montagne": 3,
-            "KHD48-Effondrement": 3,
-            "KHD49-Ruine croulante": 2,
-            "KHD50-Sombre et Abominable": 2,
-            "KHD51-Piège Soudain": 1,
-            "KHD52-Terrible Crevasse": 1,
-            "KHD53-Puits Souillé": 3,
-            "KHD54-Uruks Noirs": 4,
-            "KHD55-Warg des Montagnes": 3,
-            "KHD56-Vent Glacial": 3,
-            "KHD57-Pied de la Montagne": 1,
-            "KHD58-Eaux Turbulentes": 2,
-            "KHD59-Tanière de Warg": 2,
-            "KHD60-Eclaireur Gobelin": 3,
-            "KHD61-Sabreur gobelin": 5,
-            "KHD62-Yeux Vigilants": 3,
-            "KHD63-Tunnels des Gobelins": 2,
-            "KHD64A-Entrer dans les Mines": 1,
-            "KHD64B-Entrer dans les Mines": 1,
-            "KHD65A-Patrouille de Gobelins": 1,
-            "KHD65B-Patrouille de gobelins": 1,
-            "KHD66A-Un chemin vers le Haut": 1,
-            "KHD66B-Un Chemin vers le Haut": 1,
-            "KHD67A-A la Recherche de la Salle des Archives": 1,
-            "KHD67B-A la Recherche de la Salle des Archives": 1,
-            "KHD68A-Le Destin de Balin": 1,
-            "KHD68B-Le Destin de Balin": 1,
-            "KHD69A-Une Présence dans le Noir": 1,
-            "KHD69B-Une Présence dans le Noir": 1,
-            "KHD70A-A la Recherche d_une Sortie": 1,
-            "KHD70B-Vers le Bas": 1,
-            "KHD71A-A la Recherche d_une Sortie": 1,
-            "KHD71B-Vers le Haut": 1,
-            "KHD72A-A la Recherche d_une Sortie": 1,
-            "KHD72B-Détour": 1,
-            "KHD73A-A la Recherche d_une Sortie": 1,
-            "KHD73B-Passages Étroits": 1,
-            "KHD74A-A la Recherche d_une Sortie": 1,
-            "KHD74B-Conciliabule": 1,
-            "KHD75A-A la Recherche d_une Sortie": 1,
-            "KHD75B-Bloqués par l_Ombre": 1,
-            "KHD76A-A la Recherche d_une Sortie": 1,
-            "KHD76B-Échapper aux Ténèbres": 1
-        },
+        "héros": [
+            "KHD001-Dwalin.png",
+            "KHD002-Bifur.png"
+        ],
+        "joueurs": [
+            "KHD003-Ceinture de Narvi.png",
+            "KHD004-Chant de Durin.png",
+            "KHD005-Toujours Devant.png",
+            "KHD006-Vétéran du Nanduhirion.png",
+            "KHD007-Hache de Cavenain.png",
+            "KHD008-Khazad Khazad.png",
+            "KHD009-Mineur de Zigil.png",
+            "KHD10-Serein face aux ténèbres.png",
+            "KHD11-Archiviste d_erebor.png",
+            "KHD12-Savoir Ancestral.png",
+            "KHD13-Bottes d_Erebor.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Dans le Gouffre Noir",
+                "number_cards": 12,
+                "cards": {
+                    "KHD14-Chef de Patrouille.png": 2,
+                    "KHD15-Traces de Combat.png": 5,
+                    "KHD16-Porte Est.png": 1,
+                    "KHD17-Première Salle.png": 1,
+                    "KHD18-Pont de Khazad-Dum.png": 1,
+                    "KHD19-Escaliers de Nain.png": 2
+                }
+            },
+            {
+                "name": "Le Septième Niveau",
+                "number_cards": 9,
+                "cards": {
+                    "KHD20-Troll des cavernes.png": 2,
+                    "KHD21-Sonneur de Cor Orque.png": 1,
+                    "KHD22-Menace Cachée.png": 2,
+                    "KHD23-Salle Supérieure.png": 3,
+                    "KHD24-Livre de Marzaboul.png": 1
+                }
+            },
+            {
+                "name": "Fuir la Moria",
+                "number_cards": 12,
+                "cards": {
+                    "KHD25-La Peur Sans Nom.png": 1,
+                    "KHD26-Nouvelle Diablerie.png": 3,
+                    "KHD27-Ombre de la Peur.png": 3,
+                    "KHD28-Au-Delà de vos Pouvoirs.png": 4,
+                    "KHD29-Outils Abandonnés.png": 1
+                }
+            },
+            {
+                "name": "Pilleurs Gobelins",
+                "number_cards": 13,
+                "cards": {
+                    "KHD30-Chef du Puits.png": 1,
+                    "KHD31-Lancier Gobelin.png": 5,
+                    "KHD32-Archer Gobelin.png": 2,
+                    "KHD33-Amas d_Ossements.png": 3,
+                    "KHD34-Armurerie Pillée.png": 2
+                }
+            },
+            {
+                "name": "Tours et Détours",
+                "number_cards": 17,
+                "cards": {
+                    "KHD35-Poursuivant gobelin.png": 4,
+                    "KHD36-Embranchement.png": 3,
+                    "KHD37-Galerie Obscure.png": 2,
+                    "KHD38-Puits de Mine de Zigil.png": 3,
+                    "KHD39-Multiples chemins.png": 1,
+                    "KHD40-Faible Flamme.png": 3,
+                    "KHD41-Torche des Cavernes.png": 1
+                }
+            },
+            {
+                "name": "Profondeurs de la Moria",
+                "number_cards": 14,
+                "cards": {
+                    "KHD42-Grand Troll des Cavernes.png": 2,
+                    "KHD43-Tambour Orque.png": 1,
+                    "KHD44-Gobelin Errant.png": 3,
+                    "KHD45-Rencontre Hasardeuse.png": 3,
+                    "KHD46-Massés dans les Profondeurs.png": 2,
+                    "KHD47-Les Racines de la Montagne.png": 3
+                }
+            },
+            {
+                "name": "Périls du Puits",
+                "number_cards": 12,
+                "cards": {
+                    "KHD48-Effondrement.png": 3,
+                    "KHD49-Ruine croulante.png": 2,
+                    "KHD50-Sombre et Abominable.png": 2,
+                    "KHD51-Piège Soudain.png": 1,
+                    "KHD52-Terrible Crevasse.png": 1,
+                    "KHD53-Puits Souillé.png": 3
+                }
+            },
+            {
+                "name": "Les Monts Brumeux",
+                "number_cards": 15,
+                "cards": {
+                    "KHD54-Uruks Noirs.png": 4,
+                    "KHD55-Warg des Montagnes.png": 3,
+                    "KHD56-Vent Glacial.png": 3,
+                    "KHD57-Pied de la Montagne.png": 1,
+                    "KHD58-Eaux Turbulentes.png": 2,
+                    "KHD59-Tanière de Warg.png": 2
+                }
+            },
+            {
+                "name": "Gobelins des Profondeurs",
+                "number_cards": 13,
+                "cards": {
+                    "KHD60-Eclaireur Gobelin.png": 3,
+                    "KHD61-Sabreur gobelin.png": 5,
+                    "KHD62-Yeux Vigilants.png": 3,
+                    "KHD63-Tunnels des Gobelins.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "KHD64A-Entrer dans les Mines.png",
+            "KHD64B-Entrer dans les Mines.png",
+            "KHD65A-Patrouille de Gobelins.png",
+            "KHD65B-Patrouille de gobelins.png",
+            "KHD66A-Un chemin vers le Haut.png",
+            "KHD66B-Un Chemin vers le Haut.png",
+            "KHD67A-A la Recherche de la Salle des Archives.png",
+            "KHD67B-A la Recherche de la Salle des Archives.png",
+            "KHD68A-Le Destin de Balin.png",
+            "KHD68B-Le Destin de Balin.png",
+            "KHD69A-Une Présence dans le Noir.png",
+            "KHD69B-Une Présence dans le Noir.png",
+            "KHD70A-A la Recherche d_une Sortie.png",
+            "KHD70B-Vers le Bas.png",
+            "KHD71A-A la Recherche d_une Sortie.png",
+            "KHD71B-Vers le Haut.png",
+            "KHD72A-A la Recherche d_une Sortie.png",
+            "KHD72B-Détour.png",
+            "KHD73A-A la Recherche d_une Sortie.png",
+            "KHD73B-Passages Étroits.png",
+            "KHD74A-A la Recherche d_une Sortie.png",
+            "KHD74B-Conciliabule.png",
+            "KHD75A-A la Recherche d_une Sortie.png",
+            "KHD75B-Bloqués par l_Ombre.png",
+            "KHD76A-A la Recherche d_une Sortie.png",
+            "KHD76B-Échapper aux Ténèbres.png"
+        ],
         "flip_cards": {
-            "KHD64A-Entrer dans les Mines": "KHD64B-Entrer dans les Mines",
-            "KHD65A-Patrouille de Gobelins": "KHD65B-Patrouille de gobelins",
-            "KHD66A-Un chemin vers le Haut": "KHD66B-Un Chemin vers le Haut",
-            "KHD67A-A la Recherche de la Salle des Archives": "KHD67B-A la Recherche de la Salle des Archives",
-            "KHD68A-Le Destin de Balin": "KHD68B-Le Destin de Balin",
-            "KHD69A-Une Présence dans le Noir": "KHD69B-Une Présence dans le Noir",
-            "KHD70A-A la Recherche d_une Sortie": "KHD70B-Vers le Bas",
-            "KHD71A-A la Recherche d_une Sortie": "KHD71B-Vers le Haut",
-            "KHD72A-A la Recherche d_une Sortie": "KHD72B-Détour",
-            "KHD73A-A la Recherche d_une Sortie": "KHD73B-Passages Étroits",
-            "KHD74A-A la Recherche d_une Sortie": "KHD74B-Conciliabule",
-            "KHD75A-A la Recherche d_une Sortie": "KHD75B-Bloqués par l_Ombre",
-            "KHD76A-A la Recherche d_une Sortie": "KHD76B-Échapper aux Ténèbres"
+            "KHD64A-Entrer dans les Mines.png": "KHD64B-Entrer dans les Mines.png",
+            "KHD65A-Patrouille de Gobelins.png": "KHD65B-Patrouille de gobelins.png",
+            "KHD66A-Un chemin vers le Haut.png": "KHD66B-Un Chemin vers le Haut.png",
+            "KHD67A-A la Recherche de la Salle des Archives.png": "KHD67B-A la Recherche de la Salle des Archives.png",
+            "KHD68A-Le Destin de Balin.png": "KHD68B-Le Destin de Balin.png",
+            "KHD69A-Une Présence dans le Noir.png": "KHD69B-Une Présence dans le Noir.png",
+            "KHD70A-A la Recherche d_une Sortie.png": "KHD70B-Vers le Bas.png",
+            "KHD71A-A la Recherche d_une Sortie.png": "KHD71B-Vers le Haut.png",
+            "KHD72A-A la Recherche d_une Sortie.png": "KHD72B-Détour.png",
+            "KHD73A-A la Recherche d_une Sortie.png": "KHD73B-Passages Étroits.png",
+            "KHD74A-A la Recherche d_une Sortie.png": "KHD74B-Conciliabule.png",
+            "KHD75A-A la Recherche d_une Sortie.png": "KHD75B-Bloqués par l_Ombre.png",
+            "KHD76A-A la Recherche d_une Sortie.png": "KHD76B-Échapper aux Ténèbres.png"
         }
     },
     "La Porte de Rubicorne": {
-        "copies": {
-            "DWA001-Elrohir": 1,
-            "DWA002-Prendre l_Initiative": 3,
-            "DWA003-Aide Opportune": 3,
-            "DWA004-Coup Imperceptible": 3,
-            "DWA005-Faire le Décompte": 3,
-            "DWA006-Bofur": 3,
-            "DWA007-Amitié Renouvelée": 3,
-            "DWA008-Éclaireur de Ravenhill": 3,
-            "DWA009-Connaître l_Essentiel": 3,
-            "DWA010-Bon Repas": 3,
-            "DWA011A-Jusqu_au Col": 1,
-            "DWA011B-Jusqu_au Col": 1,
-            "DWA012A-Congères": 1,
-            "DWA012B-Congères": 1,
-            "DWA013A-Les Sommets des Monts Brumeux": 1,
-            "DWA013B-Les Sommets des Monts Brumeux": 1,
-            "DWA014-Arwen Undomiel": 1,
-            "DWA015-Caradhras": 1,
-            "DWA016-Fanuidhol": 1,
-            "DWA017-Celebdil": 1,
-            "DWA018-L_Escalier des Rigoles Sombres": 1,
-            "DWA019-Rochers Escarpés": 3,
-            "DWA020-Voix Lointaines": 2,
-            "DWA021-Chute de Pierres": 2,
-            "DWA022-Tempête de Neige": 5,
-            "DWA023-Froid Glacial": 3,
-            "DWA024-Avalanche": 1,
-            "DWA025-Gobelin des Montagnes": 3,
-            "DWA026-Troll des Montagnes": 2,
-            "DWA027-Warg des Neiges": 3
-        },
+        "héros": [
+            "DWA001-Elrohir.png"
+        ],
+        "joueurs": [
+            "DWA002-Prendre l_Initiative.png",
+            "DWA003-Aide Opportune.png",
+            "DWA004-Coup Imperceptible.png",
+            "DWA005-Faire le Décompte.png",
+            "DWA006-Bofur.png",
+            "DWA007-Amitié Renouvelée.png",
+            "DWA008-Éclaireur de Ravenhill.png",
+            "DWA009-Connaître l_Essentiel.png",
+            "DWA010-Bon Repas.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Porte de Rubicorne",
+                "number_cards": 29,
+                "cards": {
+                    "DWA014-Arwen Undomiel.png": 1,
+                    "DWA015-Caradhras.png": 1,
+                    "DWA016-Fanuidhol.png": 1,
+                    "DWA017-Celebdil.png": 1,
+                    "DWA018-L_Escalier des Rigoles Sombres.png": 1,
+                    "DWA019-Rochers Escarpés.png": 3,
+                    "DWA020-Voix Lointaines.png": 2,
+                    "DWA021-Chute de Pierres.png": 2,
+                    "DWA022-Tempête de Neige.png": 5,
+                    "DWA023-Froid Glacial.png": 3,
+                    "DWA024-Avalanche.png": 1,
+                    "DWA025-Gobelin des Montagnes.png": 3,
+                    "DWA026-Troll des Montagnes.png": 2,
+                    "DWA027-Warg des Neiges.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA011A-Jusqu_au Col.png",
+            "DWA011B-Jusqu_au Col.png",
+            "DWA012A-Congères.png",
+            "DWA012B-Congères.png",
+            "DWA013A-Les Sommets des Monts Brumeux.png",
+            "DWA013B-Les Sommets des Monts Brumeux.png"
+        ],
         "flip_cards": {
-            "DWA011A-Jusqu_au Col": "DWA011B-Jusqu_au Col",
-            "DWA012A-Congères": "DWA012B-Congères",
-            "DWA013A-Les Sommets des Monts Brumeux": "DWA013B-Les Sommets des Monts Brumeux"
+            "DWA011A-Jusqu_au Col.png": "DWA011B-Jusqu_au Col.png",
+            "DWA012A-Congères.png": "DWA012B-Congères.png",
+            "DWA013A-Les Sommets des Monts Brumeux.png": "DWA013B-Les Sommets des Monts Brumeux.png"
         }
     },
     "La Route vers Fondcombe": {
-        "copies": {
-            "DWA028-Elladan": 1,
-            "DWA029-Vagabond Dunedain": 3,
-            "DWA030-L_Attrait de la Moria": 3,
-            "DWA031-Lame de Fondcombe": 3,
-            "DWA032-Grêle de Pierres": 3,
-            "DWA033-Cavalier de la Marche": 3,
-            "DWA034-Chant d_Eärendil": 3,
-            "DWA035-Bombur": 3,
-            "DWA036-Hors de la Nature": 3,
-            "DWA037-La Fin est Proche": 3,
-            "DWA038A-La Traversée des Monts Brumeux": 1,
-            "DWA038B-La Traversée des Monts Brumeux": 1,
-            "DWA039A-Avant-Poste Orque": 1,
-            "DWA039B-Avant-Poste Orque": 1,
-            "DWA040A-En Approchant de Fondcombe": 1,
-            "DWA040B-En Approchant de Fondcombe": 1,
-            "DWA041-Arwen Undomiel": 1,
-            "DWA042-Route Délabrée": 2,
-            "DWA043-Porte des Gobelins": 1,
-            "DWA044-Région Inexplorée": 3,
-            "DWA045-Collines Arides": 2,
-            "DWA046-Sentinelle Endormie": 2,
-            "DWA047-Poursuite Nocturne": 3,
-            "DWA048-Embuscade Orque": 2,
-            "DWA049-Chef de Corvée Gobelin": 4,
-            "DWA050-Pillards Orques": 3,
-            "DWA051-Crebain": 3,
-            "DWA052-Ours Sauvage": 3
-        },
+        "héros": [
+            "DWA028-Elladan.png"
+        ],
+        "joueurs": [
+            "DWA029-Vagabond Dunedain.png",
+            "DWA030-L_Attrait de la Moria.png",
+            "DWA031-Lame de Fondcombe.png",
+            "DWA032-Grêle de Pierres.png",
+            "DWA033-Cavalier de la Marche.png",
+            "DWA034-Chant d_Eärendil.png",
+            "DWA035-Bombur.png",
+            "DWA036-Hors de la Nature.png",
+            "DWA037-La Fin est Proche.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Route vers Fondcombe",
+                "number_cards": 29,
+                "cards": {
+                    "DWA041-Arwen Undomiel.png": 1,
+                    "DWA042-Route Délabrée.png": 2,
+                    "DWA043-Porte des Gobelins.png": 1,
+                    "DWA044-Région Inexplorée.png": 3,
+                    "DWA045-Collines Arides.png": 2,
+                    "DWA046-Sentinelle Endormie.png": 2,
+                    "DWA047-Poursuite Nocturne.png": 3,
+                    "DWA048-Embuscade Orque.png": 2,
+                    "DWA049-Chef de Corvée Gobelin.png": 4,
+                    "DWA050-Pillards Orques.png": 3,
+                    "DWA051-Crebain.png": 3,
+                    "DWA052-Ours Sauvage.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA038A-La Traversée des Monts Brumeux.png",
+            "DWA038B-La Traversée des Monts Brumeux.png",
+            "DWA039A-Avant-Poste Orque.png",
+            "DWA039B-Avant-Poste Orque.png",
+            "DWA040A-En Approchant de Fondcombe.png",
+            "DWA040B-En Approchant de Fondcombe.png"
+        ],
         "flip_cards": {
-            "DWA038A-La Traversée des Monts Brumeux": "DWA038B-La Traversée des Monts Brumeux",
-            "DWA039A-Avant-Poste Orque": "DWA039B-Avant-Poste Orque",
-            "DWA040A-En Approchant de Fondcombe": "DWA040B-En Approchant de Fondcombe"
+            "DWA038A-La Traversée des Monts Brumeux.png": "DWA038B-La Traversée des Monts Brumeux.png",
+            "DWA039A-Avant-Poste Orque.png": "DWA039B-Avant-Poste Orque.png",
+            "DWA040A-En Approchant de Fondcombe.png": "DWA040B-En Approchant de Fondcombe.png"
         }
     },
     "Le Guetteur de l'Eau": {
-        "copies": {
-            "DWA053-Aragorn": 1,
-            "DWA054-Cairn Funéraire": 3,
-            "DWA055-L_Épée qui Fut Brisée": 3,
-            "DWA056-Gardien de la Bruinen": 3,
-            "DWA057-Arc de Fondcombe": 3,
-            "DWA058-Arwen Undomiel": 3,
-            "DWA059-Le Conseil d_Elrond": 3,
-            "DWA060-Raccourci": 3,
-            "DWA061-Héritage de Durin": 3,
-            "DWA062-Débrouillard": 3,
-            "DWA063A-Vers la Porte Ouest": 1,
-            "DWA063B-Vers la Porte Ouest": 1,
-            "DWA064A-Le Lac Bouillonnant": 1,
-            "DWA064B-Le Lac Boullonnnant": 1,
-            "DWA065-Portes de Durin": 1,
-            "DWA066-Chutes de l_Escalier": 1,
-            "DWA067-Marais Dangereux": 2,
-            "DWA068-Passage Improvisé": 2,
-            "DWA069-Crique Stagnante": 3,
-            "DWA070-Intention Malsaine": 1,
-            "DWA071-Eaux Turbides": 3,
-            "DWA072-Le Guetteur de l_Eau": 1,
-            "DWA073-Tentacule Agrippant": 4,
-            "DWA074-Tentacule Écrasant": 4,
-            "DWA075-Tentacule Frappant": 4,
-            "DWA076-Saisi !": 4
-        },
+        "héros": [
+            "DWA053-Aragorn.png"
+        ],
+        "joueurs": [
+            "DWA054-Cairn Funéraire.png",
+            "DWA055-L_Épée qui Fut Brisée.png",
+            "DWA056-Gardien de la Bruinen.png",
+            "DWA057-Arc de Fondcombe.png",
+            "DWA058-Arwen Undomiel.png",
+            "DWA059-Le Conseil d_Elrond.png",
+            "DWA060-Raccourci.png",
+            "DWA061-Héritage de Durin.png",
+            "DWA062-Débrouillard.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Guetteur de l'Eau",
+                "number_cards": 30,
+                "cards": {
+                    "DWA065-Portes de Durin.png": 1,
+                    "DWA066-Chutes de l_Escalier.png": 1,
+                    "DWA067-Marais Dangereux.png": 2,
+                    "DWA068-Passage Improvisé.png": 2,
+                    "DWA069-Crique Stagnante.png": 3,
+                    "DWA070-Intention Malsaine.png": 1,
+                    "DWA071-Eaux Turbides.png": 3,
+                    "DWA072-Le Guetteur de l_Eau.png": 1,
+                    "DWA073-Tentacule Agrippant.png": 4,
+                    "DWA074-Tentacule Écrasant.png": 4,
+                    "DWA075-Tentacule Frappant.png": 4,
+                    "DWA076-Saisi !.png": 4
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA063A-Vers la Porte Ouest.png",
+            "DWA063B-Vers la Porte Ouest.png",
+            "DWA064A-Le Lac Bouillonnant.png",
+            "DWA064B-Le Lac Boullonnnant.png"
+        ],
         "flip_cards": {
-            "DWA063A-Vers la Porte Ouest": "DWA063B-Vers la Porte Ouest",
-            "DWA064A-Le Lac Bouillonnant": "DWA064B-Le Lac Boullonnnant"
+            "DWA063A-Vers la Porte Ouest.png": "DWA063B-Vers la Porte Ouest.png",
+            "DWA064A-Le Lac Bouillonnant.png": "DWA064B-Le Lac Boullonnnant.png"
         }
     },
     "La Longue Obscurité": {
-        "copies": {
-            "DWA076-2-Hama": 1,
-            "DWA077-Erestor": 3,
-            "DWA078-Traces Fraîches": 3,
-            "DWA079-Maître de Bataille d_Erebord": 3,
-            "DWA080-Cotte de Mailles": 3,
-            "DWA081-Hors de Vue": 3,
-            "DWA082-Mon Coeur se Relève Toujours": 3,
-            "DWA083-Gardien des Maisons du Guérison": 3,
-            "DWA084-Mot de Commandement": 3,
-            "DWA085-Amour des Histoires": 3,
-            "DWA086A-Périple dans le Puits Noir": 1,
-            "DWA086B-Périple dans le Puits Noir": 1,
-            "DWA087A-Continuer vers l_Est": 1,
-            "DWA087B-Continuer vers l_Est": 1,
-            "DWA088-Jambières de Durin": 1,
-            "DWA089-Mine Abandonnée": 3,
-            "DWA090-Forge Naine": 2,
-            "DWA091-Cavernes Silencieuces": 2,
-            "DWA092-Passage Sinueux": 2,
-            "DWA093-Fatigue": 2,
-            "DWA094-Atmopshère Viciée": 4,
-            "DWA095-Point de Rassemblement": 1,
-            "DWA096-Vaste et Complexe": 2,
-            "DWA097-Araignée des Cavernes": 3,
-            "DWA098-Mouchard Gobelin": 4,
-            "DWA099-Chef de Guerre Gobelin": 1,
-            "DWA100-Vipère des Rochers": 3
-        },
+        "héros": [
+            "DWA076-2-Hama.png"
+        ],
+        "joueurs": [
+            "DWA077-Erestor.png",
+            "DWA078-Traces Fraîches.png",
+            "DWA079-Maître de Bataille d_Erebord.png",
+            "DWA080-Cotte de Mailles.png",
+            "DWA081-Hors de Vue.png",
+            "DWA082-Mon Coeur se Relève Toujours.png",
+            "DWA083-Gardien des Maisons du Guérison.png",
+            "DWA084-Mot de Commandement.png",
+            "DWA085-Amour des Histoires.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Longue Obscurité",
+                "number_cards": 30,
+                "cards": {
+                    "DWA088-Jambières de Durin.png": 1,
+                    "DWA089-Mine Abandonnée.png": 3,
+                    "DWA090-Forge Naine.png": 2,
+                    "DWA091-Cavernes Silencieuces.png": 2,
+                    "DWA092-Passage Sinueux.png": 2,
+                    "DWA093-Fatigue.png": 2,
+                    "DWA094-Atmopshère Viciée.png": 4,
+                    "DWA095-Point de Rassemblement.png": 1,
+                    "DWA096-Vaste et Complexe.png": 2,
+                    "DWA097-Araignée des Cavernes.png": 3,
+                    "DWA098-Mouchard Gobelin.png": 4,
+                    "DWA099-Chef de Guerre Gobelin.png": 1,
+                    "DWA100-Vipère des Rochers.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA086A-Périple dans le Puits Noir.png",
+            "DWA086B-Périple dans le Puits Noir.png",
+            "DWA087A-Continuer vers l_Est.png",
+            "DWA087B-Continuer vers l_Est.png"
+        ],
         "flip_cards": {
-            "DWA086A-Périple dans le Puits Noir": "DWA086B-Périple dans le Puits Noir",
-            "DWA087A-Continuer vers l_Est": "DWA087B-Continuer vers l_Est"
+            "DWA086A-Périple dans le Puits Noir.png": "DWA086B-Périple dans le Puits Noir.png",
+            "DWA087A-Continuer vers l_Est.png": "DWA087B-Continuer vers l_Est.png"
         }
     },
     "Fondations de Pierre": {
-        "copies": {
-            "DWA101-Glorfindel": 1,
-            "DWA102-Aîné Longue-Barbe": 3,
-            "DWA103-Chemin de la Nécessité": 3,
-            "DWA104-Éclaireur du Bosquet des Trolls": 3,
-            "DWA105-Coup Puissant": 3,
-            "DWA106-Astronome d_Imladris": 3,
-            "DWA107-Lumière de Valinor": 3,
-            "DWA108-Runes de Daeron": 3,
-            "DWA109-Herbes Médicinales": 3,
-            "DWA110-Asfaloth": 3,
-            "DWA111A-Les Murs Suintants": 1,
-            "DWA111B-Les Murs Suintants": 1,
-            "DWA112A-Au Bord de l_Eau": 1,
-            "DWA112B-Au Bord de l_Eau": 1,
-            "DWA113A-Balayés !": 1,
-            "DWA113B-Balayés !": 1,
-            "DWA114A-Sous les Mines": 1,
-            "DWA114B-Rochers Abrités": 1,
-            "DWA115A-Sous les Mines": 1,
-            "DWA115B-Cavernes Interminables": 1,
-            "DWA116A-Sous les Mines": 1,
-            "DWA116B-Berges Gelées": 1,
-            "DWA117A-Sous les Mines": 1,
-            "DWA117B-L_Antre d_une Entité d_un Autre Âge": 1,
-            "DWA118A-Sorti des Profondeurs": 1,
-            "DWA118B-Sorti des Profondeurs": 1,
-            "DWA119-Hache de Durin": 1,
-            "DWA120-Heaume de Durin": 1,
-            "DWA121-Trésor Englouti": 3,
-            "DWA122-Veine de Mithril": 1,
-            "DWA123-Profondes Obscurités": 4,
-            "DWA124-Seul et Perdu": 2,
-            "DWA125-Chose Sans Nom": 5,
-            "DWA126-Chose Très Ancienne Sans Nom": 3,
-            "DWA127-Chauves-Souris de la Moria": 4
-        },
+        "héros": [
+            "DWA101-Glorfindel.png"
+        ],
+        "joueurs": [
+            "DWA102-Aîné Longue-Barbe.png",
+            "DWA103-Chemin de la Nécessité.png",
+            "DWA104-Éclaireur du Bosquet des Trolls.png",
+            "DWA105-Coup Puissant.png",
+            "DWA106-Astronome d_Imladris.png",
+            "DWA107-Lumière de Valinor.png",
+            "DWA108-Runes de Daeron.png",
+            "DWA109-Herbes Médicinales.png",
+            "DWA110-Asfaloth.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Fondations de Pierre",
+                "number_cards": 24,
+                "cards": {
+                    "DWA119-Hache de Durin.png": 1,
+                    "DWA120-Heaume de Durin.png": 1,
+                    "DWA121-Trésor Englouti.png": 3,
+                    "DWA122-Veine de Mithril.png": 1,
+                    "DWA123-Profondes Obscurités.png": 4,
+                    "DWA124-Seul et Perdu.png": 2,
+                    "DWA125-Chose Sans Nom.png": 5,
+                    "DWA126-Chose Très Ancienne Sans Nom.png": 3,
+                    "DWA127-Chauves-Souris de la Moria.png": 4
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA111A-Les Murs Suintants.png",
+            "DWA111B-Les Murs Suintants.png",
+            "DWA112A-Au Bord de l_Eau.png",
+            "DWA112B-Au Bord de l_Eau.png",
+            "DWA113A-Balayés !.png",
+            "DWA113B-Balayés !.png",
+            "DWA114A-Sous les Mines.png",
+            "DWA114B-Rochers Abrités.png",
+            "DWA115A-Sous les Mines.png",
+            "DWA115B-Cavernes Interminables.png",
+            "DWA116A-Sous les Mines.png",
+            "DWA116B-Berges Gelées.png",
+            "DWA117A-Sous les Mines.png",
+            "DWA117B-L_Antre d_une Entité d_un Autre Âge.png",
+            "DWA118A-Sorti des Profondeurs.png",
+            "DWA118B-Sorti des Profondeurs.png"
+        ],
         "flip_cards": {
-            "DWA111A-Les Murs Suintants": "DWA111B-Les Murs Suintants",
-            "DWA112A-Au Bord de l_Eau": "DWA112B-Au Bord de l_Eau",
-            "DWA113A-Balayés !": "DWA113B-Balayés !",
-            "DWA114A-Sous les Mines": "DWA114B-Rochers Abrités",
-            "DWA115A-Sous les Mines": "DWA115B-Cavernes Interminables",
-            "DWA116A-Sous les Mines": "DWA116B-Berges Gelées",
-            "DWA117A-Sous les Mines": "DWA117B-L_Antre d_une Entité d_un Autre Âge",
-            "DWA118A-Sorti des Profondeurs": "DWA118B-Sorti des Profondeurs"
+            "DWA111A-Les Murs Suintants.png": "DWA111B-Les Murs Suintants.png",
+            "DWA112A-Au Bord de l_Eau.png": "DWA112B-Au Bord de l_Eau.png",
+            "DWA113A-Balayés !.png": "DWA113B-Balayés !.png",
+            "DWA114A-Sous les Mines.png": "DWA114B-Rochers Abrités.png",
+            "DWA115A-Sous les Mines.png": "DWA115B-Cavernes Interminables.png",
+            "DWA116A-Sous les Mines.png": "DWA116B-Berges Gelées.png",
+            "DWA117A-Sous les Mines.png": "DWA117B-L_Antre d_une Entité d_un Autre Âge.png",
+            "DWA118A-Sorti des Profondeurs.png": "DWA118B-Sorti des Profondeurs.png"
         }
     },
     "L'Ombre et la Flamme": {
-        "copies": {
-            "DWA128-Elrond": 1,
-            "DWA129-Nous ne Sommes pas Paresseux": 3,
-            "DWA130-Conduite Audacieuse": 3,
-            "DWA131-Les Mains sur l_Arc": 3,
-            "DWA132-Ô Elbereth ! Gilthonial !": 3,
-            "DWA133-Miruvor": 3,
-            "DWA134-Maître de la Forge": 3,
-            "DWA135-En Paix pour Penser": 3,
-            "DWA136-Risquer de la Lumière": 3,
-            "DWA137-Vilya": 3,
-            "DWA138A-S_Approcher de la Porte": 1,
-            "DWA138B-S_Approcher de la Porte": 1,
-            "DWA139A-L_Arrière-Garde": 1,
-            "DWA139B-L_Arrière-Garde": 1,
-            "DWA140A-Le Dernier Seigneur de la Moria": 1,
-            "DWA140B-Le Dernier Seigneur de la Moria": 1,
-            "DWA141-Puits Obscur": 1,
-            "DWA142-Deuxième Salle": 1,
-            "DWA143-Seconde Profondeur": 3,
-            "DWA144-Flammes des Profondeurs": 2,
-            "DWA145-Contre-Sort": 3,
-            "DWA146-Flammes Internes": 3,
-            "DWA147-Ombre Intérieure": 3,
-            "DWA148-Coup de Fouet": 2,
-            "DWA149-Flammes Jaillissantes": 3,
-            "DWA150-Fléau de Durin": 1,
-            "DWA151-Tireur Gobelin": 3,
-            "DWA152-Épée Enflammée": 2,
-            "DWA153-Fouet à Multiples Lanières": 2
-        },
+        "héros": [
+            "DWA128-Elrond.png"
+        ],
+        "joueurs": [
+            "DWA129-Nous ne Sommes pas Paresseux.png",
+            "DWA130-Conduite Audacieuse.png",
+            "DWA131-Les Mains sur l_Arc.png",
+            "DWA132-Ô Elbereth ! Gilthonial !.png",
+            "DWA133-Miruvor.png",
+            "DWA134-Maître de la Forge.png",
+            "DWA135-En Paix pour Penser.png",
+            "DWA136-Risquer de la Lumière.png",
+            "DWA137-Vilya.png"
+        ],
+        "rencontres": [
+            {
+                "name": "L'Ombre et la Flamme",
+                "number_cards": 29,
+                "cards": {
+                    "DWA141-Puits Obscur.png": 1,
+                    "DWA142-Deuxième Salle.png": 1,
+                    "DWA143-Seconde Profondeur.png": 3,
+                    "DWA144-Flammes des Profondeurs.png": 2,
+                    "DWA145-Contre-Sort.png": 3,
+                    "DWA146-Flammes Internes.png": 3,
+                    "DWA147-Ombre Intérieure.png": 3,
+                    "DWA148-Coup de Fouet.png": 2,
+                    "DWA149-Flammes Jaillissantes.png": 3,
+                    "DWA150-Fléau de Durin.png": 1,
+                    "DWA151-Tireur Gobelin.png": 3,
+                    "DWA152-Épée Enflammée.png": 2,
+                    "DWA153-Fouet à Multiples Lanières.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "DWA138A-S_Approcher de la Porte.png",
+            "DWA138B-S_Approcher de la Porte.png",
+            "DWA139A-L_Arrière-Garde.png",
+            "DWA139B-L_Arrière-Garde.png",
+            "DWA140A-Le Dernier Seigneur de la Moria.png",
+            "DWA140B-Le Dernier Seigneur de la Moria.png"
+        ],
         "flip_cards": {
-            "DWA138A-S_Approcher de la Porte": "DWA138B-S_Approcher de la Porte",
-            "DWA139A-L_Arrière-Garde": "DWA139B-L_Arrière-Garde",
-            "DWA140A-Le Dernier Seigneur de la Moria": "DWA140B-Le Dernier Seigneur de la Moria"
+            "DWA138A-S_Approcher de la Porte.png": "DWA138B-S_Approcher de la Porte.png",
+            "DWA139A-L_Arrière-Garde.png": "DWA139B-L_Arrière-Garde.png",
+            "DWA140A-Le Dernier Seigneur de la Moria.png": "DWA140B-Le Dernier Seigneur de la Moria.png"
         }
     }
 }
