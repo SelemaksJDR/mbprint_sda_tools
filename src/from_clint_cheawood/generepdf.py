@@ -19,156 +19,156 @@ import shutil
 import sys
 from pathlib import Path
 
-from config import parse_card_ranges, parse_deck_counts, get_base_name
-from magick import run_magick
+# from config import parse_card_ranges, parse_deck_counts, get_base_name
+from from_clint_cheawood.magick import run_magick
 
 
 # ---------------------------------------------------------------------------
 # Fonctions de creation des cartes
 # ---------------------------------------------------------------------------
 
-def find_source_cards(source_dir: Path, pattern: str) -> list[Path]:
-    """Recherche des fichiers correspondant a un pattern glob dans un repertoire."""
-    return sorted(source_dir.glob(pattern))
+# def find_source_cards(source_dir: Path, pattern: str) -> list[Path]:
+#     """Recherche des fichiers correspondant a un pattern glob dans un repertoire."""
+#     return sorted(source_dir.glob(pattern))
 
 
-def creation_heros(
-    file_path: Path,
-    source_dir: Path,
-    dos_hero_template: Path,
-    output_dir: Path,
-) -> None:
-    """Cree les cartes Heros (_H) et leurs dos a partir des images source."""
-    output_dir.mkdir(parents=True, exist_ok=True)
-    base_name = get_base_name(file_path)
-    card_ranges = parse_card_ranges(file_path)
+# def creation_heros(
+#     file_path: Path,
+#     source_dir: Path,
+#     dos_hero_template: Path,
+#     output_dir: Path,
+# ) -> None:
+#     """Cree les cartes Heros (_H) et leurs dos a partir des images source."""
+#     output_dir.mkdir(parents=True, exist_ok=True)
+#     base_name = get_base_name(file_path)
+#     card_ranges = parse_card_ranges(file_path)
 
-    if "H" not in card_ranges:
-        print("Aucune ligne 'H:' trouvee. Heros ignores.")
-        return
+#     if "H" not in card_ranges:
+#         print("Aucune ligne 'H:' trouvee. Heros ignores.")
+#         return
 
-    for start, end in card_ranges["H"]:
-        for i in range(start, end + 1):
-            sources = find_source_cards(source_dir, f"{base_name}{i}*.png")
-            if not sources:
-                print(f"ERREUR: Aucune image source pour {base_name}{i}", file=sys.stderr)
-                continue
+#     for start, end in card_ranges["H"]:
+#         for i in range(start, end + 1):
+#             sources = find_source_cards(source_dir, f"{base_name}{i}*.png")
+#             if not sources:
+#                 print(f"ERREUR: Aucune image source pour {base_name}{i}", file=sys.stderr)
+#                 continue
 
-            for src in sources:
-                # Carte face
-                dest_face = output_dir / f"{base_name}{i}_H.png"
-                if not dest_face.exists():
-                    shutil.copy2(src, dest_face)
-                    print(f"Carte heros creee : {dest_face.name}")
+#             for src in sources:
+#                 # Carte face
+#                 dest_face = output_dir / f"{base_name}{i}_H.png"
+#                 if not dest_face.exists():
+#                     shutil.copy2(src, dest_face)
+#                     print(f"Carte heros creee : {dest_face.name}")
 
-                # Carte dos
-                dest_dos = output_dir / f"{base_name}{i}_H_dos.png"
-                if not dest_dos.exists():
-                    shutil.copy2(dos_hero_template, dest_dos)
-                    print(f"Dos heros cree : {dest_dos.name}")
-
-
-def creation_joueur(
-    file_path: Path,
-    source_dir: Path,
-    dos_joueur_template: Path,
-    output_dir: Path,
-) -> None:
-    """Cree les cartes Joueur (_J) en 3 exemplaires avec leurs dos."""
-    output_dir.mkdir(parents=True, exist_ok=True)
-    base_name = get_base_name(file_path)
-    card_ranges = parse_card_ranges(file_path)
-
-    if "J" not in card_ranges:
-        print("Aucune ligne 'J:' trouvee. Joueurs ignores.")
-        return
-
-    for start, end in card_ranges["J"]:
-        for i in range(start, end + 1):
-            sources = find_source_cards(source_dir, f"{base_name}{i}-*.png")
-            if not sources:
-                print(f"AVERTISSEMENT: Aucune image source pour {base_name}{i}")
-                continue
-
-            for src in sources:
-                for j in range(1, 4):  # 3 exemplaires
-                    dest_face = output_dir / f"{base_name}{i}_{j}_J.png"
-                    shutil.copy2(src, dest_face)
-                    print(f"Carte joueur creee : {dest_face.name}")
-
-                    dest_dos = output_dir / f"{base_name}{i}_{j}_J_dos.png"
-                    shutil.copy2(dos_joueur_template, dest_dos)
-                    print(f"Dos joueur cree : {dest_dos.name}")
+#                 # Carte dos
+#                 dest_dos = output_dir / f"{base_name}{i}_H_dos.png"
+#                 if not dest_dos.exists():
+#                     shutil.copy2(dos_hero_template, dest_dos)
+#                     print(f"Dos heros cree : {dest_dos.name}")
 
 
-def creation_deck_rencontre(
-    file_path: Path,
-    deck_file_path: Path,
-    source_dir: Path,
-    dos_rencontre_template: Path,
-    output_dir: Path,
-) -> None:
-    """Cree les cartes Rencontre (_R) selon les quantites du deck."""
-    output_dir.mkdir(parents=True, exist_ok=True)
-    base_name = get_base_name(file_path)
-    card_ranges = parse_card_ranges(file_path)
-    deck_counts = parse_deck_counts(deck_file_path)
+# def creation_joueur(
+#     file_path: Path,
+#     source_dir: Path,
+#     dos_joueur_template: Path,
+#     output_dir: Path,
+# ) -> None:
+#     """Cree les cartes Joueur (_J) en 3 exemplaires avec leurs dos."""
+#     output_dir.mkdir(parents=True, exist_ok=True)
+#     base_name = get_base_name(file_path)
+#     card_ranges = parse_card_ranges(file_path)
 
-    if "E" not in card_ranges:
-        print("Aucune ligne 'E:' trouvee. Rencontres ignorees.")
-        return
+#     if "J" not in card_ranges:
+#         print("Aucune ligne 'J:' trouvee. Joueurs ignores.")
+#         return
 
-    for start, end in card_ranges["E"]:
-        for i in range(start, end + 1):
-            card_number = f"{base_name}{i}"
-            count = deck_counts.get(card_number)
-            if count is None:
-                print(f"ERREUR: Nombre d'exemplaires non trouve pour {card_number}", file=sys.stderr)
-                continue
+#     for start, end in card_ranges["J"]:
+#         for i in range(start, end + 1):
+#             sources = find_source_cards(source_dir, f"{base_name}{i}-*.png")
+#             if not sources:
+#                 print(f"AVERTISSEMENT: Aucune image source pour {base_name}{i}")
+#                 continue
 
-            sources = find_source_cards(source_dir, f"{card_number}*.png")
-            if not sources:
-                print(f"ERREUR: Aucune image source pour {card_number}", file=sys.stderr)
-                continue
+#             for src in sources:
+#                 for j in range(1, 4):  # 3 exemplaires
+#                     dest_face = output_dir / f"{base_name}{i}_{j}_J.png"
+#                     shutil.copy2(src, dest_face)
+#                     print(f"Carte joueur creee : {dest_face.name}")
 
-            src = sources[0]
-            for j in range(1, count + 1):
-                dest_face = output_dir / f"{card_number}_{j}_R.png"
-                shutil.copy2(src, dest_face)
-                print(f"Carte rencontre creee : {dest_face.name}")
-
-                dest_dos = output_dir / f"{card_number}_{j}_R_dos.png"
-                shutil.copy2(dos_rencontre_template, dest_dos)
-                print(f"Dos rencontre cree : {dest_dos.name}")
+#                     dest_dos = output_dir / f"{base_name}{i}_{j}_J_dos.png"
+#                     shutil.copy2(dos_joueur_template, dest_dos)
+#                     print(f"Dos joueur cree : {dest_dos.name}")
 
 
-def creation_deck_quete(
-    file_path: Path,
-    source_dir: Path,
-    output_dir: Path,
-) -> None:
-    """Cree les cartes Quete (_Q) en un seul exemplaire, sans dos."""
-    output_dir.mkdir(parents=True, exist_ok=True)
-    base_name = get_base_name(file_path)
-    card_ranges = parse_card_ranges(file_path)
+# def creation_deck_rencontre(
+#     file_path: Path,
+#     deck_file_path: Path,
+#     source_dir: Path,
+#     dos_rencontre_template: Path,
+#     output_dir: Path,
+# ) -> None:
+#     """Cree les cartes Rencontre (_R) selon les quantites du deck."""
+#     output_dir.mkdir(parents=True, exist_ok=True)
+#     base_name = get_base_name(file_path)
+#     card_ranges = parse_card_ranges(file_path)
+#     deck_counts = parse_deck_counts(deck_file_path)
 
-    if "Q" not in card_ranges:
-        print("Aucune ligne 'Q:' trouvee. Quetes ignorees.")
-        return
+#     if "E" not in card_ranges:
+#         print("Aucune ligne 'E:' trouvee. Rencontres ignorees.")
+#         return
 
-    for start, end in card_ranges["Q"]:
-        for i in range(start, end + 1):
-            card_number = f"{base_name}{i}"
-            sources = find_source_cards(source_dir, f"{card_number}*.png")
-            if not sources:
-                print(f"AVERTISSEMENT: Aucune image source pour {card_number}")
-                continue
+#     for start, end in card_ranges["E"]:
+#         for i in range(start, end + 1):
+#             card_number = f"{base_name}{i}"
+#             count = deck_counts.get(card_number)
+#             if count is None:
+#                 print(f"ERREUR: Nombre d'exemplaires non trouve pour {card_number}", file=sys.stderr)
+#                 continue
 
-            for src in sources:
-                dest_name = src.stem + "_Q.png"
-                dest = output_dir / dest_name
-                shutil.copy2(src, dest)
-                print(f"Carte quete copiee : {dest.name}")
+#             sources = find_source_cards(source_dir, f"{card_number}*.png")
+#             if not sources:
+#                 print(f"ERREUR: Aucune image source pour {card_number}", file=sys.stderr)
+#                 continue
+
+#             src = sources[0]
+#             for j in range(1, count + 1):
+#                 dest_face = output_dir / f"{card_number}_{j}_R.png"
+#                 shutil.copy2(src, dest_face)
+#                 print(f"Carte rencontre creee : {dest_face.name}")
+
+#                 dest_dos = output_dir / f"{card_number}_{j}_R_dos.png"
+#                 shutil.copy2(dos_rencontre_template, dest_dos)
+#                 print(f"Dos rencontre cree : {dest_dos.name}")
+
+
+# def creation_deck_quete(
+#     file_path: Path,
+#     source_dir: Path,
+#     output_dir: Path,
+# ) -> None:
+#     """Cree les cartes Quete (_Q) en un seul exemplaire, sans dos."""
+#     output_dir.mkdir(parents=True, exist_ok=True)
+#     base_name = get_base_name(file_path)
+#     card_ranges = parse_card_ranges(file_path)
+
+#     if "Q" not in card_ranges:
+#         print("Aucune ligne 'Q:' trouvee. Quetes ignorees.")
+#         return
+
+#     for start, end in card_ranges["Q"]:
+#         for i in range(start, end + 1):
+#             card_number = f"{base_name}{i}"
+#             sources = find_source_cards(source_dir, f"{card_number}*.png")
+#             if not sources:
+#                 print(f"AVERTISSEMENT: Aucune image source pour {card_number}")
+#                 continue
+
+#             for src in sources:
+#                 dest_name = src.stem + "_Q.png"
+#                 dest = output_dir / dest_name
+#                 shutil.copy2(src, dest)
+#                 print(f"Carte quete copiee : {dest.name}")
 
 
 # ---------------------------------------------------------------------------
@@ -195,7 +195,7 @@ def convert_image_to_bleed(
     print(f"Creation de la marge de coupe ({pad}px) pour '{input_file.name}'")
 
     try:
-        from magick import get_image_dimensions
+        from from_clint_cheawood.magick import get_image_dimensions
         width, height = get_image_dimensions(input_file)
     except RuntimeError as e:
         print(f"ERREUR: {e}", file=sys.stderr)
@@ -342,62 +342,62 @@ def process_images(
 # Point d'entree
 # ---------------------------------------------------------------------------
 
-def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Genere un PDF de cartes pret a l'impression (MBPrint)."
-    )
-    parser.add_argument(
-        "--source-dir", required=True, type=Path,
-        help="Repertoire contenant les images originales.",
-    )
-    parser.add_argument(
-        "--output-dir", required=True, type=Path,
-        help="Repertoire de sortie pour les fichiers generes.",
-    )
-    parser.add_argument(
-        "--file-path", required=True, type=Path,
-        help="Fichier de configuration des plages de cartes (PREFIX.txt).",
-    )
-    parser.add_argument(
-        "--deck-file-path", required=True, type=Path,
-        help="Fichier de configuration du nombre d'exemplaires (PREFIX-Deck.txt).",
-    )
-    parser.add_argument(
-        "--dos-hero-template", required=True, type=Path,
-        help="Image du dos pour les cartes Heros.",
-    )
-    parser.add_argument(
-        "--dos-joueur-template", required=True, type=Path,
-        help="Image du dos pour les cartes Joueur.",
-    )
-    parser.add_argument(
-        "--dos-rencontre-template", required=True, type=Path,
-        help="Image du dos pour les cartes Rencontre.",
-    )
-    parser.add_argument(
-        "--source-pdf-dir", required=True, type=Path,
-        help="Repertoire contenant les images pour le PDF.",
-    )
+# def main() -> None:
+#     parser = argparse.ArgumentParser(
+#         description="Genere un PDF de cartes pret a l'impression (MBPrint)."
+#     )
+#     parser.add_argument(
+#         "--source-dir", required=True, type=Path,
+#         help="Repertoire contenant les images originales.",
+#     )
+#     parser.add_argument(
+#         "--output-dir", required=True, type=Path,
+#         help="Repertoire de sortie pour les fichiers generes.",
+#     )
+#     parser.add_argument(
+#         "--file-path", required=True, type=Path,
+#         help="Fichier de configuration des plages de cartes (PREFIX.txt).",
+#     )
+#     parser.add_argument(
+#         "--deck-file-path", required=True, type=Path,
+#         help="Fichier de configuration du nombre d'exemplaires (PREFIX-Deck.txt).",
+#     )
+#     parser.add_argument(
+#         "--dos-hero-template", required=True, type=Path,
+#         help="Image du dos pour les cartes Heros.",
+#     )
+#     parser.add_argument(
+#         "--dos-joueur-template", required=True, type=Path,
+#         help="Image du dos pour les cartes Joueur.",
+#     )
+#     parser.add_argument(
+#         "--dos-rencontre-template", required=True, type=Path,
+#         help="Image du dos pour les cartes Rencontre.",
+#     )
+#     parser.add_argument(
+#         "--source-pdf-dir", required=True, type=Path,
+#         help="Repertoire contenant les images pour le PDF.",
+#     )
 
-    args = parser.parse_args()
+#     args = parser.parse_args()
 
-    # Etape 1 : Generation des cartes et de leurs dos
-    print("=" * 60)
-    print("ETAPE 1 : Generation des cartes")
-    print("=" * 60)
+#     # Etape 1 : Generation des cartes et de leurs dos
+#     print("=" * 60)
+#     print("ETAPE 1 : Generation des cartes")
+#     print("=" * 60)
 
-    creation_heros(args.file_path, args.source_dir, args.dos_hero_template, args.output_dir)
-    creation_joueur(args.file_path, args.source_dir, args.dos_joueur_template, args.output_dir)
-    creation_deck_rencontre(
-        args.file_path, args.deck_file_path, args.source_dir,
-        args.dos_rencontre_template, args.output_dir,
-    )
-    creation_deck_quete(args.file_path, args.source_dir, args.output_dir)
+#     creation_heros(args.file_path, args.source_dir, args.dos_hero_template, args.output_dir)
+#     creation_joueur(args.file_path, args.source_dir, args.dos_joueur_template, args.output_dir)
+#     creation_deck_rencontre(
+#         args.file_path, args.deck_file_path, args.source_dir,
+#         args.dos_rencontre_template, args.output_dir,
+#     )
+#     creation_deck_quete(args.file_path, args.source_dir, args.output_dir)
 
-    # Etape 2 : Traitement bleed + generation PDF
-    print("=" * 60)
-    print("ETAPE 2 : Bleed et generation du PDF")
-    print("=" * 60)
+#     # Etape 2 : Traitement bleed + generation PDF
+#     print("=" * 60)
+#     print("ETAPE 2 : Bleed et generation du PDF")
+#     print("=" * 60)
 
-    process_images(args.source_dir, args.source_pdf_dir, args.output_dir)
+#     process_images(args.source_dir, args.source_pdf_dir, args.output_dir)
 

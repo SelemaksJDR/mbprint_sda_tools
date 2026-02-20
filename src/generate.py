@@ -9,6 +9,7 @@ import helper_files
 import json5
 import infos
 import pathlib
+from from_clint_cheawood import generepdf
 
 
 def get_backs(backs_object) -> dict:
@@ -85,3 +86,8 @@ if __name__ == '__main__':
         cards.extend(cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs))
     # génération des images
     cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, fix_config_object=fix_config_object, backs=backs)
+    # Generer le PDF
+    pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
+    pdf_folder.mkdir(parents=True, exist_ok=True)
+    pdf_output = pdf_folder / f"0_FINAL.pdf"
+    generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
