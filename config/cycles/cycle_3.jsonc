@@ -7,23 +7,471 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "Les Héritiers de Númenor": {
-        "heros": [
+        "héros": [
+            "HON001-Beregond.png",
+            "HON002-Boromir.png"
         ],
         "joueurs": [
-        ],
-        "contrats": [
+            "HON003-Messager à Cheval.png",
+            "HON004-Sentinelle de la Citadelle.png",
+            "HON005-Accord Mutuel.png",
+            "HON006-Richesses du Gondor.png",
+            "HON007-Défenseur du Rammas.png",
+            "HON008-Derrière des Murs Puissants.png",
+            "HON009-Lance de la Citadelle.png",
+            "HON010-Damrod.png",
+            "HON011-Feux d_Alarme.png",
+            "HON012-Une Paix Tendue.png",
+            "HON013-Sang de Numenor.png",
+            "HON014-Chasseur du Lamedon.png",
+            "HON015-Traqueur de l_Ithilien.png",
+            "HON016-Maître du Savoir.png",
+            "HON017-Piège des Rôdeurs.png",
+            "HON018-Émissaire de Pelargir.png"
         ],
         "rencontres": [
             {
-                "name": "",
-                "number_cards": 1,
+                "name": "Bagarre à Pelargir",
+                "number_cards": 15,
                 "cards": {
+                    "HON019-Parchemin d_Alcaron.png": 1,
+                    "HON020-Brute du Port.png": 5,
+                    "HON021-Le Poisson Sauteur.png": 1,
+                    "HON022-Quais de Pelargir.png": 2,
+                    "HON023-Entrepôt du Port.png": 2,
+                    "HON024-Dommages Collatéraux.png": 4
+                }
+            },
+            {
+                "name": "En Ithlilien",
+                "number_cards": 13,
+                "cards": {
+                    "HON025-Celador.png": 1,
+                    "HON026-Gardien de l_Ithilien.png": 2,
+                    "HON027-Compagnie de Suderons.png": 4,
+                    "HON028-Route de l_Ithilien.png": 2,
+                    "HON029-Cernés par les Wargs.png": 4
+                }
+            },
+            {
+                "name": "Le Siège de Cair Andros",
+                "number_cards": 13,
+                "cards": {
+                    "HON030-Orques Belliqueux.png": 3,
+                    "HON031-Bélier.png": 3,
+                    "HON032-Radeau de Siège.png": 2,
+                    "HON033-La Citadelle.png": 1,
+                    "HON034-Le Chemin d_Accès.png": 1,
+                    "HON035-Les Berges.png": 1,
+                    "HON036-Assaut Orque.png": 2
+                }
+            },
+            {
+                "name": "Rues du Gondor",
+                "number_cards": 11,
+                "cards": {
+                    "HON037-Pickpocket.png": 3,
+                    "HON038-Rue de la Ville.png": 3,
+                    "HON039-Place du Marché.png": 2,
+                    "HON040-Perdus en Ville.png": 1,
+                    "HON041-De Sérieux Ennuis.png": 2
+                }
+            },
+            {
+                "name": "Brigands",
+                "number_cards": 8,
+                "cards": {
+                    "HON042-Scélérat Avide.png": 3,
+                    "HON043-Bandit du Lossarnach.png": 2,
+                    "HON044-Assassin d_Umbar.png": 1,
+                    "HON045-Tapis dans l_Ombre.png": 2
+                }
+            },
+            {
+                "name": "Forêt Menaçante",
+                "number_cards": 8,
+                "cards": {
+                    "HON046-Sentier Abandonné.png": 3,
+                    "HON047-Clairière Reculée.png": 3,
+                    "HON048-Compagnon Perdu.png": 2
+                }
+            },
+            {
+                "name": "Créatures de la Forêt",
+                "number_cards": 8,
+                "cards": {
+                    "HON049-Araignée de Morgul.png": 3,
+                    "HON050-Chauves-souris des Forêts.png": 3,
+                    "HON051-Guetteur des Bois.png": 2
+                }
+            },
+            {
+                "name": "Suderons",
+                "number_cards": 8,
+                "cards": {
+                    "HON052-Mercenaires Suderons.png": 3,
+                    "HON053-Elite Haradrim.png": 2,
+                    "HON054-Mumak.png": 1,
+                    "HON055-Renforts Suderons.png": 2
+                }
+            },
+            {
+                "name": "Troupes d'Élite du Mordor",
+                "number_cards": 11,
+                "cards": {
+                    "HON056-Lieutenant du Mordor.png": 1,
+                    "HON057-Arbalétriers Orques.png": 3,
+                    "HON058-Avant-Garde Orque.png": 2,
+                    "HON059-Camp de Guerre Orque.png": 2,
+                    "HON060-La Malice du Maître.png": 2,
+                    "HON061-Le Pouvoir du Mordor.png": 1
+                }
+            },
+            {
+                "name": "Orques Ravageurs",
+                "number_cards": 8,
+                "cards": {
+                    "HON062-Vermines Orques.png": 3,
+                    "HON063-Incendiaire Orque.png": 3,
+                    "HON064-Fléau du Mordor.png": 2
                 }
             }
         ],
         "quêtes": [
+            "HON065A-Le Poisson Sauteur.png",
+            "HON065B-Le Poisson Sauteur.png",
+            "HON066A-Combats dans les Rues.png",
+            "HON066B-Combats dans les Rues.png",
+            "HON067A-Fuite sur les Quais.png",
+            "HON067B-Fuite sur les Quais.png",
+            "HON068A-Embuscade en Ithilien.png",
+            "HON068B-Embuscade en Ithilien.png",
+            "HON069A-Contre-Attaque des Suderons.png",
+            "HON069B-Contre-Attaque des Suderons.png",
+            "HON070A-Le Sentier Caché.png",
+            "HON070B-Le Sentier Caché.png",
+            "HON071A-En Vue de Cair Andros.png",
+            "HON071B-En Vue de Cair Andros.png",
+            "HON072A-La Défense.png",
+            "HON072B-La Défense.png",
+            "HON073A-Protéger les Berges.png",
+            "HON073B-Protéger les Berges.png",
+            "HON074A-L_Assaut du Chemin d_Accès.png",
+            "HON074B-L_Assaut du Chemin d_Accès.png",
+            "HON075A-L_Assaut de la Citadelle.png",
+            "HON075B-L_Assaut de la Citadelle.png",
+            "HON076A-La Dernière Bataille.png",
+            "HON076B-La Dernière Bataille.png"
         ],
         "flip_cards": {
+            "HON065A-Le Poisson Sauteur.png": "HON065B-Le Poisson Sauteur.png",
+            "HON066A-Combats dans les Rues.png": "HON066B-Combats dans les Rues.png",
+            "HON067A-Fuite sur les Quais.png": "HON067B-Fuite sur les Quais.png",
+            "HON068A-Embuscade en Ithilien.png": "HON068B-Embuscade en Ithilien.png",
+            "HON069A-Contre-Attaque des Suderons.png": "HON069B-Contre-Attaque des Suderons.png",
+            "HON070A-Le Sentier Caché.png": "HON070B-Le Sentier Caché.png",
+            "HON071A-En Vue de Cair Andros.png": "HON071B-En Vue de Cair Andros.png",
+            "HON072A-La Défense.png": "HON072B-La Défense.png",
+            "HON073A-Protéger les Berges.png": "HON073B-Protéger les Berges.png",
+            "HON074A-L_Assaut du Chemin d_Accès.png": "HON074B-L_Assaut du Chemin d_Accès.png",
+            "HON075A-L_Assaut de la Citadelle.png": "HON075B-L_Assaut de la Citadelle.png",
+            "HON076A-La Dernière Bataille.png": "HON076B-La Dernière Bataille.png"
+        }
+    },
+    "Les Craintes de l'Intendant": {
+        "héros": [
+            "ATS001-Hirluin le Beau.png"
+        ],
+        "joueurs": [
+            "ATS002-Guerrier du Lossarnach.png",
+            "ATS003-Regain de Forces.png",
+            "ATS004-Chevaliers au Cygne.png",
+            "ATS005-Bouclier Gondorien.png",
+            "ATS006-Escrimeur de l_Éthir.png",
+            "ATS007-Anneau de Barahir.png",
+            "ATS008-Berger des Anfalas.png",
+            "ATS009-Conseil de Mithrandir.png",
+            "ATS010-Une Bonne Récolte.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Craintes de l'Intendant",
+                "number_cards": 29,
+                "cards": {
+                    "ATS014-Dissident des Bas-Fonds.png": 5,
+                    "ATS015-Fille de Beruthiel.png": 1,
+                    "ATS016-La Main de Castamir.png": 1,
+                    "ATS017-Fléau de Telemnar.png": 1,
+                    "ATS018-Égouts.png": 3,
+                    "ATS019-Racines du Mindolluin.png": 1,
+                    "ATS020-Entrepôt.png": 2,
+                    "ATS021-Maisons des Morts.png": 1,
+                    "ATS022-La Quatrième Étoile.png": 1,
+                    "ATS023-Découverte Fâcheuse.png": 2,
+                    "ATS024-Un Poignard entre les Omoplates.png": 3,
+                    "ATS025-Fausse Piste.png": 2,
+                    "ATS026-Une Page d_Histoire.png": 1,
+                    "ATS027-Carte Secrète.png": 1,
+                    "ATS028-Un Prisonnier.png": 1,
+                    "ATS029-Alliance Contre Nature.png": 1,
+                    "ATS030-En Flammes.png": 1,
+                    "ATS031-Conseils Malveillants.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS011A-Conspiration.png",
+            "ATS011B-Conspiration.png",
+            "ATS012A-Le Grand dessein.png",
+            "ATS012B-Le Grand Dessein.png",
+            "ATS013A-La Confrontation.png",
+            "ATS013B-La Confrontation.png"
+        ],
+        "flip_cards": {
+            "ATS011A-Conspiration.png": "ATS011B-Conspiration.png",
+            "ATS012A-Le Grand dessein.png": "ATS012B-Le Grand Dessein.png",
+            "ATS013A-La Confrontation.png": "ATS013B-La Confrontation.png"
+        }
+    },
+    "La Forêt de Drúadan": {
+        "héros": [
+            "ATS032-Mirlonde.png"
+        ],
+        "joueurs": [
+            "ATS033-Forlong.png",
+            "ATS034-Parade Militaire.png",
+            "ATS035-Démonstration de Force.png",
+            "ATS036-Formation Militaire.png",
+            "ATS037-Réfuigié Sylvain.png",
+            "ATS038-Face à l_Ombre.png",
+            "ATS039-Capitaine de Port.png",
+            "ATS040-Mise en Garde.png",
+            "ATS041-Guetteur de la Tour Blanche.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Forêt de Drúadan",
+                "number_cards": 29,
+                "cards": {
+                    "ATS045-Drû-Buri-Drû.png": 1,
+                    "ATS046-Joueuse de Tambour Druadan.png": 3,
+                    "ATS047-Élite Druadan.png": 3,
+                    "ATS048-Chasseur Druadan.png": 4,
+                    "ATS049-Chapardeur Druadan.png": 3,
+                    "ATS050-Clairière Ancestrale.png": 1,
+                    "ATS051-Jardin des Poisons.png": 3,
+                    "ATS052-Clairière de la Purification.png": 3,
+                    "ATS053-Des Hommes dans l_Obscurité.png": 3,
+                    "ATS054-Des Étoiles dans le Ciel.png": 3,
+                    "ATS055-Des Feuilles sur les Arbres.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS042A-La Traque.png",
+            "ATS042B-La Traque.png",
+            "ATS043A-Une Fin Prématurée.png",
+            "ATS043B-Une Fin Prématurée.png",
+            "ATS044A-La Fuite.png",
+            "ATS044B-La Fuite.png"
+        ],
+        "flip_cards": {
+            "ATS042A-La Traque.png": "ATS042B-La Traque.png",
+            "ATS043A-Une Fin Prématurée.png": "ATS043B-Une Fin Prématurée.png",
+            "ATS044A-La Fuite.png": "ATS044B-La Fuite.png"
+        }
+    },
+    "Rencontre à Amon Dîn": {
+        "héros": [
+            "ATS056-Pippin.png"
+        ],
+        "joueurs": [
+            "ATS057-Denethor.png",
+            "ATS058-Seigneur du Morthond.png",
+            "ATS059-Livre d_Elcadar.png",
+            "ATS060-Discipline Gondorienne.png",
+            "ATS061-Lanternier de Mias Tirith.png",
+            "ATS062-Petite Cible.png",
+            "ATS063-Archer de l_Ithilien.png",
+            "ATS064-Fosse de l_Ithilien.png",
+            "ATS065-Sens Hobbit.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Rencontre à Amon Dîn",
+                "number_cards": 30,
+                "cards": {
+                    "ATS068-Villageois Sauvés.png": 1,
+                    "ATS069-Villageois Morts.png": 1,
+                    "ATS070-Seigneur Alcaron.png": 1,
+                    "ATS071-Ghulat.png": 1,
+                    "ATS072-Maraudeur Orque.png": 4,
+                    "ATS073-Ravageur Orque.png": 3,
+                    "ATS074-Aigle Affamé.png": 2,
+                    "ATS075-Grange Incendiée.png": 4,
+                    "ATS076-Hameau Gondorien.png": 4,
+                    "ATS077-Ferme Reculée.png": 3,
+                    "ATS078-Ferme Incendiée.png": 2,
+                    "ATS079-Pris au Piège.png": 2,
+                    "ATS080-Pris de Panique.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS066A-Sauvagerie des Orques.png",
+            "ATS066B-Sauvagerie des Orques.png",
+            "ATS067A-Protéger les Villageois.png",
+            "ATS067B-Protéger les Villageois.png"
+        ],
+        "flip_cards": {
+            "ATS066A-Sauvagerie des Orques.png": "ATS066B-Sauvagerie des Orques.png",
+            "ATS067A-Protéger les Villageois.png": "ATS067B-Protéger les Villageois.png"
+        }
+    },
+    "Assaut sur Osgiliath": {
+        "héros": [
+            "ATS081-Faramir.png"
+        ],
+        "joueurs": [
+            "ATS082-Épée du Morthond.png",
+            "ATS083-Hommes de l_Ouest.png",
+            "ATS084-Chevalier de Minas Tirith.png",
+            "ATS085-Feu Gondorien.png",
+            "ATS086-Charpentier de Marine de Pelargir.png",
+            "ATS087-Carte d_Earnil.png",
+            "ATS088-Arc de Rôdeur.png",
+            "ATS089-Patrouille Forestière.png",
+            "ATS090-Palantir.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Assaut sur Osgiliath",
+                "number_cards": 31,
+                "cards": {
+                    "ATS092-Lieutenant Uruk.png": 2,
+                    "ATS093-Soldat Uruk.png": 4,
+                    "ATS094-Phalange Suderonne.png": 3,
+                    "ATS095-Commandant Suderon.png": 2,
+                    "ATS096-Porte Ouest.png": 1,
+                    "ATS097-La Bibliothèque du Roi.png": 1,
+                    "ATS098-Vieux Port.png": 1,
+                    "ATS099-Le Vieux Pont.png": 1,
+                    "ATS100-Quartier Ouest.png": 2,
+                    "ATS101-Quartier Est.png": 2,
+                    "ATS102-Place en Ruine.png": 3,
+                    "ATS103-Tour en Ruine.png": 3,
+                    "ATS104-Déluge de Flèches.png": 2,
+                    "ATS105-Combats de Rue.png": 2,
+                    "ATS106-Contre-Attaque.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS091A-Reconquête de la Cité.png",
+            "ATS091B-Reconquête de la Cité.png"
+        ],
+        "flip_cards": {
+            "ATS091A-Reconquête de la Cité.png": "ATS091B-Reconquête de la Cité.png"
+        }
+    },
+    "Le Sang du Gondor": {
+        "héros": [
+            "ATS107-Caldara.png"
+        ],
+        "joueurs": [
+            "ATS108-Écuyer de la Citadelle.png",
+            "ATS109-Livre d_Atanator.png",
+            "ATS110-Guthlaf.png",
+            "ATS111-Le Coup de Marteau.png",
+            "ATS112-Emery.png",
+            "ATS113-Enfants de la Mer.png",
+            "ATS114-Anborn.png",
+            "ATS115-Pieux Empoisonnés.png",
+            "ATS116-Bien Équipé.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Sang du Gondor",
+                "number_cards": 30,
+                "cards": {
+                    "ATS119-Numénoréen Noir.png": 1,
+                    "ATS120-Tirailleur Orque.png": 4,
+                    "ATS121-Uruk Forcené.png": 3,
+                    "ATS122-Corneille Maléfique.png": 2,
+                    "ATS123-La Croisée des Chemins.png": 1,
+                    "ATS124-Route Sud.png": 1,
+                    "ATS125-Route Ouest.png": 1,
+                    "ATS126-Route Nord.png": 1,
+                    "ATS127-Route Est.png": 1,
+                    "ATS128-Les Bois Sombres.png": 4,
+                    "ATS129-En Embuscade.png": 4,
+                    "ATS130-En Vue du Mordor.png": 3,
+                    "ATS131-Escarmouche à la Croisée.png": 2,
+                    "ATS132-Faramir.png": 1,
+                    "ATS133-Seigneur Alcaron.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS117A-L_Embuscade.png",
+            "ATS117B-L_Embuscade.png",
+            "ATS118A-Capturés !.png",
+            "ATS118B-Capturés !.png"
+        ],
+        "flip_cards": {
+            "ATS117A-L_Embuscade.png": "ATS117B-L_Embuscade.png",
+            "ATS118A-Capturés !.png": "ATS118B-Capturés !.png"
+        }
+    },
+    "La Vallée de Morgul": {
+        "héros": [
+            "ATS134-Théoden.png"
+        ],
+        "joueurs": [
+            "ATS135-Capitaine de Pelargir.png",
+            "ATS136-Commandement Visionnaire.png",
+            "ATS137-Lance de la Marche.png",
+            "ATS138-En Avant, Eorlingas !.png",
+            "ATS139-Destrier de la Marche.png",
+            "ATS140-Lai de Nimrodel.png",
+            "ATS141-Prospecteur de l_Ered Nimrais.png",
+            "ATS142-Parchemin d_Isildur.png",
+            "ATS143-Cache Secrète.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Vallée de Morgul",
+                "number_cards": 29,
+                "cards": {
+                    "ATS147-A la Tour.png": 1,
+                    "ATS148-Garde du Corps de Morgul.png": 4,
+                    "ATS149-Sorcier de Morgul.png": 2,
+                    "ATS150-Pisteur de Morgul.png": 3,
+                    "ATS151-Murzag.png": 1,
+                    "ATS152-Seigneur Alcaron.png": 1,
+                    "ATS153-Nazgûl de Minas Morgul.png": 1,
+                    "ATS154-Route de Morgul.png": 3,
+                    "ATS155-Vallée de Morgul.png": 3,
+                    "ATS156-Le Pont Blanc.png": 1,
+                    "ATS157-Brouillard Impénétrable.png": 2,
+                    "ATS158-Malice Éternelle.png": 2,
+                    "ATS159-Animés par la Terreur.png": 3,
+                    "ATS160-En Vue de la Cité Morte.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ATS144A-L_Arrière-GArde.png",
+            "ATS144B-L_Arrière-Garde.png",
+            "ATS145A-La Trahison.png",
+            "ATS145B-La Trahison.png",
+            "ATS146A-Le Cavalier de Morgul.png",
+            "ATS146B-Le Cavalier de Morgul.png"
+        ],
+        "flip_cards": {
+            "ATS144A-L_Arrière-GArde.png": "ATS144B-L_Arrière-Garde.png",
+            "ATS145A-La Trahison.png": "ATS145B-La Trahison.png",
+            "ATS146A-Le Cavalier de Morgul.png": "ATS146B-Le Cavalier de Morgul.png"
         }
     }
 }
