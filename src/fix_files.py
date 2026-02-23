@@ -24,7 +24,7 @@ def fix_filenames(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_qui
             if is_quiet is False:
                 # Effectue l'action
                 if source.exists():
-                    source.replace(source.parent / target.name)
+                    source.rename(source.parent / target.name)
                 elif target.exists():
                     print(f"{source} a déjà été remplacé par {target}")
 
