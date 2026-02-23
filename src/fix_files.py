@@ -9,6 +9,27 @@ import json5
 import pathlib
 import shutil
 
+
+def fix_erratas(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_quiet: bool) -> None:
+    with open(fix_config_file, 'r') as file:
+        data = json5.load(file)
+        if "erratas" not in data:
+            print(f"L'élément erratas n'existe pas dans le fichier {fix_config_file}")
+            exit(1)
+        for element in data["erratas"]:
+            card_with_error: pathlib.Path = root_path / element
+            card_with_fix: pathlib.Path = root_path / data["erratas"][element]
+            print(f"Suffixage de {card_with_error} en {card_with_error.with_suffix(f".error{card_with_error.suffix}")}")
+            print(f"Corrige l'errata : {card_with_error} -> {card_with_fix}")
+            # Si il n'y a pas d'action à faire, continue
+            if is_quiet is False:
+                # Effectue l'action
+                if card_with_error.exists() and card_with_fix.exists():
+                    previous_name = card_with_error
+                    card_with_error.rename(card_with_error.with_suffix(f".error{card_with_error.suffix}"))
+                    shutil.copy2(card_with_fix, previous_name)
+
+
 def fix_filenames(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_quiet: bool) -> None:
     # Ouvre le fichier .jsonc
     with open(fix_config_file, 'r') as file:
@@ -27,6 +48,7 @@ def fix_filenames(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_qui
                     source.rename(source.parent / target.name)
                 elif target.exists():
                     print(f"{source} a déjà été remplacé par {target}")
+
 
 def copy_cycle_9_deluxe(root_path: pathlib.Path, fix_config_file: pathlib.Path, is_quiet: bool):
     with open(fix_config_file, 'r') as file:
@@ -64,5 +86,7 @@ if __name__ == '__main__':
 
     # Corrige les noms de fichier
     fix_filenames(root_path, config_path, is_quiet)
+    # Corrige les erratas
+    fix_erratas(root_path, config_path, is_quiet)
     # Copie les éléments du dossier Deluxe cycle 9 sans logo FFG dans cycle 9 (incl. A Shadow in the east)
     copy_cycle_9_deluxe(root_path, config_path, is_quiet)

@@ -126,7 +126,7 @@
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS17-Fléau de Telemnar.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS017-Fléau de Telemnar.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS18-Égouts.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS018-Égouts.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS19-Racines du Mindolluin.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS019-Racines du Mindolluin.png",
-        "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS1-HIrluin le Beau.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS001-HIrluin le Beau.png",
+        "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS1-HIrluin le Beau.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS001-Hirluin le Beau.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS20-Entrepôt.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS020-Entrepôt.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS21-Maisons des Morts.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS021-Maisons des Morts.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS22-La Quatrième Étoile.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS022-La Quatrième Étoile.png",
@@ -137,7 +137,7 @@
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS27-Carte Secrète.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS027-Carte Secrète.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS28-Un Prisonnier.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS028-Un Prisonnier.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS29-Alliance Contre Nature.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS029-Alliance Contre Nature.png",
-        "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS2-Guerier du Lossarnach.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS002-Guerier du Lossarnach.png",
+        "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS2-Guerier du Lossarnach.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS002-Guerrier du Lossarnach.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS30-En Flammes.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS030-En Flammes.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS31-Conseils Malveillants.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS031-Conseils Malveillants.png",
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS32-Mirlonde.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/ATS032-Mirlonde.png",
@@ -317,6 +317,9 @@
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacmbes.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacombes.png",
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082-L_Héritage du Mordor.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082B-L_Héritage du Mordor.png",
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gents-des-Chariots.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gens-des-Chariots.png"
+    },
+    "erratas": {
+        "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs-erraté.png"
     },
     "copy_cycle_9_deluxe": {
         "SDA-intégrale/Deluxe cycle 9 sans logo FFG/UOAE012.jpg": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE012-Poursuite des Orientaux.png",
