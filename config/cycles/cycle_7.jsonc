@@ -364,7 +364,7 @@
             }
         ],
         "quêtes": [
-            "HAR106A-Le Fort de la Croisée des Chemins.png",
+            "HAR105A-Le Fort de la Croisée des Chemins.png",
             "HAR106B-Le Fort de la Croisée des Chemins.png",
             "HAR107A-Bataille au Camp.png",
             "HAR107B-Bataille au Camp.png",
@@ -372,7 +372,7 @@
             "HAR108B-Vaincre le Serpent.png"
         ],
         "flip_cards": {
-            "HAR106A-Le Fort de la Croisée des Chemins.png": "HAR106B-Le Fort de la Croisée des Chemins.png",
+            "HAR105A-Le Fort de la Croisée des Chemins.png": "HAR106B-Le Fort de la Croisée des Chemins.png",
             "HAR107A-Bataille au Camp.png": "HAR107B-Bataille au Camp.png",
             "HAR108A-Vaincre le Serpent.png": "HAR108B-Vaincre le Serpent.png"
         }
@@ -409,7 +409,7 @@
                     "HAR128-Salle de Torture.png": 2,
                     "HAR129-Fait Prisonnier.png": 2,
                     "HAR130-Torturés par les Orques.png": 3,
-                    "HAR131-CApturés !.png": 1
+                    "HAR131-Capturés !.png": 1
                 }
             }
         ],
