@@ -7,23 +7,280 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "À la Poursuite de Gollum": {
-        "heros": [
+        "héros": [
+            "SOM001-Bilbon Sacquet.png"
         ],
         "joueurs": [
-        ],
-        "contrats": [
+            "SOM002-Marque des Dunedain.png",
+            "SOM003-Histoires au Coin du Feu.png",
+            "SOM004-Gardien Ailé.png",
+            "SOM005-Les Aigles Arrivent.png",
+            "SOM006-Dompteur de Chevaux de l_Ouestfolde.png",
+            "SOM007-Rassemblement des Rohirrim.png",
+            "SOM008-Ménestrel de Fondcombe.png",
+            "SOM009-Chemin de Grand-Pas.png",
+            "SOM010-Chant des Rois.png"
         ],
         "rencontres": [
             {
-                "name": "",
-                "number_cards": 1,
+                "name": "À la Poursuite de Gollum",
+                "number_cards": 29,
                 "cards": {
+                    "SOM014-Traces de Gollum.png": 4,
+                    "SOM015-Le Vieux Gué.png": 2,
+                    "SOM016-La Lisière de la Forêt Noire.png": 3,
+                    "SOM017-Rivière Ninglor.png": 2,
+                    "SOM018-La Rive Est.png": 2,
+                    "SOM019-La Rive Ouest.png": 2,
+                    "SOM020-Charognards de Gobelinville.png": 2,
+                    "SOM021-Chasseurs du Mordor.png": 5,
+                    "SOM022-Fausse Piste.png": 2,
+                    "SOM023-Inondation.png": 2,
+                    "SOM024-Racontars de Vielles Femmes.png": 3
                 }
             }
         ],
         "quêtes": [
+            "SOM011A-La Poursuite Commence.png",
+            "SOM011B-La Poursuite Commence.png",
+            "SOM012A-Une Nouvelle Terreur.png",
+            "SOM012B-Une Nouvelle Terreur.png",
+            "SOM013A-Sur la Piste.png",
+            "SOM013B-Sur la Piste.png"
         ],
         "flip_cards": {
+            "SOM011A-La Poursuite Commence.png": "SOM011B-La Poursuite Commence.png",
+            "SOM012A-Une Nouvelle Terreur.png": "SOM012B-Une Nouvelle Terreur.png",
+            "SOM013A-Sur la Piste.png": "SOM013B-Sur la Piste.png"
+        }
+    },
+    "Conflit au Carrock": {
+        "héros": [
+            "SOM025-Frodon Sacquet.png"
+        ],
+        "joueurs": [
+            "SOM026-Avertissement des Dunedain.png",
+            "SOM027-Un Second Petit Déjeuner.png",
+            "SOM028-Apiculteur Beornide.png",
+            "SOM029-Né en Altitude.png",
+            "SOM030-Eomund.png",
+            "SOM031-Je ne suis pas un Étranger.png",
+            "SOM032-Cartographe Longue-Barbe.png",
+            "SOM033-Un Tison Enflammé.png",
+            "SOM034-Chant de Sagesse.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Conflit au Carrock",
+                "number_cards": 30,
+                "cards": {
+                    "SOM037-Grimbeorn l_Ancien.png": 1,
+                    "SOM038-Louis.png": 1,
+                    "SOM039-Morris.png": 1,
+                    "SOM040-Stuart.png": 1,
+                    "SOM041-Rupert.png": 1,
+                    "SOM042-Serpent de Boue.png": 4,
+                    "SOM043-Le Carrock.png": 1,
+                    "SOM044-Grand Fleuve.png": 4,
+                    "SOM045-Pâturages à Abeilles.png": 3,
+                    "SOM046-Bosquet de Chênes.png": 3,
+                    "SOM047-Une Bête Effrayée.png": 3,
+                    "SOM048-Mis en Sac.png": 5,
+                    "SOM049-Lentement Rôti.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "SOM035A-Quête de Grimbeorn.png",
+            "SOM035B-Quête de Grimbeorn.png",
+            "SOM036A-Contre les Trolls.png",
+            "SOM036B-Contre les Trolls.png"
+        ],
+        "flip_cards": {
+            "SOM035A-Quête de Grimbeorn.png": "SOM035B-Quête de Grimbeorn.png",
+            "SOM036A-Contre les Trolls.png": "SOM036B-Contre les Trolls.png"
+        }
+    },
+    "Voyage à Rhosgobel": {
+        "héros": [
+            "SOM050-Prince Imrahil.png"
+        ],
+        "joueurs": [
+            "SOM051-Quête des Dunedain.png",
+            "SOM052-Cadeaux d_Adieu.png",
+            "SOM053-Landroval.png",
+            "SOM054-Vers l_Aire des Aigles.png",
+            "SOM055-Escorte d_Edoras.png",
+            "SOM056-Ancien Mathom.png",
+            "SOM057-Haldir de la Lorien.png",
+            "SOM058-Conflits Internes.png",
+            "SOM059-Radagast.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Voyage à Rhosgobel",
+                "number_cards": 29,
+                "cards": {
+                    "SOM063-Athelas.png": 4,
+                    "SOM064-Wilyador.png": 1,
+                    "SOM065-Rhosgobel.png": 1,
+                    "SOM066-Bosquet de la Forêt.png": 4,
+                    "SOM067-Épuisement.png": 4,
+                    "SOM068-Grouillement d_Insectes.png": 4,
+                    "SOM069-Blessures Purulentes.png": 2,
+                    "SOM070-Nuée de la Forêt Noire.png": 4,
+                    "SOM071-Chauves-Souris de la Forêt Noire.png": 5
+                }
+            }
+        ],
+        "quêtes": [
+            "SOM060A-L_Aigle Blessé.png",
+            "SOM060B-L_Aigle Blessé.png",
+            "SOM061A-A la Demande de Radagast.png",
+            "SOM061B-A la Demande de Radagast.png",
+            "SOM062A-Retour à Rhosgobel.png",
+            "SOM062B-Retour à Rhosgobel.png"
+        ],
+        "flip_cards": {
+            "SOM060A-L_Aigle Blessé.png": "SOM060B-L_Aigle Blessé.png",
+            "SOM061A-A la Demande de Radagast.png": "SOM061B-A la Demande de Radagast.png",
+            "SOM062A-Retour à Rhosgobel.png": "SOM062B-Retour à Rhosgobel.png"
+        }
+    },
+    "Les Collines d'Emyn Muil": {
+        "héros": [
+            "SOM072-Brand Fils de Bain.png"
+        ],
+        "joueurs": [
+            "SOM073-Touque à la Vue Perçante.png",
+            "SOM074-Arrière Garde.png",
+            "SOM075-Descendant de Thorondor.png",
+            "SOM076-Le Vol de Meneldor.png",
+            "SOM077-Monture du Riddermark.png",
+            "SOM078-Courir à la Ruine.png",
+            "SOM079-Gildor Inglorion.png",
+            "SOM080-Conseil de Gildor.png",
+            "SOM081-Chant du Voyage.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Collines d'Emyn Muil",
+                "number_cards": 31,
+                "cards": {
+                    "SOM083-Amon Hen.png": 1,
+                    "SOM084-Amon Lhaw.png": 1,
+                    "SOM085-Le Mur Est du Rohan.png": 2,
+                    "SOM086-L_Escalier du Nord.png": 2,
+                    "SOM087-Chutes du Rauros.png": 2,
+                    "SOM088-Les Rivages de Nen Hithoel.png": 3,
+                    "SOM089-La Grande Corniche.png": 3,
+                    "SOM090-Les Hautes Terres.png": 4,
+                    "SOM091-Gouffre Infranchissable.png": 4,
+                    "SOM092-Éboulement.png": 3,
+                    "SOM093-Gué Glissant.png": 3,
+                    "SOM094-Voleurs de Chevaux Orques.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "SOM082A-Les Collines d_Emyn Muil.png",
+            "SOM082B-Les Collines d_Emyn Muil.png"
+        ],
+        "flip_cards": {
+            "SOM082A-Les Collines d_Emyn Muil.png": "SOM082B-Les Collines d_Emyn Muil.png"
+        }
+    },
+    "Les Marais des Morts": {
+        "héros": [
+            "SOM095-Boromir.png"
+        ],
+        "joueurs": [
+            "SOM096-Observateur Dunedain.png",
+            "SOM097-Cache des Dunedain.png",
+            "SOM098-Vassal du Seigneur des Vents.png",
+            "SOM099-Chant Moqueur.png",
+            "SOM100-Elfhelm.png",
+            "SOM101-Nous ne Dormons pas.png",
+            "SOM102-Pisteur Sylvain.png",
+            "SOM103-Noeud Serré.png",
+            "SOM104-Chant de Bataille.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Marais des Morts",
+                "number_cards": 30,
+                "cards": {
+                    "SOM107-Gollum.png": 1,
+                    "SOM108-Traînée de Pâle Luminosité.png": 3,
+                    "SOM109-Crépuscule.png": 3,
+                    "SOM110-Dans la Brume.png": 3,
+                    "SOM111-Les Lueurs des Morts.png": 4,
+                    "SOM112-Ver Géant des Marais.png": 4,
+                    "SOM113-Tourbière Infranchissable.png": 4,
+                    "SOM114-Le Coeur des Marais.png": 4,
+                    "SOM115-Fange et Bourbe.png": 4
+                }
+            }
+        ],
+        "quêtes": [
+            "SOM105A-Dans les Marais.png",
+            "SOM105B-Dans les Marais.png",
+            "SOM106A-La Capture.png",
+            "SOM106B-La Capture.png"
+        ],
+        "flip_cards": {
+            "SOM105A-Dans les Marais.png": "SOM105B-Dans les Marais.png",
+            "SOM106A-La Capture.png": "SOM106B-La Capture.png"
+        }
+    },
+    "Retour à la Forêt Noire": {
+        "héros": [
+            "SOM116-Dain Pied d_Acier.png"
+        ],
+        "joueurs": [
+            "SOM117-Signe des Dunedain.png",
+            "SOM118-Que l_Aube vous Saisisse.png",
+            "SOM119-Aigles des Monts Brumeux.png",
+            "SOM120-Soutien des Aigles.png",
+            "SOM121-Voyageuse de la Route de l_Ouest.png",
+            "SOM122-Rapidité étonnante.png",
+            "SOM123-Messager de la Forêt Noire.png",
+            "SOM124-Rumeur de la Terre.png",
+            "SOM125-Une Ombre du Passé.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Retour à la Forêt Noire",
+                "number_cards": 28,
+                "cards": {
+                    "SOM130-Gollum.png": 1,
+                    "SOM131-Le Cercle des Araignées.png": 4,
+                    "SOM132-Cours d_Eau Asséché.png": 3,
+                    "SOM133-Clairière du Bûcheron.png": 3,
+                    "SOM134-Chemin des Elfes Sylvains.png": 3,
+                    "SOM135-Douleur de Gollum.png": 2,
+                    "SOM136-Morsure de Gollum.png": 2,
+                    "SOM137-Provisions Gâchées.png": 3,
+                    "SOM138-Chauves-Souris de la Forêt Noire.png": 4,
+                    "SOM139-Attercop, Attercop.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "SOM126A-A Travers la Forêt.png",
+            "SOM126B-A Travers la Forêt.png",
+            "SOM127A-Tentative d_évasion.png",
+            "SOM127B-Tentative d_évasion.png",
+            "SOM128A-Vers les Salles du Roi des Elfes.png",
+            "SOM128B-Vers les Salles du Roi des Elfes.png",
+            "SOM129A-Embuscade.png",
+            "SOM129B-Embuscade.png"
+        ],
+        "flip_cards": {
+            "SOM126A-A Travers la Forêt.png": "SOM126B-A Travers la Forêt.png",
+            "SOM127A-Tentative d_évasion.png": "SOM127B-Tentative d_évasion.png",
+            "SOM128A-Vers les Salles du Roi des Elfes.png": "SOM128B-Vers les Salles du Roi des Elfes.png",
+            "SOM129A-Embuscade.png": "SOM129B-Embuscade.png"
         }
     }
 }

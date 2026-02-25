@@ -18,7 +18,7 @@
     // Cycles de cartes à imprimer
     "cycles": [
         // "coreset",
-        // "cycle_1",
+        "cycle_1",
         "cycle_2",
         "cycle_3",
         "cycle_4",
