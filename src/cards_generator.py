@@ -9,15 +9,15 @@ import pathlib
 from from_clint_cheawood.generepdf import convert_image_to_bleed
 
 
-def add_card(card_front: dict, card_back: dict, root_pictures: pathlib.Path, occurrence: int, fix_object) -> dict:
+def add_card(card_front: dict, card_back: dict, occurrence: int, fix_object) -> dict:
     result: dict = {}
     # Face A
-    exists_a, card_face_a = helper_files.path_exists_with_fix(img_path=pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card_front)), fix_config_object=fix_object)
+    exists_a, card_face_a = helper_files.path_exists_with_fix(img_path=card_front, fix_config_object=fix_object)
     if exists_a is False:
         return False, {}
     result[infos.CARDS_FACE_A] = card_face_a
     # Face B
-    exists_b, card_face_b = helper_files.path_exists_with_fix(img_path=pathlib.Path.absolute(pathlib.Path.joinpath(root_pictures, card_back)), fix_config_object=fix_object)
+    exists_b, card_face_b = helper_files.path_exists_with_fix(img_path=card_back, fix_config_object=fix_object)
     if exists_b is False:
         return False, {}
     result[infos.CARDS_FACE_B] = card_face_b
@@ -26,7 +26,7 @@ def add_card(card_front: dict, card_back: dict, root_pictures: pathlib.Path, occ
     return True, result
 
 
-def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictures: pathlib.Path, fix_object: dict, back: pathlib.Path = None) -> list:
+def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, fix_object: dict, back: pathlib.Path = None) -> list:
     result: list = []
 
     facesA: list = [a for a in flip_cards]
@@ -41,12 +41,12 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
 
     for card, occurrence in cards.items() :
         result_card: dict = {}
-        if card in facesA:
+        if card.name in facesA:
             # cas particulier, une face A a plusieurs dos
-            if isinstance(flip_cards[card], list):
+            if isinstance(flip_cards[card.name], list):
                 multiple_result_card: list = []
-                for card_back in flip_cards[card]:
-                    is_ok, result_card_front = add_card(card_front=card, card_back=card_back, root_pictures=root_pictures, occurrence=occurrence, fix_object=fix_object)
+                for card_back in flip_cards[card.name]:
+                    is_ok, result_card_front = add_card(card_front=card, card_back=pathlib.Path(card.parent / card_back), occurrence=occurrence, fix_object=fix_object)
                     if is_ok is False:
                         continue
                     multiple_result_card.append(result_card_front)
@@ -54,10 +54,10 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
                 # On arrête le traitement ici
                 continue
             # Cas général, il n'y a qu'un seul dos
-            is_ok, result_card = add_card(card_front=card, card_back=flip_cards[card], root_pictures=root_pictures, occurrence=occurrence, fix_object=fix_object)
+            is_ok, result_card = add_card(card_front=card, card_back=pathlib.Path(card.parent / flip_cards[card.name]), occurrence=occurrence, fix_object=fix_object)
             if is_ok is False:
                 continue
-        elif card in facesB:
+        elif card.name in facesB:
             # Cette carte n'est pas générée car c'est juste une face B
             continue
         else:
@@ -65,7 +65,7 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
                 print(f"Aucun dos n'a été assigné à la carte {card}")
                 continue
             # Cas général, il n'y a qu'un seul dos
-            is_ok, result_card = add_card(card_front=card, card_back=back, root_pictures=root_pictures, occurrence=occurrence, fix_object=fix_object)
+            is_ok, result_card = add_card(card_front=card, card_back=back, occurrence=occurrence, fix_object=fix_object)
             if is_ok is False:
                 continue
         result.append(result_card)
@@ -73,8 +73,8 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, root_pictu
 
 
 def card_list_with_flip_cards(cards: list, flip_cards: dict, root_pictures: pathlib.Path, number_cards: int, fix_object: dict, back: pathlib.Path = None) -> list:
-    cards_dict: dict = {card: number for card, number in zip(cards, itertools.repeat(number_cards, len(cards)))}
-    return card_list_with_flip_cards_numbered(cards=cards_dict, flip_cards=flip_cards, root_pictures=root_pictures, back=back, fix_object=fix_object)
+    cards_dict: dict = {pathlib.Path.absolute(root_pictures / card): number for card, number in zip(cards, itertools.repeat(number_cards, len(cards)))}
+    return card_list_with_flip_cards_numbered(cards=cards_dict, flip_cards=flip_cards, back=back, fix_object=fix_object)
 
 
 def generate_heroes(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path, fix_object: dict) -> list:
@@ -99,8 +99,8 @@ def generate_encounters(extension: dict, flip_cards: dict, root_pictures: pathli
     for serie in encounter_series:
         encounter_name: str = serie[infos.ENCOUNTERS_SERIE_NAME]
         cards_number: int = serie[infos.ENCOUNTERS_SERIE_NUMBER_CARDS]
-        cards: dict = serie[infos.ENCOUNTERS_SERIE_CARDS]
-        cards_in_serie: list = card_list_with_flip_cards_numbered(cards=cards, flip_cards=flip_cards, root_pictures=root_pictures, back=back, fix_object=fix_object)
+        cards: dict =  {pathlib.Path.absolute(root_pictures / card): number for card, number in serie[infos.ENCOUNTERS_SERIE_CARDS].items()}
+        cards_in_serie: list = card_list_with_flip_cards_numbered(cards=cards, flip_cards=flip_cards, back=back, fix_object=fix_object)
         cards_in_serie_occ: int = 0
         for card in cards_in_serie:
             cards_in_serie_occ = cards_in_serie_occ + card[infos.CARDS_EXEMPLAIRES]

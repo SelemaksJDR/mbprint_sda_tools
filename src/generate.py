@@ -18,18 +18,18 @@ def get_backs(backs_object) -> dict:
     if "player_back" not in backs_object:
         print(f"L'élément player_back n'existe pas dans l'objet backs")
         exit(1)
-    result[infos.BACK_PLAYER] = backs_object["player_back"]
+    result[infos.BACK_PLAYER] = pathlib.Path(backs_object["player_back"]).absolute()
     # Dos des cartes rencontre
     if "encounter_back" not in backs_object:
         print(f"L'élément encounter_back n'existe pas dans l'objet backs")
         exit(1)
-    result[infos.BACK_ENCOUNTER] = backs_object["encounter_back"]
+    result[infos.BACK_ENCOUNTER] = pathlib.Path(backs_object["encounter_back"]).absolute()
     # Dos des cartes héros
     if "heros_back" not in backs_object:
         print(f"L'élément heros_back n'existe pas dans l'objet backs, utilisation du dos de carte joueurs dans ce cas")
-        result[infos.BACK_HEROS] = backs_object["player_back"]
+        result[infos.BACK_HEROS] = pathlib.Path(backs_object["player_back"]).absolute()
     else:
-        result[infos.BACK_HEROS] = backs_object["heros_back"]
+        result[infos.BACK_HEROS] = pathlib.Path(backs_object["heros_back"]).absolute()
     return result
 
 
@@ -73,7 +73,7 @@ if __name__ == '__main__':
         fix_config_object = json5.load(file)
         fix_config_object = fix_config_object["fix_filenames"]
     # Récupération du chemin vers le dossier de résultat
-    result_folder: pathlib.Path = pathlib.Path(workspace["result_folder"])
+    result_folder: pathlib.Path = pathlib.Path.absolute(pathlib.Path(workspace["result_folder"]))
     # Récupération du chemin vers les dos de carte
     backs_object = workspace["backs"]
     backs: dict = get_backs(backs_object)
@@ -81,8 +81,8 @@ if __name__ == '__main__':
     cycles_object = config_object["cycles"]
     cycles : list = get_cycles_from_workspace(config_folder, cycles_object)
     # génération des listes de cartes par cycle
-    cards: list = []
     encounters_infos: dict = {}
+    cards_in_cycle: dict = {}
     for cycle in cycles:
         cycle_data: dict = None
         with open(cycle, 'r') as file:
@@ -91,7 +91,7 @@ if __name__ == '__main__':
                 continue
         # Génère les cartes avec le bon dos et le bon nombre d'exemplaires
         cards_generated, encounters_generated = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs, fix_object=fix_config_object)
-        cards.extend(cards_generated)
+        cards_in_cycle[cycle_data[infos.CYCLE_NAME]] = (cards_generated)
         encounters_infos.update(encounters_generated)
     all_is_good: bool = True
     for encounter, status in encounters_infos.items():
