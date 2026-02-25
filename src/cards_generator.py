@@ -7,6 +7,8 @@ import infos
 import itertools
 import pathlib
 from from_clint_cheawood.generepdf import convert_image_to_bleed
+from from_clint_cheawood.magick import run_magick
+import sys
 
 
 def add_card(card_front: dict, card_back: dict, occurrence: int, fix_object) -> dict:
@@ -154,6 +156,23 @@ def get_and_create_bleed_img(card: pathlib.Path, cards_folder: pathlib.Path):
         return True, pathlib.Path.absolute(dest_img)
 
 
+def handle_rotation(img_path: pathlib.Path, face: str):
+    # Gère le cas d'une image pas rotatée
+    try:
+        from from_clint_cheawood.magick import get_image_dimensions
+        width, height = get_image_dimensions(img_path)
+        # La carte est en format paysage
+        if width > height:
+            if face == "A":
+                run_magick(str(img_path), "-rotate", "90", str(img_path))
+            elif face == "B":
+                run_magick(str(img_path), "-rotate", "-90", str(img_path))
+
+    except RuntimeError as e:
+        print(f"ERREUR: {e}", file=sys.stderr)
+        return None
+
+
 def generate_images(cards: list, result_folder: pathlib.Path, backs) -> list:
     cards_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("cards"))
     cards_folder.mkdir(parents=True, exist_ok=True)
@@ -170,13 +189,17 @@ def generate_images(cards: list, result_folder: pathlib.Path, backs) -> list:
 
     for card in cards:
         # Récupère les images
+        # FACE A
         front_exists, front_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_A], cards_folder=cards_folder)
         if front_exists is False:
             continue
+        handle_rotation(front_img, "A")
         if card[infos.CARDS_FACE_B] not in backs_with_bleed.keys():
+            # FACE B
             back_exists, back_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_B], cards_folder=cards_folder)
             if back_exists is False:
                 continue
+            handle_rotation(back_img, "B")
         else:
             back_img = backs_with_bleed[card[infos.CARDS_FACE_B]]
 
