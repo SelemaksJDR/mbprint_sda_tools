@@ -7,23 +7,469 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "Le Royaume Perdu": {
-        "heros": [
+        "héros": [
+            "LRP001-Aragorn.png",
+            "LRP002-Halbarad.png"
         ],
         "joueurs": [
-        ],
-        "contrats": [
+            "LRP003-Guetteur des Collines Venteuses.png",
+            "LRP004-Chasseur Dunedain.png",
+            "LRP005-Sentinelle du Gué de Sarn.png",
+            "LRP006-Gardien d_Annuminas.png",
+            "LRP007-Appel des Rôdeurs.png",
+            "LRP008-Chasseurs Infatigables.png",
+            "LRP009-Pisteurs Chevronnés.png",
+            "LRP010-Héritier de Valandil.png",
+            "LRP011-Athelas.png",
+            "LRP012-Veille Secrète.png",
+            "LRP013-Broche Étoilée.png",
+            "LRP014-Recueillir des Informations.png",
+            "LRP015-Rôdeur du Nord.png"
         ],
         "rencontres": [
             {
-                "name": "",
+                "name": "Intrus au Bois de Chet",
+                "number_cards": 18,
+                "cards": {
+                    "LRP017-Groupe de Guerriers Orques.png": 3,
+                    "LRP018-Bois de Chet.png": 3,
+                    "LRP019-Orée du Pays de Bree.png": 2,
+                    "LRP020-Ferme Isolée.png": 3,
+                    "LRP021-Assaut Soudain.png": 2,
+                    "LRP022-Vitesse Surprenante.png": 3,
+                    "LRP023-Arrière-Garde Orque.png": 1,
+                    "LRP024-Sauver Iarion.png": 1
+                }
+            },
+            {
+                "name": "Les Collines Venteuses",
+                "number_cards": 21,
+                "cards": {
+                    "LRP025-Orque Acculé.png": 5,
+                    "LRP026-Amon Forn.png": 1,
+                    "LRP027-Sommet Érodé.png": 3,
+                    "LRP028-Crête Exposée.png": 3,
+                    "LRP029-Vallée Abritée.png": 2,
+                    "LRP030-Campement Orque Dissimulé.png": 3,
+                    "LRP031-Tempête de Glace.png": 2,
+                    "LRP032-Trouver un Abri.png": 1,
+                    "LRP071-Traquer les Orques.png": 1,
+                    "LRP072-Contre-Attaque Brutale.png": 1
+                }
+            },
+            {
+                "name": "La Chaussée des Morts",
+                "number_cards": 24,
+                "cards": {
+                    "LRP033-Thaurdir.png": 1,
+                    "LRP034-Damné de Thaurdir.png": 3,
+                    "LRP035-Ombre Funeste.png": 4,
+                    "LRP036-Remparts Brisés.png": 3,
+                    "LRP037-Tombes de Norchâteau.png": 2,
+                    "LRP038-Place de Fornost.png": 3,
+                    "LRP039-Donjon Hanté.png": 3,
+                    "LRP040-Porte des Morts.png": 2,
+                    "LRP041-Brouillard Surnaturel.png": 2,
+                    "LRP042-Le Monde des Ombres.png": 1
+                }
+            },
+            {
+                "name": "Iarion",
                 "number_cards": 1,
                 "cards": {
+                    "LRP016-Iarion.png": 1
+                }
+            },
+            {
+                "name": "Orques d'Angmar",
+                "number_cards": 9,
+                "cards": {
+                    "LRP043-Orque d_Angmar.png": 3,
+                    "LRP044-Maraudeur d_Angmar.png": 3,
+                    "LRP045-Capitaine d_Angmar.png": 2,
+                    "LRP046-Embuscade Orque.png": 1
+                }
+            },
+            {
+                "name": "Pays Sauvage d'Eriador",
+                "number_cards": 10,
+                "cards": {
+                    "LRP047-Région Accidentée.png": 3,
+                    "LRP048-Collines Voilées.png": 2,
+                    "LRP049-Parer au plus Pressé.png": 2,
+                    "LRP050-Le Poids des Responsabilités.png": 2,
+                    "LRP051-Perdus en Pleine Nature.png": 1
+                }
+            },
+            {
+                "name": "Mauvais Temps",
+                "number_cards": 9,
+                "cards": {
+                    "LRP052-Vent Mordant.png": 3,
+                    "LRP053-Rafale Givrante.png": 2,
+                    "LRP054-Froid d_Angmar.png": 3,
+                    "LRP055-Monter le Camp.png": 1
+                }
+            },
+            {
+                "name": "Ruines de l'Arnor",
+                "number_cards": 8,
+                "cards": {
+                    "LRP056-Ruines de l_Arnor.png": 3,
+                    "LRP057-Chaussée Ancienne.png": 2,
+                    "LRP058-Découverte Tragique.png": 2,
+                    "LRP059-Fouiller les Ruines.png": 1
+                }
+            },
+            {
+                "name": "Mort Maudit",
+                "number_cards": 10,
+                "cards": {
+                    "LRP060-Seigneur Mort.png": 2,
+                    "LRP061-Mort Maudit.png": 5,
+                    "LRP062-Mal sans Repos.png": 2,
+                    "LRP063-Sceller le Tombeau.png": 1
+                }
+            },
+            {
+                "name": "Magie Noire",
+                "number_cards": 9,
+                "cards": {
+                    "LRP064-Terreur du Nord.png": 3,
+                    "LRP065-Magie Noire.png": 2,
+                    "LRP066-Puissante Malédiction.png": 3,
+                    "LRP067-La Puissance d_Angmar.png": 1
                 }
             }
         ],
         "quêtes": [
+            "LRP068A-Arrêter le Groupe de Guerriers.png",
+            "LRP068B-Arrêter le Groupe de Guerriers.png",
+            "LRP069A-Dispersés dans les Collines.png",
+            "LRP069B-Dispersés dans les Collines.png",
+            "LRP070A-Animaux Acculés.png",
+            "LRP070B-Animaux Acculés.png",
+            "LRP073A-Les Ombres d_Angmar.png",
+            "LRP073B-Les Ombres d_Angmar.png",
+            "LRP074A-Un Spectre Funeste.png",
+            "LRP074B-Un Spectre Funeste.png"
         ],
         "flip_cards": {
+            "LRP071-Traquer les Orques.png": "LRP072-Contre-Attaque Brutale.png",
+            "LRP068A-Arrêter le Groupe de Guerriers.png": "LRP068B-Arrêter le Groupe de Guerriers.png",
+            "LRP069A-Dispersés dans les Collines.png": "LRP069B-Dispersés dans les Collines.png",
+            "LRP070A-Animaux Acculés.png": "LRP070B-Animaux Acculés.png",
+            "LRP073A-Les Ombres d_Angmar.png": "LRP073B-Les Ombres d_Angmar.png",
+            "LRP074A-Un Spectre Funeste.png": "LRP074B-Un Spectre Funeste.png"
+        }
+    },
+    "Les Désolations d'Eriador": {
+        "héros": [
+            "ANG001-Merry.png"
+        ],
+        "joueurs": [
+            "ANG002-Ingold.png",
+            "ANG003-Cri de Ralliement.png",
+            "ANG004-Garde d_Honneur.png",
+            "ANG005-Casque aux Ailes de Corbeau.png",
+            "ANG006-Brandebouc Curieux.png",
+            "ANG007-Poney de Hobbit.png",
+            "ANG008-Rôdeuse de la Route de l_Est.png",
+            "ANG009-En Exploration.png",
+            "ANG010-Rôdeur du Cardolan.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Les Désolations d'Eriador",
+                "number_cards": 29,
+                "cards": {
+                    "ANG011-Lever du Jour.png": 1,
+                    "ANG012-Nuit Tombante.png": 1,
+                    "ANG016-Amarthiul.png": 1,
+                    "ANG017-Chef de Meute.png": 1,
+                    "ANG018-Warg du Nord.png": 4,
+                    "ANG019-Warg Sanguinaire.png": 2,
+                    "ANG020-Meute en Chasse.png": 2,
+                    "ANG021-Warg Blanc.png": 3,
+                    "ANG022-Loup d_Angmar.png": 3,
+                    "ANG023-Désolations d_Eriador.png": 2,
+                    "ANG024-Antre du Warg.png": 2,
+                    "ANG025-Hauts du Nord.png": 3,
+                    "ANG026-Obscurité Grandissante.png": 2,
+                    "ANG027-Loups Prédateurs.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG013A-Par-Delà les Désolations.png",
+            "ANG013B-Par-Delà les Désolations.png",
+            "ANG014A-Hurlements dans la Nuit.png",
+            "ANG014B-Hurlements dans la Nuit.png",
+            "ANG015A-Affronter la Meute.png",
+            "ANG015B-Affronter la Meute.png"
+        ],
+        "flip_cards": {
+            "ANG011-Lever du Jour.png": "ANG012-Nuit Tombante.png",
+            "ANG013A-Par-Delà les Désolations.png": "ANG013B-Par-Delà les Désolations.png",
+            "ANG014A-Hurlements dans la Nuit.png": "ANG014B-Hurlements dans la Nuit.png",
+            "ANG015A-Affronter la Meute.png": "ANG015B-Affronter la Meute.png"
+        }
+    },
+    "Fuite du Mont Gram": {
+        "héros": [
+            "ANG028-Rossiel.png"
+        ],
+        "joueurs": [
+            "ANG029-Vétéran d_Osgiliath.png",
+            "ANG030-Descendants des Rois.png",
+            "ANG031-Guerrier de Derunant.png",
+            "ANG032-Grondant et Trompetant.png",
+            "ANG033-Joailler Elfe.png",
+            "ANG034-Demi-Tour.png",
+            "ANG035-Ne Laisser Aucune Trace.png",
+            "ANG036-Étoiles Lointaines.png",
+            "ANG037-Regard Pénétrant.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Fuite du Mont Gram",
+                "number_cards": 26,
+                "cards": {
+                    "ANG041-Geôlier Gornakh.png": 1,
+                    "ANG042-Porte Sud.png": 1,
+                    "ANG043-Tortionnaire Cruel.png": 2,
+                    "ANG044-Garde des Cachots.png": 3,
+                    "ANG045-Bourreau Gobelin.png": 2,
+                    "ANG046-Cachot.png": 4,
+                    "ANG047-Salle de Garde.png": 2,
+                    "ANG048-Tunnel du Mont Gram.png": 2,
+                    "ANG049-Sonnez l_alarme !.png": 2,
+                    "ANG050-Faible et Fatigué.png": 2,
+                    "ANG051-Prisonniers de Gornakh.png": 2,
+                    "ANG052-Interrogatoire.png": 2,
+                    "ANG053-Arrêtez les Bourreaux !.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG038A-Sauvetage Inattendu.png",
+            "ANG038B-Sauvetage Inattendu.png",
+            "ANG039A-Cachots de Gornakh.png",
+            "ANG039B-Cachots de Gornakh.png",
+            "ANG040A-Évasion du Mont Gram.png",
+            "ANG040B-Évasion du Mont Gram.png"
+        ],
+        "flip_cards": {
+            "ANG038A-Sauvetage Inattendu.png": "ANG038B-Sauvetage Inattendu.png",
+            "ANG039A-Cachots de Gornakh.png": "ANG039B-Cachots de Gornakh.png",
+            "ANG040A-Évasion du Mont Gram.png": "ANG040B-Évasion du Mont Gram.png"
+        }
+    },
+    "La Traversée des Landes d'Etten": {
+        "héros": [
+            "ANG054-Dori.png"
+        ],
+        "joueurs": [
+            "ANG055-Réserves de Rôdeur.png",
+            "ANG056-Message des Dunedain.png",
+            "ANG057-Sentinelle Longue-Barbe.png",
+            "ANG058-Retarder l_Ennemi.png",
+            "ANG059-Destrier d_Imladris.png",
+            "ANG060-Beau et Périlleux.png",
+            "ANG061-Protecteur de la Salle du Jaillissement.png",
+            "ANG062-Nul n_en Ressortira.png",
+            "ANG063-Espoir Ranimé.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Traversée des Landes d'Etten",
+                "number_cards": 29,
+                "cards": {
+                    "ANG067-Amarthiul.png": 1,
+                    "ANG068-Caverne Reculée.png": 1,
+                    "ANG069-La Fontgrise.png": 1,
+                    "ANG070-Camp Abandonné.png": 1,
+                    "ANG071-Boqueteau.png": 1,
+                    "ANG072-Rejeton Troll Féroce.png": 4,
+                    "ANG073-Géant des Plateaux Froids.png": 2,
+                    "ANG074-Troll des Montagnes Cruel.png": 2,
+                    "ANG075-Troll des Collines Impitoyable.png": 2,
+                    "ANG076-Gobelin Poursuivant.png": 2,
+                    "ANG077-Hauteurs des Trolls.png": 2,
+                    "ANG078-Lande Stérile.png": 2,
+                    "ANG079-Fléau d_Arador.png": 2,
+                    "ANG080-Pas de Répit.png": 3,
+                    "ANG081-En Douce.png": 1,
+                    "ANG082-A la Recherche de Nourriture.png": 1,
+                    "ANG083-En Quête de Provisions.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG064A-Dans les Landes d_Etten.png",
+            "ANG064B-Dans les Landes d_Etten.png",
+            "ANG065A-Un Voyage Pénible.png",
+            "ANG065B-Un Voyage Pénible.png",
+            "ANG066A-La Fin du Voyage.png",
+            "ANG066B-La Fin du Voyage.png"
+        ],
+        "flip_cards": {
+            "ANG064A-Dans les Landes d_Etten.png": "ANG064B-Dans les Landes d_Etten.png",
+            "ANG065A-Un Voyage Pénible.png": "ANG065B-Un Voyage Pénible.png",
+            "ANG066A-La Fin du Voyage.png": "ANG066B-La Fin du Voyage.png"
+        }
+    },
+    "La Perfidie du Rhudaur": {
+        "héros": [
+            "ANG084-Erestor.png"
+        ],
+        "joueurs": [
+            "ANG085-Renforts.png",
+            "ANG086-Appel à l_aide.png",
+            "ANG087-Lance Elfique.png",
+            "ANG088-Sonner du Cor.png",
+            "ANG089-Tisseuse des Galadhrim.png",
+            "ANG090-Harpe d_Argent.png",
+            "ANG091-Galdor des Havres.png",
+            "ANG092-La Porte est Fermée !.png",
+            "ANG093-Ami des Elfes.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Perfidie du Rhudaur",
+                "number_cards": 30,
+                "cards": {
+                    "ANG096-Amarthiul.png": 1,
+                    "ANG097-La Grande Salle.png": 1,
+                    "ANG098-Thaurdir.png": 1,
+                    "ANG099-Être du Rhudaur.png": 2,
+                    "ANG100-Être Perfide.png": 3,
+                    "ANG101-Descente Interdite.png": 2,
+                    "ANG102-Lieu Surnaturel.png": 2,
+                    "ANG103-Ruines Fantomatiques.png": 2,
+                    "ANG104-Vestiges Décrépits.png": 2,
+                    "ANG105-Des Siècles de Chagrin.png": 2,
+                    "ANG106-Malédiction des Ans.png": 3,
+                    "ANG107-Pacte Maléfique.png": 3,
+                    "ANG108-Brouillard Envoûtant.png": 3,
+                    "ANG109-Calmer les Esprits.png": 1,
+                    "ANG110-Marque de Daechanar.png": 1,
+                    "ANG111-Inspecter les Décombres.png": 1,
+                    "ANG112-Bijou d_Iarchon.png": 1,
+                    "ANG113-Déchiffrer des Textes Anciens.png": 1,
+                    "ANG114-Ordres d_Angmar.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG094A-Secrets du Rhudaur.png",
+            "ANG094B-Secrets du Rhudaur.png",
+            "ANG095A-La Traque de Thaurdir.png",
+            "ANG095B-La Traque de Thaurdir.png"
+        ],
+        "flip_cards": {
+            "ANG109-Calmer les Esprits.png": "ANG110-Marque de Daechanar.png",
+            "ANG111-Inspecter les Décombres.png": "ANG112-Bijou d_Iarchon.png",
+            "ANG113-Déchiffrer des Textes Anciens.png": "ANG114-Ordres d_Angmar.png",
+            "ANG094A-Secrets du Rhudaur.png": "ANG094B-Secrets du Rhudaur.png",
+            "ANG095A-La Traque de Thaurdir.png": "ANG095B-La Traque de Thaurdir.png"
+        }
+    },
+    "La Bataille de Carn Dûm": {
+        "héros": [
+            "ANG115-Amarthiul.png"
+        ],
+        "joueurs": [
+            "ANG116-Gardien de l_Arnor.png",
+            "ANG117-Destin Suspendu.png",
+            "ANG118-Osdehétu.png",
+            "ANG119-Tenez Bon !.png",
+            "ANG120-Lindir.png",
+            "ANG121-Seigneurs de l_Eldar.png",
+            "ANG122-La Longue Défaite.png",
+            "ANG123-Ouïe Fine.png",
+            "ANG124-Faveur du Valar.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Bataille de Carn Dûm",
+                "number_cards": 30,
+                "cards": {
+                    "ANG127-Thaurdir.png": 1,
+                    "ANG128-Thaurdir.png": 1,
+                    "ANG129-Garnison de Carn Dum.png": 4,
+                    "ANG130-Grogneurs Orques.png": 4,
+                    "ANG131-Loup-Garou d_Angmar.png": 2,
+                    "ANG132-Champ de Bataille Maudit.png": 3,
+                    "ANG133-Montagnes d_Angmar.png": 2,
+                    "ANG134-Désolation de Carn Dum.png": 3,
+                    "ANG135-Remparts de la Forteresse.png": 3,
+                    "ANG136-Le Ciel s_Assombrit.png": 2,
+                    "ANG137-Affliction Abjecte.png": 3,
+                    "ANG138-Volonté de Daechanar.png": 2,
+                    "ANG139-Charge Impétueuse.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG125A-Les Griffes de Carn Dum.png",
+            "ANG125B-Les Griffes de Carn Dum.png",
+            "ANG126A-Apogée du Solstice.png",
+            "ANG126B-Apogée du Solstice.png"
+        ],
+        "flip_cards": {
+            "ANG127-Thaurdir.png": "ANG128-Thaurdir.png",
+            "ANG125A-Les Griffes de Carn Dum.png": "ANG125B-Les Griffes de Carn Dum.png",
+            "ANG126A-Apogée du Solstice.png": "ANG126B-Apogée du Solstice.png"
+        }
+    },
+    "Le Royaume de l'Effroi": {
+        "héros": [
+            "ANG140-Arwen Undomiel.png"
+        ],
+        "joueurs": [
+            "ANG141-Éothain.png",
+            "ANG142-Épée de Numenor.png",
+            "ANG143-Archer de Fornost.png",
+            "ANG144-L_Heure du Courroux.png",
+            "ANG145-Lumière Elfique.png",
+            "ANG146-Histoire de Tinuviel.png",
+            "ANG147-Guérisseuse des Galadhrim.png",
+            "ANG148-Manteau Crotté.png",
+            "ANG149-Thane de l_Épée.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Royaume de l'Effroi",
+                "number_cards": 29,
+                "cards": {
+                    "ANG153-Daechanar.png": 1,
+                    "ANG154-Autel du Solstice d_Hiver.png": 1,
+                    "ANG155-Dwimmerlaik.png": 3,
+                    "ANG156-Sorcière d_Angmar.png": 3,
+                    "ANG157-Spectre de Carn Dum.png": 2,
+                    "ANG158-Cachot Sinistre.png": 3,
+                    "ANG159-Tombes de Carn Dum.png": 3,
+                    "ANG160-Pièces Sombres.png": 2,
+                    "ANG161-Crypte Impie.png": 3,
+                    "ANG162-Possession.png": 2,
+                    "ANG163-Peur Innommable.png": 2,
+                    "ANG164-Mort et Calamité.png": 4
+                }
+            }
+        ],
+        "quêtes": [
+            "ANG150A-Les Catacombes de Carn Dum.png",
+            "ANG150B-Les Catacombes de Carn Dum.png",
+            "ANG151A-Le Réveil d_Angmar.png",
+            "ANG151B-Le Réveil d_Angmar.png",
+            "ANG152A-La Chute de Daechanar.png",
+            "ANG152B-La Chute de Daechanar.png"
+        ],
+        "flip_cards": {
+            "ANG150A-Les Catacombes de Carn Dum.png": "ANG150B-Les Catacombes de Carn Dum.png",
+            "ANG151A-Le Réveil d_Angmar.png": "ANG151B-Le Réveil d_Angmar.png",
+            "ANG152A-La Chute de Daechanar.png": "ANG152B-La Chute de Daechanar.png"
         }
     }
 }
