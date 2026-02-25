@@ -115,7 +115,8 @@ if __name__ == '__main__':
 
     if validate_only is False:
         # Supprime le dossier de résultat
-        shutil.rmtree(result_folder)
+        if result_folder.exists():
+            shutil.rmtree(result_folder)
         # Génère les cartes de chaque cycle
         for cycle_name, cards in cards_in_cycle.items():
             generate_cycle_pdf(cycle_name, cards, result_folder)
