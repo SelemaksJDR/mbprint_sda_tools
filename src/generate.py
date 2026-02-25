@@ -10,6 +10,7 @@ import json5
 import infos
 import pathlib
 from from_clint_cheawood import generepdf
+import shutil
 
 
 def get_backs(backs_object) -> dict:
@@ -39,6 +40,17 @@ def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> lis
         # Création du chemin vers le cycle
         result.append(pathlib.Path.joinpath(config_folder, f"cycles/{element}.jsonc"))
     return result
+
+
+def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path) -> None:
+    print(f"========== Génération du cycle {cycle_name} ==========")
+    # génération des images
+    cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
+    # Generer le PDF
+    pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
+    pdf_folder.mkdir(parents=True, exist_ok=True)
+    pdf_output = pdf_folder / f"{cycle_name}.pdf"
+    generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
 
 
 if __name__ == '__main__':
@@ -102,10 +114,8 @@ if __name__ == '__main__':
         print(f"[OK] Toutes les séries sont correctement configurées")
 
     if validate_only is False:
-        # génération des images
-        cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
-        # Generer le PDF
-        pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
-        pdf_folder.mkdir(parents=True, exist_ok=True)
-        pdf_output = pdf_folder / f"0_FINAL.pdf"
-        generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
+        # Supprime le dossier de résultat
+        shutil.rmtree(result_folder)
+        # Génère les cartes de chaque cycle
+        for cycle_name, cards in cards_in_cycle.items():
+            generate_cycle_pdf(cycle_name, cards, result_folder)
