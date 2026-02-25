@@ -105,6 +105,9 @@ if __name__ == '__main__':
         cards_generated, encounters_generated = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs, fix_object=fix_config_object)
         cards_in_cycle[cycle_data[infos.CYCLE_NAME]] = (cards_generated)
         encounters_infos.update(encounters_generated)
+    print("================================")
+    print("========== CONCLUSION ==========")
+    print("================================")
     all_is_good: bool = True
     for encounter, status in encounters_infos.items():
         if status is False:
