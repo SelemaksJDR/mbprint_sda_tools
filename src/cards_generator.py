@@ -94,6 +94,12 @@ def generate_contracts(extension: dict, flip_cards: dict, root_pictures: pathlib
     return result
 
 
+def generate_specials(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path, fix_object: dict) -> list:
+    cards: dict =  {pathlib.Path.absolute(root_pictures / card): number for card, number in extension[infos.EXTENSION_SPECIALS].items()}
+    result: list = card_list_with_flip_cards_numbered(cards=cards, flip_cards=flip_cards, back=back, fix_object=fix_object)
+    return result
+
+
 def generate_encounters(extension: dict, flip_cards: dict, root_pictures: pathlib.Path, back: pathlib.Path, fix_object: dict) -> list | dict:
     result_cards: list = []
     result_encounters: dict = {}
@@ -137,6 +143,9 @@ def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict, f
         result.extend(heros_cards)
         player_cards = generate_players(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER], fix_object=fix_object)
         result.extend(player_cards)
+        if infos.EXTENSION_SPECIALS in extension_data:
+            specials_cards = generate_specials(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER], fix_object=fix_object)
+            result.extend(specials_cards)
         if infos.EXTENSION_CONTRACTS in extension_data:
             contract_cards = generate_contracts(extension=extension_data, flip_cards=flip_cards, root_pictures=pictures_path, back=backs[infos.BACK_PLAYER], fix_object=fix_object)
             result.extend(contract_cards)
