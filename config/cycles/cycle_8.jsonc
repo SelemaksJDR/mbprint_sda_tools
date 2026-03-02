@@ -7,23 +7,533 @@
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
     "Les Terres Sauvages du Rhovanion": {
-        "heros": [
+        "héros": [
+            "TSR001-Brand Fils de Bain.png",
+            "TSR002-Bard Fils de Brand.png"
         ],
         "joueurs": [
-        ],
-        "contrats": [
+            "TSR003-Sentinelle de la Rivière Rouge.png",
+            "TSR004-Guetteur du Royaume du Nord.png",
+            "TSR005-Guerrier de Dale.png",
+            "TSR006-Marchand du Long Lac.png",
+            "TSR007-Haubert.png",
+            "TSR008-Roi de Dale.png",
+            "TSR009-Arc d_If.png",
+            "TSR010-Carte du Rhovanion.png",
+            "TSR011-Collier de Girion.png",
+            "TSR012-Trafic de Dale.png",
+            "TSR013-Aux Armes !.png",
+            "TSR014-Vaillance du Nord.png",
+            "TSR015-Troc.png"
         ],
         "rencontres": [
             {
-                "name": "",
-                "number_cards": 1,
+                "name": "La Remontée de l'Anduin",
+                "number_cards": 10, // 11 cartes numérotées mais Village des Hommes des Bois / Haldan est double face
                 "cards": {
+                    "TSR016-Le Vieux Gué.png": 1,
+                    "TSR017-Berge Boisée.png": 3,
+                    "TSR018-Créature Enragée.png": 2,
+                    "TSR019-Traversée Dangereuse.png": 3,
+                    "TSR069-Village des Hommes des Bois.png": 1
+                }
+            },
+            {
+                "name": "Gobelins des Montagnes Grises",
+                "number_cards": 5,
+                "cards": {
+                    "TSR020-Troupe de Gobelins.png": 2,
+                    "TSR021-Gobelin Errant.png": 3
+                }
+            },
+            {
+                "name": "Perdus dans les Terres Sauvages",
+                "number_cards": 7,
+                "cards": {
+                    "TSR022-Meute de Wargs.png": 2,
+                    "TSR023-Collines des Terres Sauvages.png": 2,
+                    "TSR024-Terres Solitaires.png": 3
+                }
+            },
+            {
+                "name": "Voyage le Long de l'Anduin",
+                "number_cards": 6,
+                "cards": {
+                    "TSR025-Provisions Perdues.png": 2,
+                    "TSR026-Perdu en Pleine Nature.png": 2,
+                    "TSR027-Alourdi.png": 2
+                }
+            },
+            {
+                "name": "Perdus dans la Forêt Noire",
+                "number_cards": 17,
+                "cards": {
+                    "TSR028-En Quête d_une Issue.png": 1,
+                    "TSR029-Chemin Abandonné.png": 1,
+                    "TSR030-Village Abandonné.png": 1,
+                    "TSR031-Colline Dénudée.png": 1,
+                    "TSR032-Clairière.png": 1,
+                    "TSR033-Hall du Crépuscule.png": 3,
+                    "TSR034-Patrouille de la Forêt Noire.png": 2,
+                    "TSR035-Araignée Affamée.png": 2,
+                    "TSR036-Danger Invisible.png": 2,
+                    "TSR037-Immensité de la Forêt Noire.png": 3
+                }
+            },
+            {
+                "name": "Bois Sombres",
+                "number_cards": 5,
+                "cards": {
+                    "TSR038-Forêt Maudite.png": 2,
+                    "TSR039-Bois Noir Menaçant.png": 3
+                }
+            },
+            {
+                "name": "Obscurité Grandissante",
+                "number_cards": 5,
+                "cards": {
+                    "TSR040-Obscurité Grandissante.png": 2,
+                    "TSR041-Nuée de Chauves-Souris.png": 3
+                }
+            },
+            {
+                "name": "La Quête du Roi",
+                "number_cards": 11,
+                "cards": {
+                    "TSR042-Drake de Feu.png": 1,
+                    "TSR043-Butin du Dragon.png": 1,
+                    "TSR044-Mine des Monts du Fer.png": 2,
+                    "TSR045-Profondeurs Contestées.png": 3,
+                    "TSR046-Faille Profonde.png": 2,
+                    "TSR047-Habitant des Profondeurs.png": 2
+                }
+            },
+            {
+                "name": "Peur du Noir",
+                "number_cards": 5,
+                "cards": {
+                    "TSR048-Peur du Noir.png": 2,
+                    "TSR057-Des Yeux dans le Noir.png": 3
+                }
+            },
+            {
+                "name": "Créatures Sauvages",
+                "number_cards": 4,
+                "cards": {
+                    "TSR049-Troll de Pierre.png": 2,
+                    "TSR050-Hobgobelin.png": 2
+                }
+            },
+            {
+                "name": "Créatures Sauvages",
+                "number_cards": 8,
+                "cards": {
+                    "TSR051-Loup-Garou.png": 2,
+                    "TSR052-Araignée Géante.png": 3,
+                    "TSR053-Chauves-Souris Noires.png": 3
+                }
+            },
+            {
+                "name": "Profondeurs Insondables",
+                "number_cards": 9,
+                "cards": {
+                    "TSR054-Tunnel Sombre.png": 4,
+                    "TSR055-Croisement.png": 2,
+                    "TSR056-Lieux Sombres.png": 3
+                }
+            },
+            {
+                "name": "Puissance du Dragon",
+                "number_cards": 4,
+                "cards": {
+                    "TSR058-Souffle du Dragon.png": 2,
+                    "TSR059-Écailles de Dragon.png": 2
+                }
+            },
+            {
+                "name": "Cavernes Perdues",
+                "number_cards": 6,
+                "cards": {
+                    "TSR060-Arsenal Oublié.png": 1,
+                    "TSR061-Trésor Ancien.png": 1,
+                    "TSR062-Antre Effrayant.png": 1,
+                    "TSR063-Grotte Sombre.png": 1,
+                    "TSR064-Caverne Croulante.png": 1,
+                    "TSR064-Lac Souterrain.png": 1
                 }
             }
         ],
         "quêtes": [
+            "TSR066A-Voyage au Nord.png",
+            "TSR066B-Voyage au Nord.png",
+            "TSR067A-Hommes des Bois Attaqués.png",
+            "TSR067B-Hommes des Bois Attaqués.png",
+            "TSR068A-Le Passage du Gué.png",
+            "TSR068B-Le Passage du Gué.png",
+            "TSR071A-Embuscade Nocturne.png",
+            "TSR071B-Embouscade Nocturne.png",
+            "TSR072A-Araignées de la Forêt Noire.png",
+            "TSR072B-Araignées de la Forêt Noire.png",
+            "TSR073B-Orques de Dol Guldur.png",
+            "TSR073C-Orques de Dol Guldur.png",
+            "TSR074A-Enlevés.png",
+            "TSR074B-Enlevés.png",
+            "TSR075C-Complètement Perdus.png",
+            "TSR075D-Complètement Perdus.png",
+            "TSR076A-La Forêt de la Grande Peur.png",
+            "TSR076B-La Forêt de la Grande Peur.png",
+            "TSR077C-Fuite de Taur-nu-fuin.png",
+            "TSR077D-Fuite de Taur-nu-fuin.png",
+            "TSR078B-Les Monts du Fer.png",
+            "TSR078-Les Monts du Fer.png",
+            "TSR079A-Les Profondeurs.png",
+            "TSR079B-Les Profondeurs.png",
+            "TSR080A-Le Ver de Feu.png",
+            "TSR080B-Le Ver de Feu.png"
         ],
         "flip_cards": {
+            "TSR066A-Voyage au Nord.png": "TSR066B-Voyage au Nord.png",
+            "TSR067A-Hommes des Bois Attaqués.png": "TSR067B-Hommes des Bois Attaqués.png",
+            "TSR068A-Le Passage du Gué.png": "TSR068B-Le Passage du Gué.png",
+            "TSR069-Village des Hommes des Bois.png": "TSR070-Haldan.png",
+            "TSR071A-Embuscade Nocturne.png": "TSR071B-Embouscade Nocturne.png",
+            "TSR072A-Araignées de la Forêt Noire.png": "TSR072B-Araignées de la Forêt Noire.png",
+            "TSR073B-Orques de Dol Guldur.png": "TSR073C-Orques de Dol Guldur.png",
+            "TSR074A-Enlevés.png": "TSR074B-Enlevés.png",
+            "TSR075C-Complètement Perdus.png": "TSR075D-Complètement Perdus.png",
+            "TSR076A-La Forêt de la Grande Peur.png": "TSR076B-La Forêt de la Grande Peur.png",
+            "TSR077C-Fuite de Taur-nu-fuin.png": "TSR077D-Fuite de Taur-nu-fuin.png",
+            "TSR078B-Les Monts du Fer.png": "TSR078-Les Monts du Fer.png",
+            "TSR079A-Les Profondeurs.png": "TSR079B-Les Profondeurs.png",
+            "TSR080A-Le Ver de Feu.png": "TSR080B-Le Ver de Feu.png"
+        }
+    },
+    "La Brande Desséchée": {
+        "héros": [
+            "ERE001-Grimbeorn l_Ancien.png"
+        ],
+        "joueurs": [
+            "ERE002-Gardien d_Esgaroth.png",
+            "ERE003-Heaume de l_Écuyer.png",
+            "ERE004-Clairière des Hommes des Bois.png",
+            "ERE005-La Voie Cachée.png",
+            "ERE006-Change-Peau Beornide.png",
+            "ERE007-Rage de Beorn.png",
+            "ERE008-Pêcheur du Long Lac.png",
+            "ERE009-Manteau Gris.png",
+            "ERE010-L_Arkenstone.png"
+        ],
+        "rencontres": [
+            {
+                "name": "La Brande Desséchée",
+                "number_cards": 28,
+                "cards": {
+                    "ERE011-Drake de Froid.png": 1,
+                    "ERE012-Signe du Dragon.png": 4,
+                    "ERE013-Troll des Neiges.png": 2,
+                    "ERE014-Dragonnet.png": 3,
+                    "ERE015-Col de Montagne.png": 3,
+                    "ERE016-Porte des Nains.png": 3,
+                    "ERE017-Entrée de la Caverne.png": 3,
+                    "ERE018-Antre de la Créature.png": 2,
+                    "ERE019-Hautes Chutes.png": 2,
+                    "ERE020-Neige Abondante.png": 2,
+                    "ERE021-Froid Mortel.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE022A-En Quête d_un Signe du Dragon.png",
+            "ERE022B-En Quête d_un Signe du Dragon.png",
+            "ERE023A-Le Drake de Froid Attaque.png",
+            "ERE023B-Le Drake de Froid Attaque !.png",
+            "ERE024A-Traquer la Bête.png",
+            "ERE024B-Traquer la Bête.png",
+            "ERE025A-Un Dragon Acculé.png",
+            "ERE025B-Un Dragon Acculé.png"
+        ],
+        "flip_cards": {
+            "ERE022A-En Quête d_un Signe du Dragon.png": "ERE022B-En Quête d_un Signe du Dragon.png",
+            "ERE023A-Le Drake de Froid Attaque.png": "ERE023B-Le Drake de Froid Attaque !.png",
+            "ERE024A-Traquer la Bête.png": "ERE024B-Traquer la Bête.png",
+            "ERE025A-Un Dragon Acculé.png": "ERE025B-Un Dragon Acculé.png"
+        }
+    },
+    "Errance au Rhovanion": {
+        "héros": [
+            "ERE026-Haldan.png"
+        ],
+        "joueurs": [
+            "ERE027-Wiglaf.png",
+            "ERE028-Armure Ancestrale.png",
+            "ERE029-Glamdring.png",
+            "ERE030-Sentier des hommes des Bois.png",
+            "ERE031-Meneldor.png",
+            "ERE032-Vol des Aigles.png",
+            "ERE033-Étalon Sauvage.png",
+            "ERE034-Vers le Sud !.png",
+            "ERE035-Aigle du Nord.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Errance au Rhovanion",
+                "number_cards": 27, // 29 cartes numérotées mais Urdug et Minus sont double face
+                "cards": {
+                    "ERE036-Clef de Durin.png": 1,
+                    "ERE037-Cor d_Urdug.png": 1,
+                    "ERE038-Géant des Montagnes Grises.png": 2,
+                    "ERE039-Aigle en Chasse.png": 3,
+                    "ERE040-Ours des Terres Sauvages.png": 2,
+                    "ERE041-Lande Grise.png": 2,
+                    "ERE042-Ravin Profond.png": 3,
+                    "ERE043-Pentes de l_Ered Mithrin.png": 3,
+                    "ERE044-Départ en Douce.png": 3,
+                    "ERE045-Climat Rigoureux.png": 3,
+                    "ERE046-Animaux Sauvages.png": 2,
+                    "ERE052-Urdug.png": 1,
+                    "ERE054-Minus.png": 1
+                }
+            },
+            {
+                "name": "Joueur",
+                "number_cards": 3,
+                "cards": {
+                    "ERE032-Vol des Aigles.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE047A-La Mission du Gobelin.png",
+            "ERE047B-La Mission du Gobelin.png",
+            "ERE048A-Sauver Minus.png",
+            "ERE048B-Sauver Minus.png",
+            "ERE049A-Récupérer le Cor d_Urdug.png",
+            "ERE049B-Récupérer le Cor d_Urdug.png",
+            "ERE050A-Trouver la Clef de Durin.png",
+            "ERE050B-Trouver la Clef de Durin.png",
+            "ERE051A-Le Pari d_Urdug.png",
+            "ERE051B-Le Pari d_Urdug.png"
+        ],
+        "flip_cards": {
+            "ERE052-Urdug.png": "ERE053-Urdug.png",
+            "ERE054-Minus.png": "ERE055-Minus.png",
+            "ERE047A-La Mission du Gobelin.png": "ERE047B-La Mission du Gobelin.png",
+            "ERE048A-Sauver Minus.png": "ERE048B-Sauver Minus.png",
+            "ERE049A-Récupérer le Cor d_Urdug.png": "ERE049B-Récupérer le Cor d_Urdug.png",
+            "ERE050A-Trouver la Clef de Durin.png": "ERE050B-Trouver la Clef de Durin.png",
+            "ERE051A-Le Pari d_Urdug.png": "ERE051B-Le Pari d_Urdug.png"
+        }
+    },
+    "Des Flammes dans la Nuit": {
+        "héros": [
+            "ERE056-Thranduil.png"
+        ],
+        "joueurs": [
+            "ERE057-Le Roi des Elfes.png",
+            "ERE058-Orcrist.png",
+            "ERE059-Voyageur de la Route de la Forêt.png",
+            "ERE060-Bottes en Cuir.png",
+            "ERE061-Ours Géant.png",
+            "ERE062-Surclassé.png",
+            "ERE063-Galion.png",
+            "ERE064-Plus Rapide que la Vue.png",
+            "ERE065-Thalion.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Des Flammes dans la Nuit",
+                "number_cards": 31,
+                "cards": {
+                    "ERE066-Attirer son Feu.png": 1,
+                    "ERE067-Consolider les Défenses.png": 1,
+                    "ERE068-Rallier les Hommes des Bois.png": 1,
+                    "ERE069-Éteindre les Flammes.png": 1,
+                    "ERE070-Tenir la Porte.png": 1,
+                    "ERE071-Défendre la Ville.png": 1,
+                    "ERE072-Mettre les gobelins en Fuite.png": 1,
+                    "ERE073-Affronter le Dragon.png": 1,
+                    "ERE074-Dagnir.png": 1,
+                    "ERE075-L_Esclave du Dragon.png": 3,
+                    "ERE076-Orque de la Flamme.png": 4,
+                    "ERE077-Porte de la Ville.png": 2,
+                    "ERE078-Palissade.png": 3,
+                    "ERE079-Tour de Guet en Flammes.png": 3,
+                    "ERE080-Courroux Puissant.png": 2,
+                    "ERE081-La Fureur du Dragon.png": 3,
+                    "ERE082-Flammes Vives.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE083A-Colline de Hrogar.png",
+            "ERE083B-Colline de Hrogar.png"
+        ],
+        "flip_cards": {
+            "ERE083A-Colline de Hrogar.png": "ERE083B-Colline de Hrogar.png"
+        }
+    },
+    "Le Fantôme de Framsbourg": {
+        "héros": [
+            "ERE084-Dain Pied d_Acier.png"
+        ],
+        "joueurs": [
+            "ERE085-Soldat d_Erebor.png",
+            "ERE086-Armer les Remparts.png",
+            "ERE087-Chasseur de la Forêt Noire.png",
+            "ERE088-Terres Familières.png",
+            "ERE089-Épée de Guerrier.png",
+            "ERE090-Rapide et Solide.png",
+            "ERE091-Descendant de Girion.png",
+            "ERE092-Vaillante Détermination.png",
+            "ERE093-Anneau de Thror.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Fantôme de Framsbourg",
+                "number_cards": 29,
+                "cards": {
+                    "ERE094-Clef de la Crypte.png": 1,
+                    "ERE095-Vielle Lanterne.png": 1,
+                    "ERE096-Dents de Scatha.png": 1,
+                    "ERE097-Le Tombeau Maudit.png": 1,
+                    "ERE098-Ombre de Fram.png": 1,
+                    "ERE099-Traqueur de la Crypte.png": 2,
+                    "ERE100-Spectre Maléfique.png": 3,
+                    "ERE101-Crypte Oubliée.png": 2,
+                    "ERE102-Salle Hantée.png": 2,
+                    "ERE103-Escalier Caché.png": 2,
+                    "ERE104-Passage Éclairé par la Lune.png": 3,
+                    "ERE105-Tour Maudite.png": 3,
+                    "ERE106-Ruines Abandonnées.png": 2,
+                    "ERE107-Ombres Terribles.png": 2,
+                    "ERE108-Fermeture Brutale.png": 3
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE109A-Le Château Hanté.png",
+            "ERE109B-Le Château Hanté.png",
+            "ERE110A-Fouiller des Ruines.png",
+            "ERE110B-Fouiller des Ruines.png",
+            "ERE111A-L_Ombre Maudite.png",
+            "ERE111B-L_Ombre Maudite.png"
+        ],
+        "flip_cards": {
+            "ERE109A-Le Château Hanté.png": "ERE109B-Le Château Hanté.png",
+            "ERE110A-Fouiller des Ruines.png": "ERE110B-Fouiller des Ruines.png",
+            "ERE111A-L_Ombre Maudite.png": "ERE111B-L_Ombre Maudite.png"
+        }
+    },
+    "Mont Gundabad": {
+        "héros": [
+            "ERE112-Bilbon Sacquet.png"
+        ],
+        "joueurs": [
+            "ERE113-Défenseur de Vertbois.png",
+            "ERE114-Guide Elfe.png",
+            "ERE115-Hamfast Gamegie.png",
+            "ERE116-Chanson à Boire.png",
+            "ERE117-Dard.png",
+            "ERE118-Rondache.png",
+            "ERE119-Fabricant de Jouets d_Erebor.png",
+            "ERE120-Armure d_Erebor.png",
+            "ERE121-Le Peuple de la Comté.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Mont Gundabad",
+                "number_cards": 24,
+                "cards": {
+                    "ERE122-La Première Forge.png": 1,
+                    "ERE123-Butin de Dagnir.png": 1,
+                    "ERE124-Gorge de la Montagne.png": 1,
+                    "ERE125-Dagnir.png": 1,
+                    "ERE126-Gardien de Gundabad.png": 3,
+                    "ERE127-Esclave de Dagnir.png": 3,
+                    "ERE128-Habitant des Profondeurs.png": 2,
+                    "ERE129-Mines de Gundabad.png": 3,
+                    "ERE130-Escalier Étroit.png": 2,
+                    "ERE131-Ruines Profanées.png": 2,
+                    "ERE132-Fléau des Terres Sauvages.png": 2,
+                    "ERE133-Ombres Étouffantes.png": 2,
+                    "ERE143-Fléau-des-Vers.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE134A-La Porte Latérale.png",
+            "ERE134B-La Porte Latérale.png",
+            "ERE135-Explorer Gundabad.png",
+            "ERE136-Les Niveaux Supérieurs.png",
+            "ERE137-Les Profondeurs.png",
+            "ERE138-Terriers en Ébullition.png",
+            "ERE139-Courroux de Dagnir.png",
+            "ERE140-Ténèbres Inquiétantes.png",
+            "ERE141-Poursuite Imminente.png",
+            "ERE142-Le Grand Ver.png"
+        ],
+        "flip_cards": {
+            "ERE134A-La Porte Latérale.png": "ERE134B-La Porte Latérale.png",
+            "ERE135-Explorer Gundabad.png": [
+                "ERE136-Les Niveaux Supérieurs.png",
+                "ERE137-Les Profondeurs.png",
+                "ERE138-Terriers en Ébullition.png",
+                "ERE139-Courroux de Dagnir.png",
+                "ERE140-Ténèbres Inquiétantes.png",
+                "ERE141-Poursuite Imminente.png",
+                "ERE142-Le Grand Ver.png"
+            ],
+            "ERE143-Fléau-des-Vers.png": "ERE144-Fléau-des-Vers.png"
+        }
+    },
+    "Le Destin des Terres Sauvages": {
+        "héros": [
+            "ERE145-Radagast.png"
+        ],
+        "joueurs": [
+            "ERE146-Corbeau Messager.png",
+            "ERE147-Le Retour du Roi.png",
+            "ERE148-Limier Loyal.png",
+            "ERE149-La Grande Chasse.png",
+            "ERE150-Shirriff de Près de l_Eau.png",
+            "ERE151-Dette de Gwaihir.png",
+            "ERE152-Cotte de Mithril.png",
+            "ERE153-Reforgée.png",
+            "ERE154-Bâton de Radagast.png"
+        ],
+        "rencontres": [
+            {
+                "name": "Le Destin des Terres Sauvages",
+                "number_cards": 29,
+                "cards": {
+                    "ERE155-L_Assaut des Gobelins.png": 1,
+                    "ERE156-La Défense des Héros.png": 1,
+                    "ERE157-Urdug.png": 1,
+                    "ERE158-Élite d_Urdug.png": 3,
+                    "ERE159-Avant-garde Déchaînée.png": 3,
+                    "ERE160-Chevaucheur de Warg.png": 2,
+                    "ERE161-Porte de Gundabad.png": 1,
+                    "ERE162-Remparts sur la Colline.png": 3,
+                    "ERE163-Tour de Guet Naine.png": 3,
+                    "ERE164-Pentes de Gundabad.png": 3,
+                    "ERE165-Attaque Violente.png": 3,
+                    "ERE166-Ordre d_Urdug.png": 3,
+                    "ERE167-Nuages Noirs.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ERE168A-L_Assaut d_Urdug.png",
+            "ERE168B-L_Assaut d_Urdug.png",
+            "ERE169A-Débordement.png",
+            "ERE169B-Débordement.png",
+            "ERE170A-La Dernière Offensive.png",
+            "ERE170B-La Dernière Offensive.png"
+        ],
+        "flip_cards": {
+            "ERE168A-L_Assaut d_Urdug.png": "ERE168B-L_Assaut d_Urdug.png",
+            "ERE169A-Débordement.png": "ERE169B-Débordement.png",
+            "ERE170A-La Dernière Offensive.png": "ERE170B-La Dernière Offensive.png"
         }
     }
 }
