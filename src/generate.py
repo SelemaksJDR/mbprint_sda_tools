@@ -108,6 +108,10 @@ if __name__ == '__main__':
     print("================================")
     print("========== CONCLUSION ==========")
     print("================================")
+    card_number: int = 0
+    for cycle_name, cards in cards_in_cycle.items():
+        card_number = card_number + len(cards)
+        print(f"{cycle_name} : {len(cards)}")
     all_is_good: bool = True
     for encounter, status in encounters_infos.items():
         if status is False:
@@ -115,6 +119,7 @@ if __name__ == '__main__':
             all_is_good = False
     if all_is_good:
         print(f"[OK] Toutes les séries sont correctement configurées")
+    print(f"Nombre total de cartes: {card_number}")
 
     if validate_only is False:
         # Supprime le dossier de résultat
