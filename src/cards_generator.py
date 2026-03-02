@@ -8,6 +8,7 @@ import itertools
 import pathlib
 from from_clint_cheawood.generepdf import convert_image_to_bleed
 from from_clint_cheawood.magick import run_magick
+from from_clint_cheawood.remplacer_fond import supprimer_texte_et_remplacer_par_fond, ajouter_texte_fan_made
 import sys
 
 
@@ -157,11 +158,18 @@ def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict, f
     return result, encounters_result
 
 
-def get_and_create_bleed_img(card: pathlib.Path, cards_folder: pathlib.Path):
+def get_and_create_bleed_img(card: pathlib.Path, cards_folder: pathlib.Path, must_add_text: bool):
         dest_img_name = f"converted-{card.name}"
         dest_img = cards_folder / dest_img_name
+        input_img = card
+        if must_add_text:
+            if supprimer_texte_et_remplacer_par_fond(chemin_source=card, chemin_sortie=dest_img):
+                ajouter_texte_fan_made(dest_img, dest_img, texte="Proxy - Not For Sale")
+                input_img = dest_img
+            else:
+                input_img = card
         # Si l'image n'existe pas déjà, elle est créée
-        dest_img = convert_image_to_bleed(input_file=card, output_dir=cards_folder, prefix="converted")
+        dest_img = convert_image_to_bleed(input_file=input_img, output_dir=cards_folder, prefix="converted")
         return True, pathlib.Path.absolute(dest_img)
 
 
@@ -191,7 +199,7 @@ def generate_images(cards: list, result_folder: pathlib.Path, backs) -> list:
     backs_with_bleed: dict = {}
 
     for back in backs_path:
-        back_exists, back_img = get_and_create_bleed_img(card=back, cards_folder=cards_folder)
+        back_exists, back_img = get_and_create_bleed_img(card=back, cards_folder=cards_folder, must_add_text=False)
         if back_exists is False:
             continue
         backs_with_bleed[back] = back_img
@@ -199,13 +207,13 @@ def generate_images(cards: list, result_folder: pathlib.Path, backs) -> list:
     for card in cards:
         # Récupère les images
         # FACE A
-        front_exists, front_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_A], cards_folder=cards_folder)
+        front_exists, front_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_A], cards_folder=cards_folder, must_add_text=True)
         if front_exists is False:
             continue
         handle_rotation(front_img, "A")
         if card[infos.CARDS_FACE_B] not in backs_with_bleed.keys():
             # FACE B
-            back_exists, back_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_B], cards_folder=cards_folder)
+            back_exists, back_img = get_and_create_bleed_img(card=card[infos.CARDS_FACE_B], cards_folder=cards_folder, must_add_text=True)
             if back_exists is False:
                 continue
             handle_rotation(back_img, "B")
