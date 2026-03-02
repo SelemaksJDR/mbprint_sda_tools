@@ -33,7 +33,7 @@ def supprimer_texte_et_remplacer_par_fond(
     y_debut: int = 1020,
     largeur: int = 252,
     hauteur: int = 10,
-    y_source: int = 1040,
+    y_source: int = 1020,
 ) -> bool:
     """Supprime une zone de texte en la remplacant par des pixels echantillonnes.
 
