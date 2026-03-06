@@ -1,14 +1,304 @@
 {
+    // Nom
+    "name": "Saga - Le Hobbit",
     // Dossier contenant les images
     "pictures_folder": "saga hobbits",
-    // Nomenclature des extensions (nom réél - nomenclature)
-    "extensions": [
-        ""
-    ],
     // Par extension :
     // * Chaque carte et son nombre d'exemplaire
     // * Les cartes recto-verso avec la face A et la face B
-    "": {
-        
+    "Par Monts et par Souterrains": {
+        "héros": [
+            "HHH01-Bilbon Sacquet.png",
+            "HHH02-Thorin Écu-de-Chêne.png",
+            "HHH03-Nori.png",
+            "HHH04-Ori.png",
+            "HHH05-Beorn.png"
+        ],
+        "joueurs": [
+            "HHH06-Fili.png",
+            "HHH07-Kili.png",
+            "HHH08-Bofur.png",
+            "HHH09-Dori.png",
+            "HHH10-Gandalf.png",
+            "HHH11-Cram.png",
+            "HHH12-Capuchon et Cape de Rechange.png",
+            "HHH13-Carte de Thror.png",
+            "HHH14-Une Très Bonne Histoire.png",
+            "HHH15-Marteau à Ennemis.png",
+            "HHH16-Fendoir à Gobelins.png",
+            "HHH17-Aventurer Inattendu.png",
+            "HHH18-Un Mauvais Tour.png",
+            "HHH19-Un Sacquet Cambrioleur.png"
+        ],
+        "specials": {
+            "HHH20-Dard.png": 1,
+            "HHH21-Orcrist.png": 1,
+            "HHH22-Glamdring.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "Il nous Faut Aller avant le Lever du Jour",
+                "number_cards": 29,
+                "cards": {
+                    "HHH32-William.png": 1,
+                    "HHH33-Bert.png": 1,
+                    "HHH34-Tom.png": 1,
+                    "HHH36-Camp des Trolls.png": 3,
+                    "HHH37-Caverne des Trolls.png": 1,
+                    "HHH38-Pays des Hobbits.png": 2,
+                    "HHH42-Porte-Monnaie des Trolls.png": 1,
+                    "HHH43-Clef des Trolls.png": 1,
+                    "HHH44-Un Sac Puant.png": 1,
+                    "HHH45-Un Sac Robuste.png": 1,
+                    "HHH46-Un Sac Solide.png": 1,
+                    "HHH47-Un Grand Sac.png": 1,
+                    "HHH48-Un Sac Profond.png": 1,
+                    "HHH49-Un Sac Dégoûtant.png": 1,
+                    "HHH50-Un Sac Usé.png": 1,
+                    "HHH51-Tout ou Rien.png": 3,
+                    "HHH52-Un Beau Pétrin.png": 2,
+                    "HHH53-Les Rôtir ou les Faire Bouillir.png": 3,
+                    "HHH54-Troll Affamé.png": 3
+                }
+            },
+            {
+                "name": "Terres de l'Ouest",
+                "number_cards": 14,
+                "cards": {
+                    "HHH35-Corneille Malveillante.png": 3,
+                    "HHH39-Mornes Collines.png": 2,
+                    "HHH40-Terres Solitaires.png": 2,
+                    "HHH41-Entrée de la Caverne.png": 2,
+                    "HHH55-Aucun Feu de Camp.png": 2,
+                    "HHH56-Pluie Cinglante.png": 2,
+                    "HHH57-Comme un Air d_Épicier.png": 1
+                }
+            },
+            {
+                "name": "Au-delà des Montagnes Froides et Embrumées",
+                "number_cards": 12,
+                "cards": {
+                    "HHH64-Géant de Pierre.png": 3,
+                    "HHH68-Roc en Surplomb.png": 2,
+                    "HHH69-Le Haut Col.png": 1,
+                    "HHH72-Rochers Bondissants.png": 4,
+                    "HHH73-Jeux de Géants.png": 2
+                }
+            },
+            {
+                "name": "Le Grand Gobelin",
+                "number_cards": 12,
+                "cards": {
+                    "HHH62-Gobelins aux Sabres Courbes.png": 4,
+                    "HHH63-Le Grand Gobelin.png": 1,
+                    "HHH66-Porche d_Entrée.png": 2,
+                    "HHH67-Grande Caverne.png": 3,
+                    "HHH71-Chaos dans la Caverne.png": 2
+                }
+            },
+            {
+                "name": "Gobelins des Monts Brumeux",
+                "number_cards": 18,
+                "cards": {
+                    "HHH58-Cogneur Gobelin.png": 3,
+                    "HHH59-Mineurs Gobelins.png": 3,
+                    "HHH60-Coureurs Gobelins.png": 3,
+                    "HHH61-Gardien Gobelin.png": 3,
+                    "HHH65-Les Cavernes des Gobelins.png": 3,
+                    "HHH70-Tiens,Serre ! Pince, Chope !.png": 3
+                }
+            },
+            {
+                "name": "Des Cachots Profonds et des Cavernes Obscures",
+                "number_cards": 21,
+                "cards": {
+                    "HHH74-Gollum.png": 1,
+                    "HHH75-Grand Loup Gris.png": 1,
+                    "HHH76-Wargs Sauvages.png": 4,
+                    "HHH77-Clairière des Wargs.png": 3,
+                    "HHH78-Lac Souterrain.png": 1,
+                    "HHH79-Anneau Magique de Bilbon.png": 1,
+                    "HHH80-Descendez, Petits Oiseaux.png": 2,
+                    "HHH81-Ca aime les Énigmes.png": 3,
+                    "HHH82-Caché dans les Arbres.png": 2,
+                    "HHH83-Qu_ai-je dans ma poche.png": 2,
+                    "HHH84-Pas de Jeu ! Pas de Jeu !.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "HHH23A-Une Réception Inattendue.png",
+            "HHH23B-Une Réception Inattendue.png",
+            "HHH24A-Grillade de Mouton.png",
+            "HHH24B-Grillade de Mouton.png",
+            "HHH25A-Que l_Aube Vous Saisisse Tous.png",
+            "HHH25B-Que l_Aube Vous Saisisse Tous.png",
+            "HHH26A-Une Courte Pause.png",
+            "HHH26B-Une Courte Pause.png",
+            "HHH27A-Le Col de Montagne.png",
+            "HHH27B-Le Col de Montagne.png",
+            "HHH28A-Tout en Bas, Tout en Bas, à Gobelinville.png",
+            "HHH28B-Tout en Bas, Tout en Bas, à Gobelinville.png",
+            "HHH29A-De Charybde.png",
+            "HHH29B-De Charybde.png",
+            "HHH30A-Énigmes dans l_Obscurité.png",
+            "HHH30B-Énigmes dans l_Obscurité.png",
+            "HHH31A-...En Scylla.png",
+            "HHH31B-... En Scylla.png"
+        ],
+        "flip_cards": {
+            "HHH23A-Une Réception Inattendue.png": "HHH23B-Une Réception Inattendue.png",
+            "HHH24A-Grillade de Mouton.png": "HHH24B-Grillade de Mouton.png",
+            "HHH25A-Que l_Aube Vous Saisisse Tous.png": "HHH25B-Que l_Aube Vous Saisisse Tous.png",
+            "HHH26A-Une Courte Pause.png": "HHH26B-Une Courte Pause.png",
+            "HHH27A-Le Col de Montagne.png": "HHH27B-Le Col de Montagne.png",
+            "HHH28A-Tout en Bas, Tout en Bas, à Gobelinville.png": "HHH28B-Tout en Bas, Tout en Bas, à Gobelinville.png",
+            "HHH29A-De Charybde.png": "HHH29B-De Charybde.png",
+            "HHH30A-Énigmes dans l_Obscurité.png": "HHH30B-Énigmes dans l_Obscurité.png",
+            "HHH31A-...En Scylla.png": "HHH31B-... En Scylla.png"
+        }
+    },
+    "Au Seuil de la Porte": {
+        "héros": [
+            "ASP01-Bilbon Sacquet.png",
+            "ASP02-Balin.png",
+            "ASP03-Bard l_Archer.png",
+            "ASP04-Oin.png",
+            "ASP05-Bombur.png"
+        ],
+        "joueurs": [
+            "ASP06-Gloin.png",
+            "ASP07-Bifur.png",
+            "ASP08-Dwalin.png",
+            "ASP09-Tir Tendu.png",
+            "ASP10-Alliance Désespérée.png",
+            "ASP11-Corbeaux de la Montagne.png",
+            "ASP12-A Moi ! O Tous les Miens !.png",
+            "ASP13-Le Bon Numéro.png",
+            "ASP14-Grand Arc d_If.png",
+            "ASP15-Flèche Noire.png",
+            "ASP16-Clef de Thror.png",
+            "ASP17-Chasseur de Trésor Expert.png",
+            "ASP18-Roi Sous la Montagne.png"
+        ],
+        "specials": {
+            "ASP19-Anneau Magique de Bilbon.png": 1,
+            "ASP20-L_Arkenstone.png": 1,
+            "ASP22-Cotte de Mithril.png": 1,
+            "ASP22-Hache d_Armes de Thror.png": 1,
+            "ASP23-Arc de Chasse de Thror.png": 1,
+            "ASP24-Coupe d_Or the Thror.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "Mouches et Araignées",
+                "number_cards": 29,
+                "cards": {
+                    "ASP25-La Clairière aux Araignées.png": 1,
+                    "ASP26-Toile d_Araignée Géante.png": 4,
+                    "ASP27-Ruisseau Forestier.png": 2,
+                    "ASP28-Vieille Nigaude.png": 3,
+                    "ASP29-Cob la Folle.png": 3,
+                    "ASP30-Lob la Molle.png": 3,
+                    "ASP31-Grosse Araignée.png": 4,
+                    "ASP32-Méchante Araignée.png": 5,
+                    "ASP33-Prisonnier des Toiles.png": 2,
+                    "ASP34-Empoisonné par les Araignées.png": 2
+                }
+            },
+            {
+                "name": "Milieu Sauvage",
+                "number_cards": 10,
+                "cards": {
+                    "ASP35-Sentier Caché.png": 3,
+                    "ASP36-Chauves-Sours Noires.png": 3,
+                    "ASP37-Querelles d_Amis.png": 2,
+                    "ASP38-Surcharge.png": 2
+                }
+            },
+            {
+                "name": "Le Mont Solitaire",
+                "number_cards": 29,
+                "cards": {
+                    "ASP39-Point Faible.png": 1,
+                    "ASP40-Smaug le Doré.png": 1,
+                    "ASP41-Smaug le Magnifique.png": 1,
+                    "ASP42-Corneilles Croassant.png": 3,
+                    "ASP43-Le Mont Solitaire.png": 1,
+                    "ASP44-Grande Salle.png": 3,
+                    "ASP45-Entrée Secrète.png": 2,
+                    "ASP46-Désolation de Smaug.png": 3,
+                    "ASP47-Versant Ouest.png": 3,
+                    "ASP48-Sommeil Feint.png": 3,
+                    "ASP49-A l_Once Près.png": 2,
+                    "ASP50-Souffle Embrasé.png": 4,
+                    "ASP51-Charme des Dragons.png": 2
+                }
+            },
+            {
+                "name": "La Bataille des Cinq Armées",
+                "number_cards": 34,
+                "cards": {
+                    "ASP52-Aigle des Monts Brumeux.png": 1,
+                    "ASP53-Bolg.png": 1,
+                    "ASP54-Garde du Corps de Bolg.png": 4,
+                    "ASP55-Chevaucheur de Loup du Gundabad.png": 3,
+                    "ASP56-Grimpeur de Gundabad.png": 4,
+                    "ASP57-Avant-Garde de Bolg.png": 4,
+                    "ASP58-Archer de Gundabad.png": 2,
+                    "ASP59-Warg Affamé.png": 3,
+                    "ASP60-Versant Nord.png": 3,
+                    "ASP61-Ruines de Dale.png": 1,
+                    "ASP62-Ravenhill.png": 1,
+                    "ASP63-La Grande Porte.png": 1,
+                    "ASP64-Haine Ravivée.png": 2,
+                    "ASP65-Les Gobelins sont sur Vous !.png": 2,
+                    "ASP66-Sans Souci d_Ordre.png": 2
+                }
+            }
+        ],
+        "quêtes": [
+            "ASP67a-Dans La Forêt Noire.png",
+            "ASP67b-Dans la Forêt Noire.png",
+            "ASP68a-Perdus dans le Noir.png",
+            "ASP68b-Perdus dans le Noir.png",
+            "ASP69a-Capturés par les Araignées.png",
+            "ASP69b-Capturés par les Araignées.png",
+            "ASP70a-Bataille contre les Araignées.png",
+            "ASP70b-Bataille contre les Araignées.png",
+            "ASP71a-Un Chaleureux Accueil.png",
+            "ASP71b-Un Chaleureux Accueil.png",
+            "ASP72a-Au Cambrioleur d_Agir.png",
+            "ASP72b-Au Cambrioleur d_Agir.png",
+            "ASP73a-Information Secrète.png",
+            "ASP73b-Information Secrète.png",
+            "ASP74a-Au Voleur ! Au Feu ! Au Meurtre !.png",
+            "ASP74b-Au Voleur ! Au Feu ! Au Meurtre !.png",
+            "ASP75a-Les Nuages s_Accumulent.png",
+            "ASP75b-Nes Nuages s_Accumulent.png",
+            "ASP76a-L_Éperon Est.png",
+            "ASP76b-L_Éperon Est.png",
+            "ASP77a-La Bataille de Dale.png",
+            "ASP77b-La Bataille de Dale.png",
+            "ASP78a-La Défense de Ravenhill.png",
+            "ASP78b-La Défense de Ravenhill.png",
+            "ASP79a-Les Nuées Éclatent.png",
+            "ASP79b-Les Nuées Éclatent.png"
+        ],
+        "flip_cards": {
+            "ASP67a-Dans La Forêt Noire.png": "ASP67b-Dans la Forêt Noire.png",
+            "ASP68a-Perdus dans le Noir.png": "ASP68b-Perdus dans le Noir.png",
+            "ASP69a-Capturés par les Araignées.png": "ASP69b-Capturés par les Araignées.png",
+            "ASP70a-Bataille contre les Araignées.png": "ASP70b-Bataille contre les Araignées.png",
+            "ASP71a-Un Chaleureux Accueil.png": "ASP71b-Un Chaleureux Accueil.png",
+            "ASP72a-Au Cambrioleur d_Agir.png": "ASP72b-Au Cambrioleur d_Agir.png",
+            "ASP73a-Information Secrète.png": "ASP73b-Information Secrète.png",
+            "ASP74a-Au Voleur ! Au Feu ! Au Meurtre !.png": "ASP74b-Au Voleur ! Au Feu ! Au Meurtre !.png",
+            "ASP75a-Les Nuages s_Accumulent.png": "ASP75b-Nes Nuages s_Accumulent.png",
+            "ASP76a-L_Éperon Est.png": "ASP76b-L_Éperon Est.png",
+            "ASP77a-La Bataille de Dale.png": "ASP77b-La Bataille de Dale.png",
+            "ASP78a-La Défense de Ravenhill.png": "ASP78b-La Défense de Ravenhill.png",
+            "ASP79a-Les Nuées Éclatent.png": "ASP79b-Les Nuées Éclatent.png"
+        }
     }
 }

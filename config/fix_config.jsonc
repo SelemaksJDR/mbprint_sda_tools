@@ -429,7 +429,27 @@
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE023-Pots-de-Vin.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE033-Pots-de-Vin.png",
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacmbes.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE050-Catacombes.png",
         "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082-L_Héritage du Mordor.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/UOE082B-L_Héritage du Mordor.png",
-        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gents-des-Chariots.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gens-des-Chariots.png"
+        "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gents-des-Chariots.png": "SDA-intégrale/cycle 9 (incl. A Shadow in the east)/LRM066-Championne des Gens-des-Chariots.png",
+        // Saga Le Hobbit
+        "saga hobbits/ASP1-Bilbon Sacquet.png": "saga hobbits/ASP01-Bilbon Sacquet.png",
+        "saga hobbits/ASP2-Balin.png": "saga hobbits/ASP02-Balin.png",
+        "saga hobbits/ASP3-Bard l_Archer.png": "saga hobbits/ASP03-Bard l_Archer.png",
+        "saga hobbits/ASP4-Oin.png": "saga hobbits/ASP04-Oin.png",
+        "saga hobbits/ASP5-Bombur.png": "saga hobbits/ASP05-Bombur.png",
+        "saga hobbits/ASP6-Gloin.png": "saga hobbits/ASP06-Gloin.png",
+        "saga hobbits/ASP7-Bifur.png": "saga hobbits/ASP07-Bifur.png",
+        "saga hobbits/ASP8-Dwalin.png": "saga hobbits/ASP08-Dwalin.png",
+        "saga hobbits/ASP9-Tir Tendu.png": "saga hobbits/ASP09-Tir Tendu.png",
+        "saga hobbits/HHH1-Bilbon Sacquet.png": "saga hobbits/HHH01-Bilbon Sacquet.png",
+        "saga hobbits/HHH2-Thorin Écu-de-Chêne.png": "saga hobbits/HHH02-Thorin Écu-de-Chêne.png",
+        "saga hobbits/HHH3-Nori.png": "saga hobbits/HHH03-Nori.png",
+        "saga hobbits/HHH4-Ori.png": "saga hobbits/HHH04-Ori.png",
+        "saga hobbits/HHH5-Beorn.png": "saga hobbits/HHH05-Beorn.png",
+        "saga hobbits/HHH6-Fili.png": "saga hobbits/HHH06-Fili.png",
+        "saga hobbits/HHH7-Kili.png": "saga hobbits/HHH07-Kili.png",
+        "saga hobbits/HHH8-Bofur.png": "saga hobbits/HHH08-Bofur.png",
+        "saga hobbits/HHH9-Dori.png": "saga hobbits/HHH09-Dori.png",
+        "saga hobbits/HHH51-Tour ou Rien.png": "saga hobbits/HHH51-Tout ou Rien.png",
     },
     "erratas": {
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs-erraté.png"
