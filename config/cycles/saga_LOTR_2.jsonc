@@ -1,0 +1,324 @@
+{
+    // Nom
+    "name": "saga LOTR - Les Deux Tours",
+    // Dossier contenant les images
+    "pictures_folder": "saga LOTR",
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "La Trahison de Saroumane": {
+        "héros": [
+            "LTS001-Aragorn.png",
+            "LTS002-Théoden.png",
+            "LTS003-Sylvebarbe.png"
+        ],
+        "joueurs": [
+            "LTS004-Gimli.png",
+            "LTS005-Legolas.png",
+            "LTS006-Vifsorbier.png",
+            "LTS007-Hama.png",
+            "LTS008-Arod.png",
+            "LTS009-Breuvage Ent.png",
+            "LTS010-Herugrim.png",
+            "LTS011-Chambre des Ents.png",
+            "LTS012-Helm ! Helm !.png",
+            "LTS013-Les Trois Chasseurs.png",
+            "LTS014-Gripoil.png"
+        ],
+        "specials": {
+            "LTS015-Intimidation.png": 1,
+            "LTS016-Mains d_un Guérisseur.png": 1,
+            "LTS017-Avertissement.png": 1,
+            "LTS018-Meneur d_Hommes.png": 1,
+            "LTS019-Contre Toute Espérance.png": 1,
+            "LTS020-Palantir d_Orthanc.png": 1,
+            "LTS021-Conseils Pernicieux.png": 4
+        },
+        "rencontres": [
+            {
+                "name": "Les Uruk-hai",
+                "number_cards": 24,
+                "cards": {
+                    "LTS022-En Route pour l_Isengard !.png": 1,
+                    "LTS023-Ugluk.png": 1,
+                    "LTS024-Grishnakh.png": 1,
+                    "LTS025-Uruk-hai d_Ugluk.png": 3,
+                    "LTS026-Le Plateau de Rohan.png": 3,
+                    "LTS027-Estemnet.png": 3,
+                    "LTS028-Plaines de Rohan.png": 4,
+                    "LTS029-Berges de l_Entalluve.png": 2,
+                    "LTS030-Repos de Nuit.png": 2,
+                    "LTS031-Étrange Fatique.png": 2,
+                    "LTS032-Barrière Invisible.png": 2
+                }
+            },
+            {
+                "name": "Le Gouffre de Helm",
+                "number_cards": 33,
+                "cards": {
+                    "LTS033-La Défense du Gouffre de Helm.png": 1,
+                    "LTS034-Sauvage des Collines.png": 3,
+                    "LTS035-Guerrier du Pays de Dun.png": 2,
+                    "LTS036-Soldat de l_Isengard.png": 4,
+                    "LTS037-Fort le Cor.png": 3,
+                    "LTS038-Mur du Gouffre.png": 4,
+                    "LTS039-Ponceau du Gouffre.png": 2,
+                    "LTS040-Poterne.png": 2,
+                    "LTS041-Porte de Helm.png": 2,
+                    "LTS042-Aux Échelles !.png": 3,
+                    "LTS043-Diablerie de Saroumane.png": 3,
+                    "LTS044-Haine Implacable.png": 2,
+                    "LTS045-Nuit Sans Fin.png": 2
+                }
+            },
+            {
+                "name": "La Route de l'Isengard",
+                "number_cards": 35,
+                "cards": {
+                    "LTS046-Ent de Fangorn.png": 4,
+                    "LTS047-Saroumane.png": 1,
+                    "LTS048-Bâton de Saroumane.png": 1,
+                    "LTS049-Grima.png": 1,
+                    "LTS050-Lieutenant d_Orthanc.png": 2,
+                    "LTS051-Orque de l_Isengard.png": 2,
+                    "LTS052-Loup de l_Isengard.png": 2,
+                    "LTS053-Orthanc.png": 1,
+                    "LTS054-Portes de l_Isengard.png": 1,
+                    "LTS055-Mur Circulaire de l_Isengard.png": 3,
+                    "LTS056-Arsenal Souterrain.png": 2,
+                    "LTS057-Puits d_Aération Fumant.png": 3,
+                    "LTS058-Plaine de l_Isengard.png": 2,
+                    "LTS059-Fosse Béante.png": 2,
+                    "LTS060-Explosion Magique.png": 3,
+                    "LTS061-Vapeur Empoisonnée.png": 2,
+                    "LTS062-Machines de l_Isengard.png": 3
+                }
+            },
+            {
+                "name": "Orques de la Main Blanche",
+                "number_cards": 8,
+                "cards": {
+                    "LTS063-Uruk de l_Isengard.png": 3,
+                    "LTS064-Guerrier Uruk-Hai.png": 3,
+                    "LTS065-Uruk-hai Combattant.png": 2
+                }
+            },
+            {
+                "name": "Orques Snaga",
+                "number_cards": 5,
+                "cards": {
+                    "LTS066-Snaga.png": 3,
+                    "LTS067-Ordres de Saroumane.png": 2
+                }
+            },
+            {
+                "name": "Fardeaux",
+                "number_cards": 1,
+                "cards": {
+                    "LTS068-Voix de Saroumane.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LTS069A-Suivre les Orques.png",
+            "LTS069B-Suivre les Orques.png",
+            "LTS070B-Sauver les Captifs.png",
+            "LTS071-Les Uruk-Hai.png",
+            "LTS071-Les Uruk-Hai v.png",
+            "LTS072A-Le Roi du Château d_Or.png",
+            "LTS072B-Le Roi du Château d_Or.png",
+            "LTS073A-Assaur sur le Gouffre de Helm.png",
+            "LTS073B-Assaut sur le Gouffre de Helm.png",
+            "LTS074A-Les Armées de l_Isengard.png",
+            "LTS074B-Les Armées de l_Isengard.png",
+            "LTS075A-Une Brèche dans le Mur ! .png",
+            "LTS075B-Une Brèche dans le Mur !.png",
+            "LTS076A-La Charge du Roi.png",
+            "LTS076B-La Charge du Roi.png",
+            "LTS077-Le Gouffre de Helm.png",
+            "LTS077-Le Gouffre de Helm v.png",
+            "LTS078A-Le Réveil des Ents.png",
+            "LTS078B-Le Réveil des Ents.png",
+            "LTS079A-A l_Assaut de l_Isengard.png",
+            "LTS079B-A l_Assaut de l_Isengard.png",
+            "LTS080A-La Voix de Saroumane.png",
+            "LTS080B-La Voix de Saroumane.png",
+            "LTS081-La Route de l_Isengard.png",
+            "LTS081-La Route de l_Isengard v.png",
+            "LTS70A-Sauver les Captifs.png"
+        ],
+        "flip_cards": {
+            "LTS069A-Suivre les Orques.png": "LTS069B-Suivre les Orques.png",
+            "LTS070A-Sauver les Captifs.png": "LTS070B-Sauver les Captifs.png",
+            "LTS071-Les Uruk-Hai.png": "LTS071-Les Uruk-Hai v.png",
+            "LTS072A-Le Roi du Château d_Or.png": "LTS072B-Le Roi du Château d_Or.png",
+            "LTS073A-Assaur sur le Gouffre de Helm.png": "LTS073B-Assaut sur le Gouffre de Helm.png",
+            "LTS074A-Les Armées de l_Isengard.png": "LTS074B-Les Armées de l_Isengard.png",
+            "LTS075A-Une Brèche dans le Mur ! .png": "LTS075B-Une Brèche dans le Mur !.png",
+            "LTS076A-La Charge du Roi.png": "LTS076B-La Charge du Roi.png",
+            "LTS077-Le Gouffre de Helm.png": "LTS077-Le Gouffre de Helm v.png",
+            "LTS078A-Le Réveil des Ents.png": "LTS078B-Le Réveil des Ents.png",
+            "LTS079A-A l_Assaut de l_Isengard.png": "LTS079B-A l_Assaut de l_Isengard.png",
+            "LTS080A-La Voix de Saroumane.png": "LTS080B-La Voix de Saroumane.png",
+            "LTS081-La Route de l_Isengard.png": "LTS081-La Route de l_Isengard v.png"
+        }
+    },
+    "La Terre de l'Ombre": {
+        "héros": [
+            "LTO001-Frodon Sacquet.png",
+            "LTO002-Faramir.png",
+            "LTO003-Damrod.png"
+        ],
+        "joueurs": [
+            "LTO004-Anborn.png",
+            "LTO005-Mablung.png",
+            "LTO006-Peaurude.png",
+            "LTO007-Gamelin.png",
+            "LTO008-Bâton de Lebethron.png",
+            "LTO009-Embûche.png",
+            "LTO010-Nivacrin.png",
+            "LTO011-Viens donc en Tâter !.png",
+            "LTO012-Dans les Ombres.png",
+            "LTO013-Prononcez votre Serment !.png"
+        ],
+        "specials": {
+            "LTO014-Couple de Lapereaux.png": 4,
+            "LTO063-L_Anneau Unique.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "La Traversée des Marais",
+                "number_cards": 30,
+                "cards": {
+                    "LTO016-Mort Tâtonnant.png": 3,
+                    "LTO017-Choses Mortes.png": 3,
+                    "LTO018-Porteur de Chandelle.png": 3,
+                    "LTO019-Marécages Puants.png": 3,
+                    "LTO020-Fondrières Mouvantes.png": 2,
+                    "LTO021-Lac Hanté.png": 3,
+                    "LTO022-Mares d_Eau Croupie.png": 2,
+                    "LTO023-Bourbiers Mous.png": 4,
+                    "LTO024-Marais Mouvants.png": 2,
+                    "LTO025-Puanteur Atroce.png": 3,
+                    "LTO026-Une Sinistre Lueur.png": 2
+                }
+            },
+            {
+                "name": "Voyage à la Croisée des Chamins",
+                "number_cards": 31,
+                "cards": {
+                    "LTO027-La Porte Noire.png": 1,
+                    "LTO028-Homme de Harad.png": 4,
+                    "LTO029-Capitaine de Harad.png": 3,
+                    "LTO030-La Croisée des Chemins.png": 1,
+                    "LTO031-Henneth Annun.png": 1,
+                    "LTO032-Route du Sud.png": 2,
+                    "LTO033-Contreforts de l_Ephel Duath.png": 3,
+                    "LTO034-Bois de l_Ithilien.png": 2,
+                    "LTO035-Collines de l_Ithilien.png": 4,
+                    "LTO036-L_Appel du Seigneur Ténébreux.png": 3,
+                    "LTO037-En Avant, Marche !.png": 2,
+                    "LTO038-Suderons Déchaînés.png": 2,
+                    "LTO039-Grêle de Flèches.png": 3
+                }
+            },
+            {
+                "name": "L'Antre d'Arachne",
+                "number_cards": 25,
+                "cards": {
+                    "LTO040-Arachne.png": 1,
+                    "LTO041-Orque de Morgul.png": 4,
+                    "LTO042-Orque de Cirith Ungol.png": 3,
+                    "LTO043-Vallée de Morgul.png": 1,
+                    "LTO044-Chemin Secret de Sméagol.png": 1,
+                    "LTO045-Crevasse de Cirith Ungol.png": 1,
+                    "LTO046-L_Antre de l_Araignée.png": 2,
+                    "LTO047-Le Souterrain.png": 2,
+                    "LTO048-Passage Sombre et Profond.png": 3,
+                    "LTO049-Antre de la Nuit.png": 3,
+                    "LTO050-Exhalation de Pourriture.png": 2,
+                    "LTO051-Multiples Ouvertures.png": 2
+                }
+            },
+            {
+                "name": "Nazgûl de Morgul",
+                "number_cards": 4,
+                "cards": {
+                    "LTO053-Spectre de Morgul.png": 2,
+                    "LTO054-L_Appel de l_Anneau.png": 2
+                }
+            },
+            {
+                "name": "Hommes de Harad",
+                "number_cards": 9,
+                "cards": {
+                    "LTO056-Oliphant.png": 3,
+                    "LTO057-Soldat Haradrim.png": 3,
+                    "LTO058-Archer Haradrim.png": 3
+                }
+            },
+            {
+                "name": "La Grande Araignée",
+                "number_cards": 10,
+                "cards": {
+                    "LTO059-Tunnel Bouché.png": 2,
+                    "LTO060-Poison d_Arachne.png": 2,
+                    "LTO061-Malice Cachée.png": 3,
+                    "LTO062-Rage et Faim.png": 3
+                }
+            },
+            {
+                "name": "Gollum",
+                "number_cards": 3,
+                "cards": {
+                    "LTO075-Gollum.png": 1,
+                    "LTO076-Sméagol.png": 1,
+                    "LTO055-On les Hait !.png": 2
+                }
+            },
+            {
+                "name": "Fardeaux",
+                "number_cards": 5,
+                "cards": {
+                    "LTO015-L_Oeil Scrutateur.png": 4,
+                    "LTO052-Un Lourd Fardeau.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LTO064A-L_Apprivoisement de Sméagol.png",
+            "LTO064B-L_Apprivoisement de Sméagol.png",
+            "LTO065A-Au Travers des Marais.png",
+            "LTO065B-Au Travers de Marais.png",
+            "LTO066A-Ne Regardez pas les Lumières !.png",
+            "LTO066B-Ne Regardez pas les Lumières !.png",
+            "LTO067-La Traversée des Marais r.png",
+            "LTO067-La Traversée des Marais v.png",
+            "LTO068A-Embuscade contre les Hommes de Harad.png",
+            "LTO068B-Embuscade contre les Hommes de Harad.png",
+            "LTO069-Voyage à la Croisée des Chemins.png",
+            "LTO069-Voyage à la croisée des chemins v.png",
+            "LTO070A-Les Escaliers de Cirith Ungol.png",
+            "LTO070B-Les Escaliers de Cirith Ungol.png",
+            "LTO071A-Le Col de l_Araignée.png",
+            "LTO071B-Le Col de l_Araignée.png",
+            "LTO072A-Trahison de Gollum.png",
+            "LTO072B-Trahison de Gollum.png",
+            "LTO073-L_Antre d_Arachne.png",
+            "LTO073-L_Antre d_Arachne v.png"
+        ],
+        "flip_cards": {
+            "LTO064A-L_Apprivoisement de Sméagol.png": "LTO064B-L_Apprivoisement de Sméagol.png",
+            "LTO065A-Au Travers des Marais.png": "LTO065B-Au Travers de Marais.png",
+            "LTO066A-Ne Regardez pas les Lumières !.png": "LTO066B-Ne Regardez pas les Lumières !.png",
+            "LTO067-La Traversée des Marais r.png": "LTO067-La Traversée des Marais v.png",
+            "LTO068A-Embuscade contre les Hommes de Harad.png": "LTO068B-Embuscade contre les Hommes de Harad.png",
+            "LTO069-Voyage à la Croisée des Chemins.png": "LTO069-Voyage à la croisée des chemins v.png",
+            "LTO070A-Les Escaliers de Cirith Ungol.png": "LTO070B-Les Escaliers de Cirith Ungol.png",
+            "LTO071A-Le Col de l_Araignée.png": "LTO071B-Le Col de l_Araignée.png",
+            "LTO072A-Trahison de Gollum.png": "LTO072B-Trahison de Gollum.png",
+            "LTO073-L_Antre d_Arachne.png": "LTO073-L_Antre d_Arachne v.png",
+            "LTO075-Gollum.png": "LTO076-Sméagol.png"
+        }
+    }
+}
