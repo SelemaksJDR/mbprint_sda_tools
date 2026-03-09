@@ -122,6 +122,7 @@
         "quêtes": [
             "LTS069A-Suivre les Orques.png",
             "LTS069B-Suivre les Orques.png",
+            "LTS070A-Sauver les Captifs.png",
             "LTS070B-Sauver les Captifs.png",
             "LTS071-Les Uruk-Hai.png",
             "LTS071-Les Uruk-Hai v.png",
@@ -144,8 +145,7 @@
             "LTS080A-La Voix de Saroumane.png",
             "LTS080B-La Voix de Saroumane.png",
             "LTS081-La Route de l_Isengard.png",
-            "LTS081-La Route de l_Isengard v.png",
-            "LTS70A-Sauver les Captifs.png"
+            "LTS081-La Route de l_Isengard v.png"
         ],
         "flip_cards": {
             "LTS069A-Suivre les Orques.png": "LTS069B-Suivre les Orques.png",
