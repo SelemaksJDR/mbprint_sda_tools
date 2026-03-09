@@ -34,23 +34,24 @@ def get_backs(backs_object) -> dict:
     return result
 
 
-def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> list:
-    result: list = []
-    for element in cycles_object:
+def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> dict:
+    result: dict = {}
+    for element, number in cycles_object.items():
         # Création du chemin vers le cycle
-        result.append(pathlib.Path.joinpath(config_folder, f"cycles/{element}.jsonc"))
+        result[element] = {"occurence": number, "path": pathlib.Path.joinpath(config_folder, f"cycles/{element}.jsonc")}
     return result
 
 
-def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path) -> None:
+def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path) -> list:
     print(f"========== Génération du cycle {cycle_name} ==========")
     # génération des images
-    cards_with_bleed = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
+    cards_with_bleed: list = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
     # Generer le PDF
     pdf_folder: pathlib.Path = pathlib.Path.joinpath(result_folder, pathlib.Path("pdf"))
     pdf_folder.mkdir(parents=True, exist_ok=True)
     pdf_output = pdf_folder / f"{cycle_name}.pdf"
     generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
+    return cards_with_bleed
 
 
 if __name__ == '__main__':
@@ -91,26 +92,30 @@ if __name__ == '__main__':
     backs: dict = get_backs(backs_object)
     # Détermination des cycles à générer
     cycles_object = config_object["cycles"]
-    cycles : list = get_cycles_from_workspace(config_folder, cycles_object)
+    cycles : dict = get_cycles_from_workspace(config_folder, cycles_object)
     # génération des listes de cartes par cycle
     encounters_infos: dict = {}
     cards_in_cycle: dict = {}
+    occurence_for_cycle: dict = {}
     for cycle in cycles:
         cycle_data: dict = None
-        with open(cycle, 'r') as file:
+        with open(cycles[cycle]["path"], 'r') as file:
             cycle_data = json5.load(file)
             if helper_files.validate_cycle_json(cycle_data) is False:
                 continue
         # Génère les cartes avec le bon dos et le bon nombre d'exemplaires
         cards_generated, encounters_generated = cards_generator.generate_cycle(cycle_data, root_pictures=root_pictures, backs=backs, fix_object=fix_config_object)
         cards_in_cycle[cycle_data[infos.CYCLE_NAME]] = (cards_generated)
+        occurence_for_cycle[cycle_data[infos.CYCLE_NAME]] = cycles[cycle]["occurence"]
         encounters_infos.update(encounters_generated)
     print("================================")
     print("========== CONCLUSION ==========")
     print("================================")
     card_number: int = 0
+    card_number_to_print: int = 0
     for cycle_name, cards in cards_in_cycle.items():
         card_number = card_number + len(cards)
+        card_number_to_print = card_number_to_print + (len(cards) * occurence_for_cycle[cycle_name])
         print(f"{cycle_name} : {len(cards)}")
     all_is_good: bool = True
     for encounter, status in encounters_infos.items():
@@ -120,11 +125,18 @@ if __name__ == '__main__':
     if all_is_good:
         print(f"[OK] Toutes les séries sont correctement configurées")
     print(f"Nombre total de cartes: {card_number}")
+    print(f"Nombre total de cartes à imprimer: {card_number_to_print}")
 
     if validate_only is False:
         # Supprime le dossier de résultat
         if result_folder.exists():
             shutil.rmtree(result_folder)
         # Génère les cartes de chaque cycle
+        final_cards: list = []
+        final_pdf = result_folder / "FINAL.pdf"
         for cycle_name, cards in cards_in_cycle.items():
-            generate_cycle_pdf(cycle_name, cards, result_folder)
+            if occurence_for_cycle[cycle_name] > 0:
+                generated_cards = generate_cycle_pdf(cycle_name, cards, result_folder)
+                for occ in occurence_for_cycle[cycle_name]:
+                    final_cards.extend(generated_cards)
+        generepdf.new_pdf_from_images(final_cards, final_pdf)

@@ -279,63 +279,63 @@ def new_pdf_from_images(image_files: list[Path], output_pdf: Path) -> None:
 # Orchestration finale
 # ---------------------------------------------------------------------------
 
-def process_images(
-    source_dir: Path,
-    source_pdf_dir: Path,
-    output_dir: Path,
-    prefix: str = "bleed",
-) -> None:
-    """Traite toutes les images par suffixe, applique le bleed, genere le PDF."""
-    if not source_dir.exists():
-        print(f"ERREUR: Le repertoire '{source_dir}' n'existe pas.", file=sys.stderr)
-        return
+# def process_images(
+#     source_dir: Path,
+#     source_pdf_dir: Path,
+#     output_dir: Path,
+#     prefix: str = "bleed",
+# ) -> None:
+#     """Traite toutes les images par suffixe, applique le bleed, genere le PDF."""
+#     if not source_dir.exists():
+#         print(f"ERREUR: Le repertoire '{source_dir}' n'existe pas.", file=sys.stderr)
+#         return
 
-    # Nom du deck (deux niveaux au-dessus)
-    deck_name = source_dir.parent.parent.name
-    new_output_dir = output_dir / deck_name
-    new_output_dir.mkdir(parents=True, exist_ok=True)
+#     # Nom du deck (deux niveaux au-dessus)
+#     deck_name = source_dir.parent.parent.name
+#     new_output_dir = output_dir / deck_name
+#     new_output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Recuperer tous les fichiers image du repertoire PDF source
-    image_files = sorted(
-        f for f in source_pdf_dir.iterdir()
-        if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg")
-    )
+#     # Recuperer tous les fichiers image du repertoire PDF source
+#     image_files = sorted(
+#         f for f in source_pdf_dir.iterdir()
+#         if f.is_file() and f.suffix.lower() in (".png", ".jpg", ".jpeg")
+#     )
 
-    suffixes = ("_H", "_J", "_R", "_Q")
-    all_ordered_files: list[Path] = []
+#     suffixes = ("_H", "_J", "_R", "_Q")
+#     all_ordered_files: list[Path] = []
 
-    for suffix in suffixes:
-        filtered = [f for f in image_files if suffix in f.stem]
+#     for suffix in suffixes:
+#         filtered = [f for f in image_files if suffix in f.stem]
 
-        # Regrouper par paire face/dos
-        pairs: dict[str, dict[str, Path | None]] = {}
-        for f in filtered:
-            base = re.sub(r"_dos$", "", f.stem)
-            base = re.sub(rf"{re.escape(suffix)}$", "", base)
-            if base not in pairs:
-                pairs[base] = {"face": None, "dos": None}
-            if f.stem.endswith("_dos"):
-                pairs[base]["dos"] = f
-            else:
-                pairs[base]["face"] = f
+#         # Regrouper par paire face/dos
+#         pairs: dict[str, dict[str, Path | None]] = {}
+#         for f in filtered:
+#             base = re.sub(r"_dos$", "", f.stem)
+#             base = re.sub(rf"{re.escape(suffix)}$", "", base)
+#             if base not in pairs:
+#                 pairs[base] = {"face": None, "dos": None}
+#             if f.stem.endswith("_dos"):
+#                 pairs[base]["dos"] = f
+#             else:
+#                 pairs[base]["face"] = f
 
-        # Trier et traiter
-        for key in sorted(pairs.keys()):
-            pair = pairs[key]
-            for role in ("face", "dos"):
-                src_file = pair[role]
-                if src_file is None:
-                    continue
-                print(f"Traitement : {src_file.name}")
-                bleed_file = convert_image_to_bleed(src_file, new_output_dir, prefix)
-                if bleed_file and bleed_file.exists():
-                    final_name = new_output_dir / f"{src_file.stem}.png"
-                    bleed_file.rename(final_name)
-                    all_ordered_files.append(final_name)
+#         # Trier et traiter
+#         for key in sorted(pairs.keys()):
+#             pair = pairs[key]
+#             for role in ("face", "dos"):
+#                 src_file = pair[role]
+#                 if src_file is None:
+#                     continue
+#                 print(f"Traitement : {src_file.name}")
+#                 bleed_file = convert_image_to_bleed(src_file, new_output_dir, prefix)
+#                 if bleed_file and bleed_file.exists():
+#                     final_name = new_output_dir / f"{src_file.stem}.png"
+#                     bleed_file.rename(final_name)
+#                     all_ordered_files.append(final_name)
 
-    # Generer le PDF
-    pdf_output = new_output_dir / f"{deck_name}.pdf"
-    new_pdf_from_images(all_ordered_files, pdf_output)
+#     # Generer le PDF
+#     pdf_output = new_output_dir / f"{deck_name}.pdf"
+#     new_pdf_from_images(all_ordered_files, pdf_output)
 
 
 # ---------------------------------------------------------------------------
