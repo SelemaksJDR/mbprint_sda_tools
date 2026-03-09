@@ -1,0 +1,167 @@
+{
+    // Nom
+    "name": "Les Deux Tours - La Terre de l'Ombre",
+    // Dossier contenant les images
+    "pictures_folder": "saga LOTR",
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "La Terre de l'Ombre": {
+        "héros": [
+            "LTO001-Frodon Sacquet.png",
+            "LTO002-Faramir.png",
+            "LTO003-Damrod.png"
+        ],
+        "joueurs": [
+            "LTO004-Anborn.png",
+            "LTO005-Mablung.png",
+            "LTO006-Peaurude.png",
+            "LTO007-Gamelin.png",
+            "LTO008-Bâton de Lebethron.png",
+            "LTO009-Embûche.png",
+            "LTO010-Nivacrin.png",
+            "LTO011-Viens donc en Tâter !.png",
+            "LTO012-Dans les Ombres.png",
+            "LTO013-Prononcez votre Serment !.png"
+        ],
+        "specials": {
+            "LTO014-Couple de Lapereaux.png": 4,
+            "LTO063-L_Anneau Unique.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "La Traversée des Marais",
+                "number_cards": 30,
+                "cards": {
+                    "LTO016-Mort Tâtonnant.png": 3,
+                    "LTO017-Choses Mortes.png": 3,
+                    "LTO018-Porteur de Chandelle.png": 3,
+                    "LTO019-Marécages Puants.png": 3,
+                    "LTO020-Fondrières Mouvantes.png": 2,
+                    "LTO021-Lac Hanté.png": 3,
+                    "LTO022-Mares d_Eau Croupie.png": 2,
+                    "LTO023-Bourbiers Mous.png": 4,
+                    "LTO024-Marais Mouvants.png": 2,
+                    "LTO025-Puanteur Atroce.png": 3,
+                    "LTO026-Une Sinistre Lueur.png": 2
+                }
+            },
+            {
+                "name": "Voyage à la Croisée des Chamins",
+                "number_cards": 31,
+                "cards": {
+                    "LTO027-La Porte Noire.png": 1,
+                    "LTO028-Homme de Harad.png": 4,
+                    "LTO029-Capitaine de Harad.png": 3,
+                    "LTO030-La Croisée des Chemins.png": 1,
+                    "LTO031-Henneth Annun.png": 1,
+                    "LTO032-Route du Sud.png": 2,
+                    "LTO033-Contreforts de l_Ephel Duath.png": 3,
+                    "LTO034-Bois de l_Ithilien.png": 2,
+                    "LTO035-Collines de l_Ithilien.png": 4,
+                    "LTO036-L_Appel du Seigneur Ténébreux.png": 3,
+                    "LTO037-En Avant, Marche !.png": 2,
+                    "LTO038-Suderons Déchaînés.png": 2,
+                    "LTO039-Grêle de Flèches.png": 3
+                }
+            },
+            {
+                "name": "L'Antre d'Arachne",
+                "number_cards": 25,
+                "cards": {
+                    "LTO040-Arachne.png": 1,
+                    "LTO041-Orque de Morgul.png": 4,
+                    "LTO042-Orque de Cirith Ungol.png": 3,
+                    "LTO043-Vallée de Morgul.png": 1,
+                    "LTO044-Chemin Secret de Sméagol.png": 1,
+                    "LTO045-Crevasse de Cirith Ungol.png": 1,
+                    "LTO046-L_Antre de l_Araignée.png": 2,
+                    "LTO047-Le Souterrain.png": 2,
+                    "LTO048-Passage Sombre et Profond.png": 3,
+                    "LTO049-Antre de la Nuit.png": 3,
+                    "LTO050-Exhalation de Pourriture.png": 2,
+                    "LTO051-Multiples Ouvertures.png": 2
+                }
+            },
+            {
+                "name": "Nazgûl de Morgul",
+                "number_cards": 4,
+                "cards": {
+                    "LTO053-Spectre de Morgul.png": 2,
+                    "LTO054-L_Appel de l_Anneau.png": 2
+                }
+            },
+            {
+                "name": "Hommes de Harad",
+                "number_cards": 9,
+                "cards": {
+                    "LTO056-Oliphant.png": 3,
+                    "LTO057-Soldat Haradrim.png": 3,
+                    "LTO058-Archer Haradrim.png": 3
+                }
+            },
+            {
+                "name": "La Grande Araignée",
+                "number_cards": 10,
+                "cards": {
+                    "LTO059-Tunnel Bouché.png": 2,
+                    "LTO060-Poison d_Arachne.png": 2,
+                    "LTO061-Malice Cachée.png": 3,
+                    "LTO062-Rage et Faim.png": 3
+                }
+            },
+            {
+                "name": "Gollum",
+                "number_cards": 3,
+                "cards": {
+                    "LTO075-Gollum.png": 1,
+                    "LTO076-Sméagol.png": 1,
+                    "LTO055-On les Hait !.png": 2
+                }
+            },
+            {
+                "name": "Fardeaux",
+                "number_cards": 5,
+                "cards": {
+                    "LTO015-L_Oeil Scrutateur.png": 4,
+                    "LTO052-Un Lourd Fardeau.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LTO064A-L_Apprivoisement de Sméagol.png",
+            "LTO064B-L_Apprivoisement de Sméagol.png",
+            "LTO065A-Au Travers des Marais.png",
+            "LTO065B-Au Travers de Marais.png",
+            "LTO066A-Ne Regardez pas les Lumières !.png",
+            "LTO066B-Ne Regardez pas les Lumières !.png",
+            "LTO067-La Traversée des Marais r.png",
+            "LTO067-La Traversée des Marais v.png",
+            "LTO068A-Embuscade contre les Hommes de Harad.png",
+            "LTO068B-Embuscade contre les Hommes de Harad.png",
+            "LTO069-Voyage à la Croisée des Chemins.png",
+            "LTO069-Voyage à la croisée des chemins v.png",
+            "LTO070A-Les Escaliers de Cirith Ungol.png",
+            "LTO070B-Les Escaliers de Cirith Ungol.png",
+            "LTO071A-Le Col de l_Araignée.png",
+            "LTO071B-Le Col de l_Araignée.png",
+            "LTO072A-Trahison de Gollum.png",
+            "LTO072B-Trahison de Gollum.png",
+            "LTO073-L_Antre d_Arachne.png",
+            "LTO073-L_Antre d_Arachne v.png"
+        ],
+        "flip_cards": {
+            "LTO064A-L_Apprivoisement de Sméagol.png": "LTO064B-L_Apprivoisement de Sméagol.png",
+            "LTO065A-Au Travers des Marais.png": "LTO065B-Au Travers de Marais.png",
+            "LTO066A-Ne Regardez pas les Lumières !.png": "LTO066B-Ne Regardez pas les Lumières !.png",
+            "LTO067-La Traversée des Marais r.png": "LTO067-La Traversée des Marais v.png",
+            "LTO068A-Embuscade contre les Hommes de Harad.png": "LTO068B-Embuscade contre les Hommes de Harad.png",
+            "LTO069-Voyage à la Croisée des Chemins.png": "LTO069-Voyage à la croisée des chemins v.png",
+            "LTO070A-Les Escaliers de Cirith Ungol.png": "LTO070B-Les Escaliers de Cirith Ungol.png",
+            "LTO071A-Le Col de l_Araignée.png": "LTO071B-Le Col de l_Araignée.png",
+            "LTO072A-Trahison de Gollum.png": "LTO072B-Trahison de Gollum.png",
+            "LTO073-L_Antre d_Arachne.png": "LTO073-L_Antre d_Arachne v.png",
+            "LTO075-Gollum.png": "LTO076-Sméagol.png"
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{
+    // Nom
+    "name": "La Communauté de l'Anneau - Les Cavaliers Noirs",
+    // Dossier contenant les images
+    "pictures_folder": "saga LOTR",
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "Les Cavaliers Noirs": {
+        "héros": [
+            "LCN001-Frodon Sacquet.png",
+            "LCN002-Sam Gamegie.png",
+            "LCN003-Merry.png",
+            "LCN004-Pippin.png",
+            "LCN005-Gros Bolger.png"
+        ],
+        "joueurs": [
+            "LCN006-Bill le Poney.png",
+            "LCN007-Prosper Poiredebeurré.png",
+            "LCN008-Père Maggotte.png",
+            "LCN009-Ténacité du Semi-Homme.png",
+            "LCN010-Ronds de Fumée.png",
+            "LCN011-Ne pas se Faire Remarquer.png",
+            "LCN012-Intuition de Frodon.png",
+            "LCN013-Manteau de Hobbit.png",
+            "LCN014-Dague de l_Ouistrenesse.png",
+            "LCN015-Pipe Hobbite.png",
+            "LCN016-Pierre Elfique.png"
+        ],
+        "specials": {
+            "LCN017-M. Soucolline.png": 1,
+            "LCN018-Rôdeur Infatigable.png": 1,
+            "LCN019-Guérisseur Chevronné.png": 1,
+            "LCN020-Valeureux Guerrier.png": 1,
+            "LCN021-Noble Héros.png": 1,
+            "LCN077-Gildor Inglorion.png": 1,
+            "LCN085-L_Anneau Unique.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "L'Ombre du Passé",
+                "number_cards": 29,
+                "cards": {
+                    "LCN031-Cul-de-Sac.png": 1,
+                    "LCN032-Bout-des-Bois.png": 1,
+                    "LCN033-Ruisseau de Stock.png": 1,
+                    "LCN034-La Haricotière.png": 1,
+                    "LCN035-Bac de Châteaubouc.png": 1,
+                    "LCN036-Pays de la Colline Verte.png": 3,
+                    "LCN037-Route de Stock.png": 3,
+                    "LCN038-Le Maresque.png": 2,
+                    "LCN039-Cavalier Noir.png": 5,
+                    "LCN040-Corneille Malfaisante.png": 3,
+                    "LCN041-En Rampant vers Lui.png": 3,
+                    "LCN042-A la Poursuite de l_Anneau.png": 3,
+                    "LCN043-Avez-vous vu Sacquet.png": 2
+                }
+            },
+            {
+                "name": "Un Poignard dans le Noir",
+                "number_cards": 24,
+                "cards": {
+                    "LCN045-Le Poney Fringant.png": 1,
+                    "LCN046-Mont Venteux.png": 1,
+                    "LCN047-Bois de Chet.png": 3,
+                    "LCN048-L_Eau-aux-Cousins.png": 1,
+                    "LCN049-Collines Venteuses.png": 3,
+                    "LCN050-Cavalier du Mordor.png": 2,
+                    "LCN051-Bill Fougeron.png": 1,
+                    "LCN052-Habitant Véreux de Bree.png": 4,
+                    "LCN053-Homme du Sud Bigle.png": 3,
+                    "LCN054-Attention Indésirable.png": 3,
+                    "LCN055-Souffle Noir.png": 2
+                }
+            },
+            {
+                "name": "Fuite Vers le Gué",
+                "number_cards": 24,
+                "cards": {
+                    "LCN057-Une Méchante Blessure.png": 1,
+                    "LCN058-Le Dernier Point.png": 1,
+                    "LCN059-Gué de Bruinen.png": 1,
+                    "LCN060-Le Camp des Trolls.png": 1,
+                    "LCN061-Landes d_Etten.png": 3,
+                    "LCN062-La Vieille Route.png": 3,
+                    "LCN063-Cavalier Acharné.png": 4,
+                    "LCN064-Frappés de Mutisme.png": 3,
+                    "LCN065-L_Ennemi est Sur Nous !.png": 2,
+                    "LCN066-Assailli par la Douleur.png": 3,
+                    "LCN067-Les Neuf sont Sortis.png": 2
+                }
+            },
+            {
+                "name": "Les Nazgûl",
+                "number_cards": 11,
+                "cards": {
+                    "LCN068-Le Roi-Sorcier.png": 1,
+                    "LCN069-Esprit Servant.png": 4,
+                    "LCN070-Lame Blafarde.png": 3,
+                    "LCN071-Pouvoir Terrorisant.png": 3
+                }
+            },
+            {
+                "name": "Pourchassés",
+                "number_cards": 6,
+                "cards": {
+                    "LCN072-Hors des Sentiers Battus.png": 3,
+                    "LCN073-Cri Perçant.png": 3
+                }
+            },
+            {
+                "name": "Les Cavaliers Noirs",
+                "number_cards": 5,
+                "cards": {
+                    "LCN074-Coursier Noir.png": 3,
+                    "LCN075-Galoper en Coup de Vent.png": 2
+                }
+            },
+            {
+                "name": "L'Anneau",
+                "number_cards": 3,
+                "cards": {
+                    "LCN076-L_Attrait de l_Anneau.png": 3
+                }
+            },
+            {
+              "name": "Fardeaux",
+                "number_cards": 7,
+                "cards": {
+                    "LCN078-Retard de Gandalf.png": 1,
+                    "LCN079-L_Anneau les Attire.png": 1,
+                    "LCN080-Poids de l_Anneau.png": 1,
+                    "LCN081-Peur d_Être Découvert.png": 1,
+                    "LCN082-Dévoré Vif !.png": 1,
+                    "LCN083-Panique !.png": 1,
+                    "LCN084-Transi de Peur.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LCN022A-Trois Font de la Compagnie.png",
+            "LCN022B-Trois Font de la Compagnie.png",
+            "LCN023A-Un Raccourci vers les Champignons.png",
+            "LCN023B-Un Raccourci vers les Champignons.png",
+            "LCN024A-Fuite au Pays de Bouc.png",
+            "LCN024B-Fuite au Pays de Bouc.png",
+            "LCN025A-Des Ennuis à Bree.png",
+            "LCN025B-Des Ennuis à Bree.png",
+            "LCN026A-Dans les Terres Sauvages.png",
+            "LCN026B-Dans les Terres Sauvages.png",
+            "LCN027A-L_Attaque des Esprits Servants.png",
+            "LCN027B-L_Attaque des Esprits Servants.png",
+            "LCN028A-Poursuivis par l_Ennemi.png",
+            "LCN028B-Poursuivis par l_Ennemi.png",
+            "LCN029A-Course vers Fondcombe.png",
+            "LCN029B-Course vers Fondcombe.png",
+            "LCN030-L_Ombre du Passé.png",
+            "LCN030v-L_Ombre du Passé.png",
+            "LCN044-Un Poignard dans le Noir.png",
+            "LCN044v-Un Poignard dans le Noir.png",
+            "LCN056A-Fuite vers le Gué.png",
+            "LCN056v-Fuite vers le Gué.png"
+        ],
+        "flip_cards": {
+            "LCN022A-Trois Font de la Compagnie.png": "LCN022B-Trois Font de la Compagnie.png",
+            "LCN023A-Un Raccourci vers les Champignons.png": "LCN023B-Un Raccourci vers les Champignons.png",
+            "LCN024A-Fuite au Pays de Bouc.png": "LCN024B-Fuite au Pays de Bouc.png",
+            "LCN025A-Des Ennuis à Bree.png": "LCN025B-Des Ennuis à Bree.png",
+            "LCN026A-Dans les Terres Sauvages.png": "LCN026B-Dans les Terres Sauvages.png",
+            "LCN027A-L_Attaque des Esprits Servants.png": "LCN027B-L_Attaque des Esprits Servants.png",
+            "LCN028A-Poursuivis par l_Ennemi.png": "LCN028B-Poursuivis par l_Ennemi.png",
+            "LCN029A-Course vers Fondcombe.png": "LCN029B-Course vers Fondcombe.png",
+            "LCN030-L_Ombre du Passé.png": "LCN030v-L_Ombre du Passé.png",
+            "LCN044-Un Poignard dans le Noir.png": "LCN044v-Un Poignard dans le Noir.png",
+            "LCN056A-Fuite vers le Gué.png": "LCN056v-Fuite vers le Gué.png"
+        }
+    }
+}
