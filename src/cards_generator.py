@@ -65,7 +65,7 @@ def card_list_with_flip_cards_numbered(cards: dict, flip_cards: dict, fix_object
             continue
         else:
             if back is None:
-                print(f"Aucun dos n'a été assigné à la carte {card}")
+                print(f"[WARNING] Aucun dos n'a été assigné à la carte {card}")
                 continue
             # Cas général, il n'y a qu'un seul dos
             is_ok, result_card = add_card(card_front=card, card_back=back, occurrence=occurrence, fix_object=fix_object)
