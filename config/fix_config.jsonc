@@ -457,7 +457,10 @@
         // Saga Les Deux Tours
         "saga LOTR/LTS025-Uruk)hai d_Ugluk.png": "saga LOTR/LTS025-Uruk-hai d_Ugluk.png",
         "saga LOTR/LTS026-Le Palteau de Rohan.png": "saga LOTR/LTS026-Le Plateau de Rohan.png",
-        "saga LOTR/LTS70A-Sauver les Captifs.png": "saga LOTR/LTS70A-Sauver les Captifs.png"
+        "saga LOTR/LTS70A-Sauver les Captifs.png": "saga LOTR/LTS070A-Sauver les Captifs.png",
+        // Saga Le Retour du Roi
+        "saga LOTR/LFO04-Grmbold.png": "saga LOTR/LFO04-Grimbold.png",
+        "saga LOTR/LFO56-Brèche dasn le Rammas.png": "saga LOTR/LFO56-Brèche dans le Rammas.png"
     },
     "erratas": {
         "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs.png": "SDA-intégrale/cycle 3 (incl. Heirs of Numenor)/HON029-Cernés par les Wargs-erraté.png"

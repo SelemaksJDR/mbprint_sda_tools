@@ -1,0 +1,320 @@
+{
+    // Nom
+    "name": "saga LOTR - Le Retour du Roi",
+    // Dossier contenant les images
+    "pictures_folder": "saga LOTR",
+    // Par extension :
+    // * Chaque carte et son nombre d'exemplaire
+    // * Les cartes recto-verso avec la face A et la face B
+    "La Flamme de l'Ouest": {
+        "héros": [
+            "LFO01-Aragorn.png",
+            "LFO02-Éowyn.png",
+            "LFO03-Beregond.png"
+        ],
+        "joueurs": [
+            "LFO04-Grimbold.png",
+            "LFO05-Prince Imrahil.png",
+            "LFO06-Halbarad.png",
+            "LFO07-Ghan-buri-Ghan.png",
+            "LFO08-Plus Dur que l_Acier.png",
+            "LFO09-Défense Désespérée.png",
+            "LFO10-Bouclier d_Or.png",
+            "LFO11-Livrée de la Tour.png",
+            "LFO12-Roheryn.png",
+            "LFO13-Étendard d_Elendil.png"
+        ],
+        "specials": {
+            "LFO14-Écuyer de Rohan.png": 1,
+            "LFO15-Écuyer de Gondor.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "Le Passage de la Compagnie Grise",
+                "number_cards": 34,
+                "cards": {
+                    "LFO67-Armée des Morts.png": 1,
+                    "LFO68-Armée des Morts.png": 1,
+                    "LFO17-La Pierre d_Erech.png": 1,
+                    "LFO18-Porte Sombre.png": 2,
+                    "LFO19-Point de Rencontre.png": 3,
+                    "LFO20-Route Mortelle.png": 3,
+                    "LFO21-Chemin Hanté.png": 3,
+                    "LFO22-Mort de Dunharrow.png": 4,
+                    "LFO23-Mort Impie.png": 3,
+                    "LFO24-Spectres des Hommes.png": 2,
+                    "LFO25-Armée des Ombres.png": 2,
+                    "LFO26-Mon Sang se Glace.png": 3,
+                    "LFO27-La Voie est Fermée.png": 2,
+                    "LFO28-Des Murmures dans le Noir.png": 3,
+                    "LFO29-Pas de Retour en Arrière.png": 2
+                }
+            },
+            {
+                "name": "Le Siège du Gondor",
+                "number_cards": 32,
+                "cards": {
+                    "LFO71-La Flotte Corsaire.png": 1,
+                    "LFO72-La Flotte Corsaire.png": 1,
+                    "LFO30-Grand Navire Corsaire.png": 1,
+                    "LFO31-Galère de Guerre d_Umbar.png": 3,
+                    "LFO32-Dromon Corsaire.png": 3,
+                    "LFO33-Port de Pelargir.png": 3,
+                    "LFO34-Quais de Pelargir.png": 2,
+                    "LFO35-Capitaine Corsaire.png": 2,
+                    "LFO36-Corsaire d_Umbar.png": 3,
+                    "LFO37-Équipage Pirate d_Umbar.png": 2,
+                    "LFO38-Pirate Haradrim.png": 3,
+                    "LFO39-Peuple Féroce d_Umbar.png": 2,
+                    "LFO40-Voiles Noires.png": 3,
+                    "LFO41-Piller les Côtes.png": 2,
+                    "LFO42-Acculés au Bord.png": 2
+                }
+            },
+            {
+                "name": "La Bataille des Champs du Pelennor",
+                "number_cards": 44, // Numéroté 45 mais le 1/45 est le verso de la Flotte Corsaire du siège du Gondor
+                "cards": {
+                    "LFO79-Le Roi-sorcier.png": 1,
+                    "LFO80-Le Roi-Sorcier.png": 1,
+                    "LFO43-Minas Tirith.png": 1,
+                    "LFO44-Broyeur.png": 1,
+                    "LFO45-Porte de Gondor.png": 1,
+                    "LFO46-Mur de la Cité.png": 3,
+                    "LFO47-Champ du Pelennor.png": 4,
+                    "LFO48-Tranchée Emplie de Feu.png": 3,
+                    "LFO49-Tour de Siège.png": 3,
+                    "LFO50-Le Serpent Noir.png": 1,
+                    "LFO51-Mumak de Guerre.png": 2,
+                    "LFO52-Champion Suderon.png": 2,
+                    "LFO53-Capitaine de Morgul.png": 2,
+                    "LFO54-Orque de l_Oeil.png": 3,
+                    "LFO55-Orque du Mordor.png": 5,
+                    "LFO56-Brèche dans le Rammas.png": 2,
+                    "LFO57-Bête Féroce.png": 2,
+                    "LFO58-Trait Noir.png": 2,
+                    "LFO59-Sorts de Ruine.png": 2,
+                    "LFO60-Peur et Désespoir.png": 2,
+                    "LFO61-Ombre du Mordor.png": 2
+                }
+            },
+            {
+                "name": "Fardeaux",
+                "number_cards": 8,
+                "cards": {
+                    "LFO62-Spectre Monté sur des Ailes.png": 4,
+                    "LFO16-Transi de Frayeur.png": 4
+                }
+            }
+        ],
+        "quêtes": [
+            "LFO63A-La Porte Interdite.png",
+            "LFO63B-La Porte Interdite.png",
+            "LFO64A-Les Chemins des Morts.png",
+            "LFO64B-Les Chemins des Morts.png",
+            "LFO65A-Les Morts nous Suivent.png",
+            "LFO65B-Les Morts nous Suivent.png",
+            "LFO66-Le Passage de la Compagnie Grise.png",
+            "LFO66-Le Passage de la Compagnie Grise v.png",
+            "LFO69A-Attaque sur Pelargir.png",
+            "LFO69B-Attaque sur Pelargir.png",
+            "LFO70-Le Siège du Gondor.png",
+            "LFO70-Le Siège du Gondor v.png",
+            "LFO73A-La Garnison du Gondor.png",
+            "LFO73B-La Garnison du Gondor.png",
+            "LFO74A-Retraite d_Osgiliath.png",
+            "LFO74B-Retraite d_Osgiliath.png",
+            "LFO75A-La Cité Blanche Assiégée.png",
+            "LFO75B-La Cité Blanche Assiégée.png",
+            "LFO76A-Le Rohan est Arrivé !.png",
+            "LFO76B-Le Rohan est Arrivé !.png",
+            "LFO77A-Combats dans les Champs.png",
+            "LFO77B-Combats dans les Champs.png",
+            "LFO78-La Bataille des Champs du Pelennor.png",
+            "LFO78-La Bataille des Champs du Pelennor v.png"
+        ],
+        "flip_cards": {
+            "LFO63A-La Porte Interdite.png": "LFO63B-La Porte Interdite.png",
+            "LFO64A-Les Chemins des Morts.png": "LFO64B-Les Chemins des Morts.png",
+            "LFO65A-Les Morts nous Suivent.png": "LFO65B-Les Morts nous Suivent.png",
+            "LFO66-Le Passage de la Compagnie Grise.png": "LFO66-Le Passage de la Compagnie Grise v.png",
+            "LFO67-Armée des Morts.png": "LFO68-Armée des Morts.png",
+            "LFO69A-Attaque sur Pelargir.png": "LFO69B-Attaque sur Pelargir.png",
+            "LFO70-Le Siège du Gondor.png": "LFO70-Le Siège du Gondor v.png",
+            "LFO71-La Flotte Corsaire.png": "LFO72-La Flotte Corsaire.png",
+            "LFO73A-La Garnison du Gondor.png": "LFO73B-La Garnison du Gondor.png",
+            "LFO74A-Retraite d_Osgiliath.png": "LFO74B-Retraite d_Osgiliath.png",
+            "LFO75A-La Cité Blanche Assiégée.png": "LFO75B-La Cité Blanche Assiégée.png",
+            "LFO76A-Le Rohan est Arrivé !.png": "LFO76B-Le Rohan est Arrivé !.png",
+            "LFO77A-Combats dans les Champs.png": "LFO77B-Combats dans les Champs.png",
+            "LFO78-La Bataille des Champs du Pelennor.png": "LFO78-La Bataille des Champs du Pelennor v.png",
+            "LFO79-Le Roi-sorcier.png": "LFO80-Le Roi-Sorcier.png"
+        }
+    },
+    "La Montagne de Feu": {
+        "héros": [
+            "LMF001-Frodon Sacquet.png",
+            "LMF002-Aragorn.png",
+            "LMF003-Éomer.png",
+            "LMF004-Tom Chaumine.png"
+        ],
+        "joueurs": [
+            "LMF005-Rosie Chaumine.png",
+            "LMF006-Elfhelm.png",
+            "LMF007-Elladan.png",
+            "LMF008-Elrohir.png",
+            "LMF009-Capitaines de l_Ouest.png",
+            "LMF010-Soulever la Comté.png",
+            "LMF011-Guthwine.png",
+            "LMF012-L_Ami par Excellence.png",
+            "LMF013-Déguisement Orque.png"
+        ],
+        "specials": {
+            "LMF065-L_Anneau Unique.png": 1
+        },
+        "rencontres": [
+            {
+                "name": "La Tour de Cirith Ungol",
+                "number_cards": 23, // Numérotée à 24 mais la carte Les Deux Guetteurs est double face
+                "cards": {
+                    "LMF070-Les Deux Guetteurs.png": 1,
+                    "LMF071-Les Deux Guetteurs.png": 1,
+                    "LMF014-Le Dernier de la Compagnie.png": 1,
+                    "LMF015-Chambre Supérieure.png": 1,
+                    "LMF016-Couloir Retentissant.png": 3,
+                    "LMF017-Cour Ensanglantée.png": 3,
+                    "LMF018-Escalier en Colimaçon.png": 3,
+                    "LMF019-Couloir aux Torches.png": 3,
+                    "LMF020-Shagrat.png": 1,
+                    "LMF021-Gorbag.png": 1,
+                    "LMF022-Uruk Blessé.png": 3,
+                    "LMF023-Hurlements Orques.png": 3
+                }
+            },
+            {
+                "name": "La Porte Noire",
+                "number_cards": 40,
+                "cards": {
+                    "LMF024-La Porte Noire.png": 1,
+                    "LMF025-Tours des Dents.png": 2,
+                    "LMF026-Collines Assiégées.png": 2,
+                    "LMF027-Désolation de Dagorlad.png": 3,
+                    "LMF028-Pentes de Cirith Gorgor.png": 2,
+                    "LMF029-Fondrière Puante.png": 3,
+                    "LMF030-Mur du Morannon.png": 2,
+                    "LMF031-La Bouche de Sauron.png": 1,
+                    "LMF032-Nazgul du Mordor.png": 3,
+                    "LMF033-Troll des Collines de Gorgoroth.png": 2,
+                    "LMF034-Archer des Orientaux.png": 3,
+                    "LMF035-Guerrier de Rhun.png": 3,
+                    "LMF036-Faucon de l_Enfer.png": 2,
+                    "LMF037-L_Heure du Destin.png": 3,
+                    "LMF038-Mâchoires d_Acier.png": 2,
+                    "LMF039-La Rage l_Envahit.png": 3,
+                    "LMF040-Assaut du Mordor.png": 3
+                }
+            },
+            {
+                "name": "Montagne du Destin",
+                "number_cards": 36,
+                "cards": {
+                    "LMF042-La Tour de Barad-dur.png": 1,
+                    "LMF043-La Montagne du Destin.png": 1,
+                    "LMF044-Forteresse Orque.png": 3,
+                    "LMF045-Route du Mordor.png": 2,
+                    "LMF046-Plaine de Gorgoroth.png": 4,
+                    "LMF047-Enchevêtrement d_Épineux.png": 3,
+                    "LMF048-Vieux Cours d_Eau.png": 1,
+                    "LMF049-Gollum.png": 1,
+                    "LMF050-Esprit Servant de Sauron.png": 2,
+                    "LMF051-Capitaine Orque.png": 2,
+                    "LMF052-Grand Uruk.png": 3,
+                    "LMF053-Petit Renifleur.png": 4,
+                    "LMF054-Sssale Maître !.png": 1,
+                    "LMF055-L_Oeil Vigilant.png": 4,
+                    "LMF056-Fumées Nauséabondes.png": 2,
+                    "LMF057-Lourd et Fatigué.png": 2
+                }
+            },
+            {
+                "name": "Orques du Mordor",
+                "number_cards": 9,
+                "cards": {
+                    "LMF058-Orque du Mordor.png": 3,
+                    "LMF059-Archer Snaga.png": 3,
+                    "LMF060-Soldat Uruk.png": 3
+                }
+            },
+            {
+                "name": "Ombres Profondes",
+                "number_cards": 8,
+                "cards": {
+                    "LMF061-Attiré par l_Anneau.png": 3,
+                    "LMF062-Ombres Profondes.png": 2,
+                    "LMF063-Vigilance Maléfique.png": 3
+                }
+            },
+            {
+                "name": "Mode Multijoueur Épique",
+                "number_cards": 3, // Numéroté à 4 mais la carte L'Oeil de Sauron est double face
+                "cards": {
+                    "LMF081-L_Oeil de Sauron.png": 1,
+                    "LMF082-L_Oeil de Sauron.png": 1,
+                    "LMF064-Dans les Ténèbres les Lier.png": 2
+                }
+            },
+            {
+                "name": "Fardeaux et Avantages",
+                "number_cards": 1,
+                "cards": {
+                    "LMF041-Gwaihir.png": 1
+                }
+            }
+        ],
+        "quêtes": [
+            "LMF066A-Passer les Deux Guetteurs.png",
+            "LMF066B-Passer les Deux Guetteurs.png",
+            "LMF067A-Combats dans la Tour.png",
+            "LMF067B-Combats dans la Tour.png",
+            "LMF068A-Fuite de Cirith Ungol.png",
+            "LMF068B-Fuite de Cirith Ungol.png",
+            "LMF069-La Tour de Cirith Ungol.png",
+            "LMF069-La Tour de Cirith Ungol v.png",
+            "LMF072A-Ambassade de la Tour Sombre.png",
+            "LMF072B-Ambassade de la Tour Sombre.png",
+            "LMF073A-La Bataille du Morannon.png",
+            "LMF073B-La Bataille du Morannon.png",
+            "LMF074-La Porte Noire s_Ouvre.png",
+            "LMF074-La Porte Noire s_Ouvre v.png",
+            "LMF075A-La Terre du Mordor.png",
+            "LMF075B-La Terre du Mordor.png",
+            "LMF076A-La Route d_Isenmouthe.png",
+            "LMF076B-La Route d_Isenmouthe.png",
+            "LMF077A-Le Dernier Sursaut.png",
+            "LMF077B-Le Dernier Sursaut.png",
+            "LMF078A-La Crevasse du Destin.png",
+            "LMF078B-La Crevasse du Destin.png",
+            "LMF079-Montagne du Destin.png",
+            "LMF079-Montagne du Destin v.png",
+            "LMF080-Mode Multijoueur Épique.png",
+            "LMF080-Mode Multijoueur Épique v.png"
+        ],
+        "flip_cards": {
+            "LMF066A-Passer les Deux Guetteurs.png": "LMF066B-Passer les Deux Guetteurs.png",
+            "LMF067A-Combats dans la Tour.png": "LMF067B-Combats dans la Tour.png",
+            "LMF068A-Fuite de Cirith Ungol.png": "LMF068B-Fuite de Cirith Ungol.png",
+            "LMF069-La Tour de Cirith Ungol.png": "LMF069-La Tour de Cirith Ungol v.png",
+            "LMF070-Les Deux Guetteurs.png": "LMF071-Les Deux Guetteurs.png",
+            "LMF072A-Ambassade de la Tour Sombre.png": "LMF072B-Ambassade de la Tour Sombre.png",
+            "LMF073A-La Bataille du Morannon.png": "LMF073B-La Bataille du Morannon.png",
+            "LMF074-La Porte Noire s_Ouvre.png": "LMF074-La Porte Noire s_Ouvre v.png",
+            "LMF075A-La Terre du Mordor.png": "LMF075B-La Terre du Mordor.png",
+            "LMF076A-La Route d_Isenmouthe.png": "LMF076B-La Route d_Isenmouthe.png",
+            "LMF077A-Le Dernier Sursaut.png": "LMF077B-Le Dernier Sursaut.png",
+            "LMF078A-La Crevasse du Destin.png": "LMF078B-La Crevasse du Destin.png",
+            "LMF079-Montagne du Destin.png": "LMF079-Montagne du Destin v.png",
+            "LMF080-Mode Multijoueur Épique.png": "LMF080-Mode Multijoueur Épique v.png",
+            "LMF081-L_Oeil de Sauron.png": "LMF082-L_Oeil de Sauron.png"
+        }
+    }
+}
