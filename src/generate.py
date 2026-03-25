@@ -42,7 +42,7 @@ def get_cycles_from_workspace(config_folder: pathlib.Path, cycles_object) -> dic
     return result
 
 
-def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path) -> list:
+def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path) -> pathlib.Path:
     print(f"========== Génération du cycle {cycle_name} ==========")
     # génération des images
     cards_with_bleed: list = cards_generator.generate_images(cards=cards, result_folder=result_folder, backs=backs)
@@ -51,7 +51,7 @@ def generate_cycle_pdf(cycle_name: str, cards: dict, result_folder: pathlib.Path
     pdf_folder.mkdir(parents=True, exist_ok=True)
     pdf_output = pdf_folder / f"{cycle_name}.pdf"
     generepdf.new_pdf_from_images(cards_with_bleed, pdf_output)
-    return cards_with_bleed
+    return pdf_output
 
 
 if __name__ == '__main__':
@@ -130,15 +130,8 @@ if __name__ == '__main__':
     print(f"Nombre total de cartes à imprimer: {card_number_to_print}")
 
     if validate_only is False:
-        # Supprime le dossier de résultat
-        if result_folder.exists():
-            shutil.rmtree(result_folder)
         # Génère les cartes de chaque cycle
-        final_cards: list = []
         final_pdf = result_folder / "FINAL.pdf"
         for cycle_name, cards in cards_in_cycle.items():
             if occurence_for_cycle[cycle_name] > 0:
                 generated_cards = generate_cycle_pdf(cycle_name, cards, result_folder)
-                for occ in occurence_for_cycle[cycle_name]:
-                    final_cards.extend(generated_cards)
-        generepdf.new_pdf_from_images(final_cards, final_pdf)
