@@ -98,6 +98,8 @@ if __name__ == '__main__':
     cards_in_cycle: dict = {}
     occurence_for_cycle: dict = {}
     for cycle in cycles:
+        if cycles[cycle]["occurence"] == 0:
+            continue
         cycle_data: dict = None
         with open(cycles[cycle]["path"], 'r') as file:
             cycle_data = json5.load(file)
@@ -116,7 +118,7 @@ if __name__ == '__main__':
     for cycle_name, cards in cards_in_cycle.items():
         card_number = card_number + len(cards)
         card_number_to_print = card_number_to_print + (len(cards) * occurence_for_cycle[cycle_name])
-        print(f"{cycle_name} : {len(cards)}")
+        print(f"{cycle_name} : {len(cards) * occurence_for_cycle[cycle_name]} ({occurence_for_cycle[cycle_name]} x {len(cards)})")
     all_is_good: bool = True
     for encounter, status in encounters_infos.items():
         if status is False:
