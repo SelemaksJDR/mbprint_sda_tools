@@ -130,8 +130,7 @@ if __name__ == '__main__':
     print(f"Nombre total de cartes à imprimer: {card_number_to_print}")
 
     if validate_only is False:
-        # Génère les cartes de chaque cycle
-        final_pdf = result_folder / "FINAL.pdf"
+        # Génère de pdfs de chaque cycle
         for cycle_name, cards in cards_in_cycle.items():
             if occurence_for_cycle[cycle_name] > 0:
                 generated_cards = generate_cycle_pdf(cycle_name, cards, result_folder)
