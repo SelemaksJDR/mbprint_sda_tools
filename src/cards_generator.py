@@ -159,7 +159,7 @@ def generate_cycle(cycle_data: dict, root_pictures: pathlib.Path, backs: dict, f
 
 
 def get_and_create_bleed_img(card: pathlib.Path, cards_folder: pathlib.Path, must_add_text: bool):
-        dest_img_name = f"converted-{card.name}"
+        dest_img_name = f"{card.name}"
         dest_img = cards_folder / dest_img_name
         input_img = card
         if must_add_text:
